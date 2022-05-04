@@ -230,6 +230,8 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
                             Mesh mesh = meshObject.Filter.mesh;
                             newGOforMesh.GetComponent<MeshFilter>().mesh = mesh;
                             newGOforMesh.GetComponent<MeshRenderer>().material = MeshMat[matno];
+                            newGOforMesh.transform.rotation = meshObject.GameObject.transform.rotation;
+                            newGOforMesh.transform.position = meshObject.GameObject.transform.position;
                             sceneObjectDict.Add(meshObject.Id, gO);
                             notUpdatedIds.Add(meshObject.Id);
                             if (matno == MeshMat.Count - 1)
@@ -239,11 +241,17 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
                         }
                         else
                         {
-                               //Update
-                                    Mesh mesh = meshObject.Filter.mesh;
-                                    sceneObjectDict[meshObject.Id].GetComponent<MeshFilter>().mesh = mesh;
-                                    notUpdatedIds.Remove(meshObject.Id);
-                                
+                            //Update
+                            if(meshObject.Filter.mesh.vertices!= sceneObjectDict[meshObject.Id].GetComponent<MeshFilter>().mesh.vertices)
+                            {
+                            Mesh mesh = meshObject.Filter.mesh;
+                            sceneObjectDict[meshObject.Id].GetComponent<MeshFilter>().mesh = mesh;
+                            sceneObjectDict[meshObject.Id].transform.rotation= meshObject.GameObject.transform.rotation;
+                            sceneObjectDict[meshObject.Id].transform.position = meshObject.GameObject.transform.position;
+
+                            }
+                            notUpdatedIds.Remove(meshObject.Id);
+
                         }
 
 
