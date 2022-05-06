@@ -10,6 +10,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         private int roomNumber = 1;
         private int userIdCount;
+        public GameObject scriptobj;
 
         private void Awake()
         {
@@ -39,7 +40,9 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             PhotonNetwork.AuthValues.UserId = randomUserId.ToString();
             userIdCount++;
             PhotonNetwork.NickName = PhotonNetwork.AuthValues.UserId;
+            Debug.Log("connected to server");
             PhotonNetwork.JoinRandomRoom();
+
         }
 
         public override void OnJoinedRoom()
@@ -68,6 +71,9 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         {
             base.OnCreatedRoom();
             roomNumber++;
+            Debug.Log("created room");
+           //scriptobj.GetComponent<Environmentdetection>().
+
         }
 
         public void OnCancelButtonClicked()
@@ -83,8 +89,9 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         private void CreateRoom()
         {
-            var roomOptions = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 10};
-            PhotonNetwork.CreateRoom("Room" + Random.Range(1, 3000), roomOptions);
+           // var roomOptions = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 10};
+            PhotonNetwork.CreateRoom("Holo");
+            //PhotonNetwork.CreateRoom("Room" + Random.Range(1, 3000), roomOptions);
         }
     }
 }

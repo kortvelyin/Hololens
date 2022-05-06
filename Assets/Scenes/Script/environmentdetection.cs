@@ -7,19 +7,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Pun;
 //using Microsoft.MixedReality.Toolkit.SpatialAwareness.Utilities;
 using SpatialAwarenessHandler = Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObservationHandler<Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject>;
-
-
+using MRTK.Tutorials.MultiUserCapabilities;
 
 
 
 namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 {
 
-    public class environmentdetection : DemoSpatialMeshHandler, SpatialAwarenessHandler
+    public class Environmentdetection : DemoSpatialMeshHandler, SpatialAwarenessHandler
 
     {
+        public GameObject user;
+        public static Environmentdetection envscript;
+        public GameObject ntw;
+        public GameObject cubeprf;
         private float nextActionTime = 0.0f;
         public float period = 0.5f;
         public GameObject newGOforMesh;
@@ -32,12 +36,14 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
         private GameObject InstantiatedPrefab = null;
         [SerializeField]
         private Transform InstantiatedParent = null;
+        public bool canInstantiate = true;
+        public GameObject gO;
 
-        private IMixedRealitySceneUnderstandingObserver observer;
+        //private IMixedRealitySceneUnderstandingObserver observer;
 
         private List<GameObject> instantiatedPrefabs;
 
-        private Dictionary<int, GameObject> sceneObjectDict = new Dictionary<int, GameObject>();
+        public static Dictionary<int, GameObject> sceneObjectDict = new Dictionary<int, GameObject>();
 
         public List<Material> MeshMat = new List<Material>();
         public int matno = 0;
@@ -45,30 +51,32 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
         TMPro.TextMeshPro myText;
         private List<int> notUpdatedIds = new List<int>();
 
+        public SpatialAwarenessMeshObject meshObject;
+        public IMixedRealitySpatialAwarenessMeshObserver observer;
         int count = 0;
         // Start is called before the first frame update
         protected override void Start()
         {
            // myText = button.GetComponent<TMPro.TextMeshPro>();
+           if (DebugText!= null)
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script is working!";
-           
-           var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySceneUnderstandingObserver>();
-           
-            if (observer == null)
-            {
-                Debug.Log("Couldn't access Scene Understanding Observer! Please make sure the current build target is set to Universal Windows Platform. "
-                    + "Visit https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding for more information.");
-                return;
-            }
-          
-           // instantiatedPrefabs = new List<GameObject>();
+           else
+                DebugText = GameObject.Find("Title_Observer");
+            observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
+
+            if (InstantiatedParent == null)
+                InstantiatedParent = GameObject.Find("Demo Parent").transform;
+            //bool onserver =ntw.GetComponent<Photon Lobby>
+
+            // instantiatedPrefabs = new List<GameObject>();
 
             // Use CoreServices to quickly get access to the IMixedRealitySpatialAwarenessSystem
             var spatialAwarenessService = CoreServices.SpatialAwarenessSystem;
             // Cast to the IMixedRealityDataProviderAccess to get access to the data providers
             var dataProviderAccess = spatialAwarenessService as IMixedRealityDataProviderAccess;
             var meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-
+           // DebugText = GameObject.Find("Title_Observer");
+                //gameObject.FindChild("Title_Observer")
             // Get the first Mesh Observer available, generally we have only one registered
             //var meshObserver = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
 
@@ -78,15 +86,17 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
             // var observers = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
             Debug.Log("im at the end of start");
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "im at the end of start";
+          // var idk= GetComponent<PhotonUser>().DictUpdate
 
         }
 
-        protected override void OnEnable()
+        #region notworking
+       /* protected override void OnEnable()
         {
             Debug.Log("in on enable");
            
-            /*await new WaitUntil(() => MixedRealityToolkit.SpatialAwarenessSystem != null);
-            MixedRealityToolkit.SpatialAwarenessSystem.Register(gameObject);*/
+            await new WaitUntil(() => MixedRealityToolkit.SpatialAwarenessSystem != null);
+            MixedRealityToolkit.SpatialAwarenessSystem.Register(gameObject);
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script is working!2";
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script onenable";
             //myText.text = "the script onenable";
@@ -97,8 +107,8 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "subscribed";
             //var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
             //var obs2 = CoreServices.SpatialAwarenessSystem;
-        }
-
+        }*/
+      /*  
         protected override void OnDisable()
         {
            // DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script onDisable";
@@ -110,7 +120,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
         {
            // CoreServices.SpatialAwarenessSystem.UnregisterHandler<SpatialAwarenessHandler>(this);
         }
-
+      */
         public void OnObservationAdded(MixedRealitySpatialAwarenessEventData<SpatialAwarenessSceneObject> eventData)
         {
             // This method called everytime a SceneObject created by the SU observer
@@ -185,26 +195,37 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
         }
 
 
-      
+        #endregion notworking
 
 
-       //  Save(Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver meshObserver, string folderPath, bool consolidate = true);
+
+        //  Save(Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver meshObserver, string folderPath, bool consolidate = true);
 
         // Update is called once per frame
         void Update()
+
         {
+
+            
+            if (!PhotonNetwork.IsConnected)
+                return;
+
+            if (!PhotonNetwork.InRoom)
+                return;
+
+            user.GetComponent<PhotonUser>().InstantiateCube();
+            
+
             if (Time.time > nextActionTime)
             {
                 nextActionTime += period; 
-                // execute block of code here
-
-                //Save(observer, "device/", true);
+               
                 if (once)
                 {
                     var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
                     // Get the first Mesh Observer available, generally we have only one registered
                     //var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-
+                    Debug.Log(observer.Name);
                     // DebugText.GetComponent<TMPro.TextMeshPro>().text = "in update " + count.ToString();
                     if (observer == null)
                         Debug.Log("we do not have an observer");
@@ -217,21 +238,25 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
                         notUpdatedIds.Add(obj.Key);
                     }
 
-                    foreach (SpatialAwarenessMeshObject meshObject in observer.Meshes.Values)
+                    
+
+                    foreach (var meshObject in observer.Meshes.Values)
                     {
 
                         
                         count++;
-                        DebugText.GetComponent<TMPro.TextMeshPro>().text = "reading mesh: " + count.ToString();
+                        DebugText.GetComponent<TMPro.TextMeshPro>().text = "reading mesh: " +sceneObjectDict.Count.ToString();
                         if (sceneObjectDict.ContainsKey(meshObject.Id) == false)
                         {
-                            //Add
-                            GameObject gO = Instantiate(newGOforMesh, InstantiatedParent);
+                            //Add 
+                            gO =  PhotonNetwork.Instantiate(newGOforMesh.name, meshObject.GameObject.transform.position, meshObject.GameObject.transform.rotation);
+                            gO.transform.parent = InstantiatedParent;
+                            //gO = Instantiate(newGOforMesh, InstantiatedParent);
                             Mesh mesh = meshObject.Filter.mesh;
                             newGOforMesh.GetComponent<MeshFilter>().mesh = mesh;
                             newGOforMesh.GetComponent<MeshRenderer>().material = MeshMat[matno];
-                            newGOforMesh.transform.rotation = meshObject.GameObject.transform.rotation;
-                            newGOforMesh.transform.position = meshObject.GameObject.transform.position;
+                            //newGOforMesh.transform.rotation = meshObject.GameObject.transform.rotation;
+                            //newGOforMesh.transform.position = meshObject.GameObject.transform.position;
                             sceneObjectDict.Add(meshObject.Id, gO);
                             notUpdatedIds.Add(meshObject.Id);
                             if (matno == MeshMat.Count - 1)
@@ -261,6 +286,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
                     // Remove
                     foreach (int a in notUpdatedIds)
                     {
+                        PhotonNetwork.Destroy(sceneObjectDict[a].gameObject);
                         Destroy(sceneObjectDict[a].gameObject);
                         sceneObjectDict.Remove(a);
                     }
