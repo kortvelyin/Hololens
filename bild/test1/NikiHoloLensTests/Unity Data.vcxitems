@@ -213,6 +213,22 @@
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)CoarseRelocUW.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\CoarseRelocUW.dll')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)CoarseRelocUW.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\CoarseRelocUW.pdb')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)AzureSpatialAnchors.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AzureSpatialAnchors.dll')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)AzureSpatialAnchors.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AzureSpatialAnchors.pdb')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
     <None Include="$(MSBuildThisFileDirectory)Microsoft.MixedReality.SceneUnderstanding.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\Microsoft.MixedReality.SceneUnderstanding.dll')">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
@@ -237,19 +253,19 @@
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)UnityOpenXR.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.dll')">
-      <DeploymentContent>true</DeploymentContent>
-      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.pdb')">
-      <DeploymentContent>true</DeploymentContent>
-      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
-    </None>
     <None Include="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.dll')">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
     <None Include="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)UnityOpenXR.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.dll')">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.pdb')">
       <DeploymentContent>true</DeploymentContent>
       <ExcludeFromResourceIndex>true</ExcludeFromResourceIndex>
     </None>
@@ -293,6 +309,12 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <Target Name="BeforeResolveReferences" Condition="'$(BuildingProject)' == 'true'">
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\CoarseRelocUW.dll" DestinationFiles="$(MSBuildThisFileDirectory)CoarseRelocUW.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\CoarseRelocUW.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)CoarseRelocUW.pdb" Condition="Exists('$(MSBuildThisFileDirectory)CoarseRelocUW.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\CoarseRelocUW.pdb" DestinationFiles="$(MSBuildThisFileDirectory)CoarseRelocUW.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\CoarseRelocUW.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AzureSpatialAnchors.dll" DestinationFiles="$(MSBuildThisFileDirectory)AzureSpatialAnchors.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AzureSpatialAnchors.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)AzureSpatialAnchors.pdb" Condition="Exists('$(MSBuildThisFileDirectory)AzureSpatialAnchors.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AzureSpatialAnchors.pdb" DestinationFiles="$(MSBuildThisFileDirectory)AzureSpatialAnchors.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AzureSpatialAnchors.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\Microsoft.MixedReality.SceneUnderstanding.dll" DestinationFiles="$(MSBuildThisFileDirectory)Microsoft.MixedReality.SceneUnderstanding.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\Microsoft.MixedReality.SceneUnderstanding.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)Microsoft.MixedReality.SceneUnderstanding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Microsoft.MixedReality.SceneUnderstanding.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\Microsoft.MixedReality.SceneUnderstanding.pdb" DestinationFiles="$(MSBuildThisFileDirectory)Microsoft.MixedReality.SceneUnderstanding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\Microsoft.MixedReality.SceneUnderstanding.pdb')" />
@@ -302,12 +324,12 @@
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\MicrosoftOpenXRPlugin.dll" DestinationFiles="$(MSBuildThisFileDirectory)MicrosoftOpenXRPlugin.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\MicrosoftOpenXRPlugin.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)MicrosoftOpenXRPlugin.pdb" Condition="Exists('$(MSBuildThisFileDirectory)MicrosoftOpenXRPlugin.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\MicrosoftOpenXRPlugin.pdb" DestinationFiles="$(MSBuildThisFileDirectory)MicrosoftOpenXRPlugin.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\MicrosoftOpenXRPlugin.pdb')" />
-        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.dll" DestinationFiles="$(MSBuildThisFileDirectory)UnityOpenXR.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.dll')" />
-        <Delete Files="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" Condition="Exists('$(MSBuildThisFileDirectory)UnityOpenXR.pdb')" />
-        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.pdb" DestinationFiles="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.dll" DestinationFiles="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb" Condition="Exists('$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb" DestinationFiles="$(MSBuildThisFileDirectory)AudioPluginMsHRTF.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\AudioPluginMsHRTF.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.dll" DestinationFiles="$(MSBuildThisFileDirectory)UnityOpenXR.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.dll')" />
+        <Delete Files="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" Condition="Exists('$(MSBuildThisFileDirectory)UnityOpenXR.pdb')" />
+        <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.pdb" DestinationFiles="$(MSBuildThisFileDirectory)UnityOpenXR.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\UnityOpenXR.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.dll" DestinationFiles="$(MSBuildThisFileDirectory)PlaneFinding.dll" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.dll')" />
         <Delete Files="$(MSBuildThisFileDirectory)PlaneFinding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)PlaneFinding.pdb')" />
         <Copy SourceFiles="$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.pdb" DestinationFiles="$(MSBuildThisFileDirectory)PlaneFinding.pdb" Condition="Exists('$(MSBuildThisFileDirectory)Plugins\$(PlatformShortName)\PlaneFinding.pdb')" />

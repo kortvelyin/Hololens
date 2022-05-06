@@ -94,87 +94,93 @@ extern void WindowsMixedRealityArticulatedHandDefinition_UpdateHandMesh_m98A3792
 extern void WindowsMixedRealityArticulatedHandDefinition__cctor_m750647722EDB4DA7DA14C8A6E342FF5EA5D29227 (void);
 // 0x0000002A System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition::<UpdateHandMesh>b__12_1(System.Int64)
 extern void WindowsMixedRealityArticulatedHandDefinition_U3CUpdateHandMeshU3Eb__12_1_mB8C82607E3400768A7277120E86E17A4A6DA8743 (void);
-// 0x0000002B System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<SetHandMeshObserver>d__9::MoveNext()
+// 0x0000002B System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<SetHandMeshObserver>d__9::.ctor()
+extern void U3CSetHandMeshObserverU3Ed__9__ctor_m5CD5CC8F1067E1EE925D4667515E11E8E3DAF306 (void);
+// 0x0000002C System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<SetHandMeshObserver>d__9::MoveNext()
 extern void U3CSetHandMeshObserverU3Ed__9_MoveNext_mDAC344624B205C2ACE775A5F87F26D50BD181A04 (void);
-// 0x0000002C System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<SetHandMeshObserver>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000002D System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<SetHandMeshObserver>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CSetHandMeshObserverU3Ed__9_SetStateMachine_m05E1FB6F7BDD33538698D5ACAE6340053A3DDC1E (void);
-// 0x0000002D System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<>c__DisplayClass12_0::.ctor()
+// 0x0000002E System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<>c__DisplayClass12_0::.ctor()
 extern void U3CU3Ec__DisplayClass12_0__ctor_mA3D1FECF9337DA189F699302C1C8652815815EF7 (void);
-// 0x0000002E System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<>c__DisplayClass12_0::<UpdateHandMesh>b__0(System.Int64)
+// 0x0000002F System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityArticulatedHandDefinition/<>c__DisplayClass12_0::<UpdateHandMesh>b__0(System.Int64)
 extern void U3CU3Ec__DisplayClass12_0_U3CUpdateHandMeshU3Eb__0_m1125523650C417FEE920A9274E26091A794B8468 (void);
-// 0x0000002F System.Boolean Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::get_RenderFromPVCameraForMixedRealityCapture()
+// 0x00000030 System.Boolean Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::get_RenderFromPVCameraForMixedRealityCapture()
 extern void WindowsMixedRealityCameraSettingsProfile_get_RenderFromPVCameraForMixedRealityCapture_m647A4F2D4F0ADDD1E51FB011082486AE264635DC (void);
-// 0x00000030 Microsoft.MixedReality.Toolkit.WindowsMixedReality.HolographicDepthReprojectionMethod Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::get_ReprojectionMethod()
+// 0x00000031 Microsoft.MixedReality.Toolkit.WindowsMixedReality.HolographicDepthReprojectionMethod Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::get_ReprojectionMethod()
 extern void WindowsMixedRealityCameraSettingsProfile_get_ReprojectionMethod_mAC05D2EAC97AE966497D7EA37C869A6CD1B7D22E (void);
-// 0x00000031 System.Boolean Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::get_ReadingModeEnabled()
+// 0x00000032 System.Boolean Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::get_ReadingModeEnabled()
 extern void WindowsMixedRealityCameraSettingsProfile_get_ReadingModeEnabled_m63801AD4E6A36F299C148A4C0FEBF64E980400BC (void);
-// 0x00000032 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::.ctor()
+// 0x00000033 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettingsProfile::.ctor()
 extern void WindowsMixedRealityCameraSettingsProfile__ctor_m8FBCF09AABBFED51D07587B6FF46079851858591 (void);
-// 0x00000033 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::.ctor(Microsoft.MixedReality.Toolkit.Utilities.Handedness)
+// 0x00000034 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::.ctor(Microsoft.MixedReality.Toolkit.Utilities.Handedness)
 extern void WindowsMixedRealityControllerModelProvider__ctor_m320B32E4CFCB8471B6738CBF45C950BDAF8C0836 (void);
-// 0x00000034 System.Threading.Tasks.Task`1<UnityEngine.GameObject> Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::TryGenerateControllerModelFromPlatformSDK()
+// 0x00000035 System.Threading.Tasks.Task`1<UnityEngine.GameObject> Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::TryGenerateControllerModelFromPlatformSDK()
 extern void WindowsMixedRealityControllerModelProvider_TryGenerateControllerModelFromPlatformSDK_mF206B85AA98F7F7BB07E87FFEA31FC4BA1154907 (void);
-// 0x00000035 System.String Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::GenerateKey(Windows.UI.Input.Spatial.SpatialInteractionSource)
+// 0x00000036 System.String Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::GenerateKey(Windows.UI.Input.Spatial.SpatialInteractionSource)
 extern void WindowsMixedRealityControllerModelProvider_GenerateKey_m900CF7BF933C42D52F31A80A0573E3FA3D8C22DB (void);
-// 0x00000036 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::.cctor()
+// 0x00000037 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider::.cctor()
 extern void WindowsMixedRealityControllerModelProvider__cctor_mD33C80A338DD6310F2C42075CB8F5B0586C7A87B (void);
-// 0x00000037 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider/<TryGenerateControllerModelFromPlatformSDK>d__3::MoveNext()
+// 0x00000038 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider/<TryGenerateControllerModelFromPlatformSDK>d__3::.ctor()
+extern void U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3__ctor_mA76B4577BC714824004671FDF50466C31A25076C (void);
+// 0x00000039 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider/<TryGenerateControllerModelFromPlatformSDK>d__3::MoveNext()
 extern void U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_MoveNext_m21FE1261BA3F3305ADF9B68D3A951B1A94594A02 (void);
-// 0x00000038 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider/<TryGenerateControllerModelFromPlatformSDK>d__3::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000003A System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityControllerModelProvider/<TryGenerateControllerModelFromPlatformSDK>d__3::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_SetStateMachine_m93ADE9970BD9D9FA447C95589EC9CF9C208EA782 (void);
-// 0x00000039 Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::get_Left()
+// 0x0000003B Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::get_Left()
 extern void WindowsMixedRealityHandMeshProvider_get_Left_mE0F7711A4802A2E97A2CA4887349602331751027 (void);
-// 0x0000003A Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::get_Right()
+// 0x0000003C Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::get_Right()
 extern void WindowsMixedRealityHandMeshProvider_get_Right_m03C060CCD045A69CE29B08BBA1500C3E9F544DA5 (void);
-// 0x0000003B System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::.ctor(Microsoft.MixedReality.Toolkit.Utilities.Handedness)
+// 0x0000003D System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::.ctor(Microsoft.MixedReality.Toolkit.Utilities.Handedness)
 extern void WindowsMixedRealityHandMeshProvider__ctor_mF892EBBD3FDEB529F8C90EEF47DD9FE5B71E6D82 (void);
-// 0x0000003C System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::.ctor(Microsoft.MixedReality.Toolkit.Input.IMixedRealityController)
+// 0x0000003E System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::.ctor(Microsoft.MixedReality.Toolkit.Input.IMixedRealityController)
 extern void WindowsMixedRealityHandMeshProvider__ctor_m9B0573498CC49E3C2B04671000C87CCC5831ED0E (void);
-// 0x0000003D System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::SetInputSource(Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputSource)
+// 0x0000003F System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::SetInputSource(Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputSource)
 extern void WindowsMixedRealityHandMeshProvider_SetInputSource_mCBCA6858E0FE03566CF9E6244FAEE8BADC27B803 (void);
-// 0x0000003E System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::SetHandMeshObserver(Windows.UI.Input.Spatial.SpatialInteractionSourceState)
+// 0x00000040 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::SetHandMeshObserver(Windows.UI.Input.Spatial.SpatialInteractionSourceState)
 extern void WindowsMixedRealityHandMeshProvider_SetHandMeshObserver_m470F34D33BB26CE626F294617108300F2668E724 (void);
-// 0x0000003F System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::InitializeUVs(UnityEngine.Vector3[])
+// 0x00000041 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::InitializeUVs(UnityEngine.Vector3[])
 extern void WindowsMixedRealityHandMeshProvider_InitializeUVs_m42E59F4C791CD52E76B4BB979D3FCBF86F34144D (void);
-// 0x00000040 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::UpdateHandMesh(Windows.UI.Input.Spatial.SpatialInteractionSourceState)
+// 0x00000042 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::UpdateHandMesh(Windows.UI.Input.Spatial.SpatialInteractionSourceState)
 extern void WindowsMixedRealityHandMeshProvider_UpdateHandMesh_m65741AA6784F22A26A57D87FF89EE774DF6C6A5C (void);
-// 0x00000041 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::.cctor()
+// 0x00000043 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider::.cctor()
 extern void WindowsMixedRealityHandMeshProvider__cctor_m207FF8AC79F1AEADDE8EB9F765E3CE923A2AAB39 (void);
-// 0x00000042 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider/<SetHandMeshObserver>d__21::MoveNext()
+// 0x00000044 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider/<SetHandMeshObserver>d__21::.ctor()
+extern void U3CSetHandMeshObserverU3Ed__21__ctor_mC75F79A3E376D5267D121B86F786607E15F8B161 (void);
+// 0x00000045 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider/<SetHandMeshObserver>d__21::MoveNext()
 extern void U3CSetHandMeshObserverU3Ed__21_MoveNext_m25C5D8709C61054B3AB608DC129F6A8A1406711A (void);
-// 0x00000043 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider/<SetHandMeshObserver>d__21::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000046 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityHandMeshProvider/<SetHandMeshObserver>d__21::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CSetHandMeshObserverU3Ed__21_SetStateMachine_mF1E3596565CE7431FF446888BAFD7858C2FC45A6 (void);
-// 0x00000044 Microsoft.MixedReality.Toolkit.WindowsMixedReality.HolographicDepthReprojectionMethod Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityReprojectionUpdater::get_ReprojectionMethod()
+// 0x00000047 Microsoft.MixedReality.Toolkit.WindowsMixedReality.HolographicDepthReprojectionMethod Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityReprojectionUpdater::get_ReprojectionMethod()
 extern void WindowsMixedRealityReprojectionUpdater_get_ReprojectionMethod_mA6BB8F3360327EDDC20FE09421B51257DA67771B (void);
-// 0x00000045 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityReprojectionUpdater::set_ReprojectionMethod(Microsoft.MixedReality.Toolkit.WindowsMixedReality.HolographicDepthReprojectionMethod)
+// 0x00000048 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityReprojectionUpdater::set_ReprojectionMethod(Microsoft.MixedReality.Toolkit.WindowsMixedReality.HolographicDepthReprojectionMethod)
 extern void WindowsMixedRealityReprojectionUpdater_set_ReprojectionMethod_m21A599DE800E6E155A0EE2C9527669D17F763993 (void);
-// 0x00000046 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityReprojectionUpdater::.ctor()
+// 0x00000049 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityReprojectionUpdater::.ctor()
 extern void WindowsMixedRealityReprojectionUpdater__ctor_m58CD473A0A4C9F43FA8F7A0037D890D3BB885567 (void);
-// 0x00000047 Microsoft.MixedReality.Toolkit.WindowsMixedReality.IWindowsMixedRealityUtilitiesProvider Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_UtilitiesProvider()
+// 0x0000004A Microsoft.MixedReality.Toolkit.WindowsMixedReality.IWindowsMixedRealityUtilitiesProvider Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_UtilitiesProvider()
 extern void WindowsMixedRealityUtilities_get_UtilitiesProvider_mBFBDED5615A7E4344889332838B7CD84980E908D (void);
-// 0x00000048 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::set_UtilitiesProvider(Microsoft.MixedReality.Toolkit.WindowsMixedReality.IWindowsMixedRealityUtilitiesProvider)
+// 0x0000004B System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::set_UtilitiesProvider(Microsoft.MixedReality.Toolkit.WindowsMixedReality.IWindowsMixedRealityUtilitiesProvider)
 extern void WindowsMixedRealityUtilities_set_UtilitiesProvider_mAF3CE4E9D0A830EAA0D2C52EE9B7B89122813D6D (void);
-// 0x00000049 Windows.UI.Input.Spatial.SpatialInteractionManager Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_SpatialInteractionManager()
+// 0x0000004C Windows.UI.Input.Spatial.SpatialInteractionManager Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_SpatialInteractionManager()
 extern void WindowsMixedRealityUtilities_get_SpatialInteractionManager_mBE7ED27754CC932002B99FA4F8E4266198189745 (void);
-// 0x0000004A Windows.Perception.Spatial.SpatialCoordinateSystem Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_SpatialCoordinateSystem()
+// 0x0000004D Windows.Perception.Spatial.SpatialCoordinateSystem Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_SpatialCoordinateSystem()
 extern void WindowsMixedRealityUtilities_get_SpatialCoordinateSystem_mCA3CA2333717B0394512EF126983FE98289A8C85 (void);
-// 0x0000004B Windows.Graphics.Holographic.HolographicFrame Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_CurrentHolographicFrame()
+// 0x0000004E Windows.Graphics.Holographic.HolographicFrame Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_CurrentHolographicFrame()
 extern void WindowsMixedRealityUtilities_get_CurrentHolographicFrame_mCD077DB2CC463DA1A2B9D5D10C2265EC26ACF627 (void);
-// 0x0000004C Windows.Graphics.Holographic.HolographicFrame Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_CurrentWindowsHolographicFrame()
+// 0x0000004F Windows.Graphics.Holographic.HolographicFrame Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::get_CurrentWindowsHolographicFrame()
 extern void WindowsMixedRealityUtilities_get_CurrentWindowsHolographicFrame_mE8C17BB13E17F3C5C122DC8FF977DAD2FAC43601 (void);
-// 0x0000004D UnityEngine.Vector3 Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::SystemVector3ToUnity(System.Numerics.Vector3)
+// 0x00000050 UnityEngine.Vector3 Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::SystemVector3ToUnity(System.Numerics.Vector3)
 extern void WindowsMixedRealityUtilities_SystemVector3ToUnity_m1F11420882B4B6EAC1151E4BA5C728F50CD8902D (void);
-// 0x0000004E UnityEngine.Quaternion Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::SystemQuaternionToUnity(System.Numerics.Quaternion)
+// 0x00000051 UnityEngine.Quaternion Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::SystemQuaternionToUnity(System.Numerics.Quaternion)
 extern void WindowsMixedRealityUtilities_SystemQuaternionToUnity_mB912AA6639841A3C65785FA39D1FFAFA7AD6B9D0 (void);
-// 0x0000004F System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::.cctor()
+// 0x00000052 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities::.cctor()
 extern void WindowsMixedRealityUtilities__cctor_m2AADA79D3CA13DAACCA965FEE0D9F9438B395F29 (void);
-// 0x00000050 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities/<>c::.cctor()
+// 0x00000053 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities/<>c::.cctor()
 extern void U3CU3Ec__cctor_mC0565B6232A6B198B09ADA3DC8268C755E060375 (void);
-// 0x00000051 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities/<>c::.ctor()
+// 0x00000054 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities/<>c::.ctor()
 extern void U3CU3Ec__ctor_m8922BC05AD0A42D2334C312E1E9626F97FE8C2F2 (void);
-// 0x00000052 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities/<>c::<get_SpatialInteractionManager>b__6_0()
+// 0x00000055 System.Void Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityUtilities/<>c::<get_SpatialInteractionManager>b__6_0()
 extern void U3CU3Ec_U3Cget_SpatialInteractionManagerU3Eb__6_0_m2EF1DCEADE88A30B09809BE94C7B8B6BAD14919D (void);
-static Il2CppMethodPointer s_methodPointers[82] = 
+static Il2CppMethodPointer s_methodPointers[85] = 
 {
 	WindowsMixedRealityHandRecorder_get_ReferenceJoint_mFB01B9FAA791CADC318100AF21165EFCAB4D3ADB,
 	WindowsMixedRealityHandRecorder_set_ReferenceJoint_m488B644BB88375CB89E87D5AAB243C9AC167FA7A,
@@ -218,6 +224,7 @@ static Il2CppMethodPointer s_methodPointers[82] =
 	WindowsMixedRealityArticulatedHandDefinition_UpdateHandMesh_m98A3792E8C7429E6E76E0711E98908F33D543FF5,
 	WindowsMixedRealityArticulatedHandDefinition__cctor_m750647722EDB4DA7DA14C8A6E342FF5EA5D29227,
 	WindowsMixedRealityArticulatedHandDefinition_U3CUpdateHandMeshU3Eb__12_1_mB8C82607E3400768A7277120E86E17A4A6DA8743,
+	U3CSetHandMeshObserverU3Ed__9__ctor_m5CD5CC8F1067E1EE925D4667515E11E8E3DAF306,
 	U3CSetHandMeshObserverU3Ed__9_MoveNext_mDAC344624B205C2ACE775A5F87F26D50BD181A04,
 	U3CSetHandMeshObserverU3Ed__9_SetStateMachine_m05E1FB6F7BDD33538698D5ACAE6340053A3DDC1E,
 	U3CU3Ec__DisplayClass12_0__ctor_mA3D1FECF9337DA189F699302C1C8652815815EF7,
@@ -230,6 +237,7 @@ static Il2CppMethodPointer s_methodPointers[82] =
 	WindowsMixedRealityControllerModelProvider_TryGenerateControllerModelFromPlatformSDK_mF206B85AA98F7F7BB07E87FFEA31FC4BA1154907,
 	WindowsMixedRealityControllerModelProvider_GenerateKey_m900CF7BF933C42D52F31A80A0573E3FA3D8C22DB,
 	WindowsMixedRealityControllerModelProvider__cctor_mD33C80A338DD6310F2C42075CB8F5B0586C7A87B,
+	U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3__ctor_mA76B4577BC714824004671FDF50466C31A25076C,
 	U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_MoveNext_m21FE1261BA3F3305ADF9B68D3A951B1A94594A02,
 	U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_SetStateMachine_m93ADE9970BD9D9FA447C95589EC9CF9C208EA782,
 	WindowsMixedRealityHandMeshProvider_get_Left_mE0F7711A4802A2E97A2CA4887349602331751027,
@@ -241,6 +249,7 @@ static Il2CppMethodPointer s_methodPointers[82] =
 	WindowsMixedRealityHandMeshProvider_InitializeUVs_m42E59F4C791CD52E76B4BB979D3FCBF86F34144D,
 	WindowsMixedRealityHandMeshProvider_UpdateHandMesh_m65741AA6784F22A26A57D87FF89EE774DF6C6A5C,
 	WindowsMixedRealityHandMeshProvider__cctor_m207FF8AC79F1AEADDE8EB9F765E3CE923A2AAB39,
+	U3CSetHandMeshObserverU3Ed__21__ctor_mC75F79A3E376D5267D121B86F786607E15F8B161,
 	U3CSetHandMeshObserverU3Ed__21_MoveNext_m25C5D8709C61054B3AB608DC129F6A8A1406711A,
 	U3CSetHandMeshObserverU3Ed__21_SetStateMachine_mF1E3596565CE7431FF446888BAFD7858C2FC45A6,
 	WindowsMixedRealityReprojectionUpdater_get_ReprojectionMethod_mA6BB8F3360327EDDC20FE09421B51257DA67771B,
@@ -259,115 +268,103 @@ static Il2CppMethodPointer s_methodPointers[82] =
 	U3CU3Ec__ctor_m8922BC05AD0A42D2334C312E1E9626F97FE8C2F2,
 	U3CU3Ec_U3Cget_SpatialInteractionManagerU3Eb__6_0_m2EF1DCEADE88A30B09809BE94C7B8B6BAD14919D,
 };
-extern void U3CSetHandMeshObserverU3Ed__9_MoveNext_mDAC344624B205C2ACE775A5F87F26D50BD181A04_AdjustorThunk (void);
-extern void U3CSetHandMeshObserverU3Ed__9_SetStateMachine_m05E1FB6F7BDD33538698D5ACAE6340053A3DDC1E_AdjustorThunk (void);
-extern void U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_MoveNext_m21FE1261BA3F3305ADF9B68D3A951B1A94594A02_AdjustorThunk (void);
-extern void U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_SetStateMachine_m93ADE9970BD9D9FA447C95589EC9CF9C208EA782_AdjustorThunk (void);
-extern void U3CSetHandMeshObserverU3Ed__21_MoveNext_m25C5D8709C61054B3AB608DC129F6A8A1406711A_AdjustorThunk (void);
-extern void U3CSetHandMeshObserverU3Ed__21_SetStateMachine_mF1E3596565CE7431FF446888BAFD7858C2FC45A6_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[6] = 
+static const int32_t s_InvokerIndices[85] = 
 {
-	{ 0x0600002B, U3CSetHandMeshObserverU3Ed__9_MoveNext_mDAC344624B205C2ACE775A5F87F26D50BD181A04_AdjustorThunk },
-	{ 0x0600002C, U3CSetHandMeshObserverU3Ed__9_SetStateMachine_m05E1FB6F7BDD33538698D5ACAE6340053A3DDC1E_AdjustorThunk },
-	{ 0x06000037, U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_MoveNext_m21FE1261BA3F3305ADF9B68D3A951B1A94594A02_AdjustorThunk },
-	{ 0x06000038, U3CTryGenerateControllerModelFromPlatformSDKU3Ed__3_SetStateMachine_m93ADE9970BD9D9FA447C95589EC9CF9C208EA782_AdjustorThunk },
-	{ 0x06000042, U3CSetHandMeshObserverU3Ed__21_MoveNext_m25C5D8709C61054B3AB608DC129F6A8A1406711A_AdjustorThunk },
-	{ 0x06000043, U3CSetHandMeshObserverU3Ed__21_SetStateMachine_mF1E3596565CE7431FF446888BAFD7858C2FC45A6_AdjustorThunk },
-};
-static const int32_t s_InvokerIndices[82] = 
-{
-	4632,
-	3808,
-	4668,
+	5807,
+	4755,
+	5844,
+	5934,
+	5934,
+	4827,
+	5934,
+	8093,
+	5934,
+	5881,
+	4827,
+	5844,
+	5934,
+	5934,
+	4755,
+	5934,
+	5881,
+	5844,
+	5934,
+	5844,
+	1000,
+	5934,
+	5934,
+	5844,
+	5934,
+	5881,
+	4827,
+	5934,
+	5934,
+	5934,
+	5934,
+	8746,
+	5809,
+	5809,
+	8511,
+	7734,
+	2736,
+	4791,
+	4791,
+	4791,
+	8746,
 	4756,
+	5934,
+	5934,
+	4791,
+	5934,
 	4756,
-	3878,
-	4756,
-	6406,
-	4756,
-	4704,
-	3878,
-	4668,
-	4756,
-	4756,
-	3808,
-	4756,
-	4704,
-	4668,
-	4756,
-	4668,
-	795,
-	4756,
-	4756,
-	4668,
-	4756,
-	4704,
-	3878,
-	4756,
-	4756,
-	4756,
-	4756,
-	6961,
-	4634,
-	4634,
-	6748,
-	6121,
-	2203,
-	3844,
-	3844,
-	3844,
-	6961,
-	3809,
-	4756,
-	3844,
-	4756,
-	3809,
-	4704,
-	4632,
-	4704,
-	4756,
-	3878,
-	4668,
-	2961,
-	6961,
-	4756,
-	3844,
-	6929,
-	6929,
-	3878,
-	3844,
-	3844,
-	3844,
-	3844,
-	3844,
-	6961,
-	4756,
-	3844,
-	4632,
-	3808,
-	4756,
-	6929,
-	6823,
-	6929,
-	6929,
-	6929,
-	6929,
-	6802,
-	6724,
-	6961,
-	6961,
-	4756,
-	4756,
+	5881,
+	5807,
+	5881,
+	5934,
+	4827,
+	5844,
+	3670,
+	8746,
+	5934,
+	5934,
+	4791,
+	8711,
+	8711,
+	4827,
+	4791,
+	4791,
+	4791,
+	4791,
+	4791,
+	8746,
+	5934,
+	5934,
+	4791,
+	5807,
+	4755,
+	5934,
+	8711,
+	8591,
+	8711,
+	8711,
+	8711,
+	8711,
+	8569,
+	8486,
+	8746,
+	8746,
+	5934,
+	5934,
 };
 extern const CustomAttributesCacheGenerator g_Microsoft_MixedReality_Toolkit_Providers_WindowsMixedReality_Shared_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Providers_WindowsMixedReality_Shared_CodeGenModule;
 const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Providers_WindowsMixedReality_Shared_CodeGenModule = 
 {
 	"Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.dll",
-	82,
+	85,
 	s_methodPointers,
-	6,
-	s_adjustorThunks,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

@@ -1879,7 +1879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseService_Initialize_m468213D350A8820A
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
 // Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSettingsConfiguration[] Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile::get_SettingsConfigurations()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8_inline (MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8 (MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * __this, const RuntimeMethod* method);
 // Microsoft.MixedReality.Toolkit.Utilities.SystemType Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSettingsConfiguration::get_ComponentType()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * MixedRealityCameraSettingsConfiguration_get_ComponentType_m7F4DFC8AE7AEFFD77C0FDAECAF964A4E84ED149C_inline (MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 * __this, const RuntimeMethod* method);
 // System.Type Microsoft.MixedReality.Toolkit.Utilities.SystemType::get_Type()
@@ -2030,8 +2030,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem__ctor_m4367BEB5
 	{
 		// public override string Name { get; protected set; } = "Mixed Reality Camera System";
 		__this->set_U3CNameU3Ek__BackingField_24(_stringLiteral196C8C01929CBAF19C0D357B9C59A48315353628);
+		// public uint SourceId { get; } = 0;
+		__this->set_U3CSourceIdU3Ek__BackingField_25(0);
 		// public string SourceName { get; } = "Mixed Reality Camera System";
 		__this->set_U3CSourceNameU3Ek__BackingField_26(_stringLiteral196C8C01929CBAF19C0D357B9C59A48315353628);
+		// private bool cameraOpaqueLastFrame = false;
+		__this->set_cameraOpaqueLastFrame_28((bool)0);
 		// private bool useFallbackBehavior = true;
 		__this->set_useFallbackBehavior_29((bool)1);
 		// BaseMixedRealityProfile profile = null) : base(profile)
@@ -2076,6 +2080,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MixedRealityCameraSystem_get_IsOpaque_m3
 		s_Il2CppMethodInitialized = true;
 	}
 	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	bool V_3 = false;
 	{
 		// currentDisplayType = DisplayType.Opaque;
 		__this->set_currentDisplayType_27(0);
@@ -2088,44 +2095,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MixedRealityCameraSystem_get_IsOpaque_m3
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Count() */, IReadOnlyCollection_1_t6079E71F8178F439524AB84F58066BDD09BC0C88_il2cpp_TypeInfo_var, L_1);
-		if ((((int32_t)L_2) <= ((int32_t)0)))
+		V_1 = (bool)((((int32_t)L_2) > ((int32_t)0))? 1 : 0);
+		bool L_3 = V_1;
+		if (!L_3)
 		{
-			goto IL_002e;
+			goto IL_003c;
 		}
 	}
 	{
 		// if (!dataProviders[0].IsOpaque)
-		RuntimeObject* L_3 = V_0;
-		NullCheck(L_3);
-		RuntimeObject* L_4;
-		L_4 = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* !0 System.Collections.Generic.IReadOnlyList`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Item(System.Int32) */, IReadOnlyList_1_t882BAC998DF7C32C550C1722C88E1386AD58756A_il2cpp_TypeInfo_var, L_3, 0);
+		RuntimeObject* L_4 = V_0;
 		NullCheck(L_4);
-		bool L_5;
-		L_5 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider::get_IsOpaque() */, IMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_il2cpp_TypeInfo_var, L_4);
-		if (L_5)
+		RuntimeObject* L_5;
+		L_5 = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* !0 System.Collections.Generic.IReadOnlyList`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Item(System.Int32) */, IReadOnlyList_1_t882BAC998DF7C32C550C1722C88E1386AD58756A_il2cpp_TypeInfo_var, L_4, 0);
+		NullCheck(L_5);
+		bool L_6;
+		L_6 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider::get_IsOpaque() */, IMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_il2cpp_TypeInfo_var, L_5);
+		V_2 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
+		bool L_7 = V_2;
+		if (!L_7)
 		{
-			goto IL_0038;
+			goto IL_0039;
 		}
 	}
 	{
 		// currentDisplayType = DisplayType.Transparent;
 		__this->set_currentDisplayType_27(1);
-		// }
-		goto IL_0038;
 	}
 
-IL_002e:
+IL_0039:
+	{
+		goto IL_0049;
+	}
+
+IL_003c:
 	{
 		// Debug.LogWarning("Windows Mixed Reality specific camera code has been moved into Windows Mixed Reality Camera Settings. Please ensure you have this added under your Camera System's Settings Providers, as this deprecated code path may be removed in a future update.");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m24085D883C9E74D7AB423F0625E13259923960E7(_stringLiteralA4093EA4CA3DFEE691E40B5C6CB894E117A3C3B9, /*hidden argument*/NULL);
 	}
 
-IL_0038:
+IL_0049:
 	{
 		// return currentDisplayType == DisplayType.Opaque;
-		int32_t L_6 = __this->get_currentDisplayType_27();
-		return (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
+		int32_t L_8 = __this->get_currentDisplayType_27();
+		V_3 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
+		goto IL_0055;
+	}
+
+IL_0055:
+	{
+		// }
+		bool L_9 = V_3;
+		return L_9;
 	}
 }
 // System.UInt32 Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSystem::get_SourceId()
@@ -2186,15 +2208,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Initialize_m960
 		s_Il2CppMethodInitialized = true;
 	}
 	MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * V_0 = NULL;
-	int32_t V_1 = 0;
-	MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206  V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* V_3 = NULL;
-	SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * G_B5_0 = NULL;
-	SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * G_B4_0 = NULL;
-	Type_t * G_B6_0 = NULL;
-	RuntimeObject* G_B10_0 = NULL;
-	RuntimeObject* G_B9_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	bool V_2 = false;
+	int32_t V_3 = 0;
+	MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206  V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* V_5 = NULL;
+	bool V_6 = false;
+	bool V_7 = false;
+	RuntimeObject* V_8 = NULL;
+	bool V_9 = false;
+	bool V_10 = false;
+	bool V_11 = false;
+	bool V_12 = false;
+	bool V_13 = false;
+	int32_t G_B3_0 = 0;
+	SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * G_B7_0 = NULL;
+	SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * G_B6_0 = NULL;
+	Type_t * G_B8_0 = NULL;
 	{
 		// base.Initialize();
 		BaseService_Initialize_m468213D350A8820AF2D976385A740D38ADA538B4(__this, /*hidden argument*/NULL);
@@ -2205,274 +2236,314 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Initialize_m960
 		// var cameraSettingProviders = GetDataProviders<IMixedRealityCameraSettingsProvider>();
 		RuntimeObject* L_1;
 		L_1 = GenericVirtFuncInvoker0< RuntimeObject* >::Invoke(BaseDataProviderAccessCoreSystem_GetDataProviders_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mF4550332487020D5B1EE7E20ACDFE9D70C732139_RuntimeMethod_var, __this);
+		V_1 = L_1;
 		// if ((cameraSettingProviders.Count == 0) && (profile != null))
-		NullCheck(L_1);
-		int32_t L_2;
-		L_2 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Count() */, IReadOnlyCollection_1_t6079E71F8178F439524AB84F58066BDD09BC0C88_il2cpp_TypeInfo_var, L_1);
-		if (L_2)
+		RuntimeObject* L_2 = V_1;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Count() */, IReadOnlyCollection_1_t6079E71F8178F439524AB84F58066BDD09BC0C88_il2cpp_TypeInfo_var, L_2);
+		if (L_3)
 		{
-			goto IL_00df;
+			goto IL_002c;
 		}
 	}
 	{
-		MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * L_3 = V_0;
+		MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * L_4 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_3, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_4)
+		bool L_5;
+		L_5 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_4, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		G_B3_0 = ((int32_t)(L_5));
+		goto IL_002d;
+	}
+
+IL_002c:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_002d:
+	{
+		V_2 = (bool)G_B3_0;
+		bool L_6 = V_2;
+		if (!L_6)
 		{
-			goto IL_00df;
+			goto IL_0104;
 		}
 	}
 	{
 		// for (int i = 0; i < profile.SettingsConfigurations.Length; i++)
-		V_1 = 0;
-		goto IL_00d1;
+		V_3 = 0;
+		goto IL_00ef;
 	}
 
-IL_0035:
+IL_003c:
 	{
 		// MixedRealityCameraSettingsConfiguration configuration = profile.SettingsConfigurations[i];
-		MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * L_5 = V_0;
-		NullCheck(L_5);
-		MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* L_6;
-		L_6 = MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8_inline(L_5, /*hidden argument*/NULL);
-		int32_t L_7 = V_1;
-		NullCheck(L_6);
-		int32_t L_8 = L_7;
-		MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206  L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
-		V_2 = L_9;
+		MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * L_7 = V_0;
+		NullCheck(L_7);
+		MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* L_8;
+		L_8 = MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8(L_7, /*hidden argument*/NULL);
+		int32_t L_9 = V_3;
+		NullCheck(L_8);
+		int32_t L_10 = L_9;
+		MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206  L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
+		V_4 = L_11;
 		// if (configuration.ComponentType?.Type == null)
-		SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * L_10;
-		L_10 = MixedRealityCameraSettingsConfiguration_get_ComponentType_m7F4DFC8AE7AEFFD77C0FDAECAF964A4E84ED149C_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * L_11 = L_10;
-		G_B4_0 = L_11;
-		if (L_11)
-		{
-			G_B5_0 = L_11;
-			goto IL_0050;
-		}
-	}
-	{
-		G_B6_0 = ((Type_t *)(NULL));
-		goto IL_0055;
-	}
-
-IL_0050:
-	{
-		NullCheck(G_B5_0);
-		Type_t * L_12;
-		L_12 = SystemType_get_Type_mD7B7EEF3C5ED6B16E2DFB9F89FCE9A8B58895E23_inline(G_B5_0, /*hidden argument*/NULL);
-		G_B6_0 = L_12;
-	}
-
-IL_0055:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		bool L_13;
-		L_13 = Type_op_Equality_mA438719A1FDF103C7BBBB08AEF564E7FAEEA0046(G_B6_0, (Type_t *)NULL, /*hidden argument*/NULL);
+		SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * L_12;
+		L_12 = MixedRealityCameraSettingsConfiguration_get_ComponentType_m7F4DFC8AE7AEFFD77C0FDAECAF964A4E84ED149C_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * L_13 = L_12;
+		G_B6_0 = L_13;
 		if (L_13)
 		{
-			goto IL_00cd;
+			G_B7_0 = L_13;
+			goto IL_0059;
 		}
 	}
 	{
+		G_B8_0 = ((Type_t *)(NULL));
+		goto IL_005e;
+	}
+
+IL_0059:
+	{
+		NullCheck(G_B7_0);
+		Type_t * L_14;
+		L_14 = SystemType_get_Type_mD7B7EEF3C5ED6B16E2DFB9F89FCE9A8B58895E23_inline(G_B7_0, /*hidden argument*/NULL);
+		G_B8_0 = L_14;
+	}
+
+IL_005e:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Type_op_Equality_mA438719A1FDF103C7BBBB08AEF564E7FAEEA0046(G_B8_0, (Type_t *)NULL, /*hidden argument*/NULL);
+		V_6 = L_15;
+		bool L_16 = V_6;
+		if (!L_16)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		// continue;
+		goto IL_00eb;
+	}
+
+IL_006d:
+	{
 		// object[] args = { this, configuration.ComponentName, configuration.Priority, configuration.SettingsProfile };
-		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_14 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)4);
-		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_15 = L_14;
-		NullCheck(L_15);
-		ArrayElementTypeCheck (L_15, __this);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)__this);
-		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_16 = L_15;
-		String_t* L_17;
-		L_17 = MixedRealityCameraSettingsConfiguration_get_ComponentName_m40838B4395809F9EBB081EC0E3A2C72091BC0A22_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		NullCheck(L_16);
-		ArrayElementTypeCheck (L_16, L_17);
-		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_17);
-		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_18 = L_16;
-		uint32_t L_19;
-		L_19 = MixedRealityCameraSettingsConfiguration_get_Priority_m58CB073F9190DC709FF4F33F94BFC92A19741DBB_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		uint32_t L_20 = L_19;
-		RuntimeObject * L_21 = Box(UInt32_tE60352A06233E4E69DD198BCC67142159F686B15_il2cpp_TypeInfo_var, &L_20);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_17 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_18 = L_17;
 		NullCheck(L_18);
-		ArrayElementTypeCheck (L_18, L_21);
-		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_21);
-		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_22 = L_18;
-		BaseCameraSettingsProfile_tAFBB12867D1B05C187631306E8FFADF52B2E72E8 * L_23;
-		L_23 = MixedRealityCameraSettingsConfiguration_get_SettingsProfile_m7AB9CB39652FA09D7FC099698D70E4784CD54A80_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		NullCheck(L_22);
-		ArrayElementTypeCheck (L_22, L_23);
-		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_23);
-		V_3 = L_22;
+		ArrayElementTypeCheck (L_18, __this);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)__this);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_19 = L_18;
+		String_t* L_20;
+		L_20 = MixedRealityCameraSettingsConfiguration_get_ComponentName_m40838B4395809F9EBB081EC0E3A2C72091BC0A22_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		NullCheck(L_19);
+		ArrayElementTypeCheck (L_19, L_20);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_20);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_21 = L_19;
+		uint32_t L_22;
+		L_22 = MixedRealityCameraSettingsConfiguration_get_Priority_m58CB073F9190DC709FF4F33F94BFC92A19741DBB_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		uint32_t L_23 = L_22;
+		RuntimeObject * L_24 = Box(UInt32_tE60352A06233E4E69DD198BCC67142159F686B15_il2cpp_TypeInfo_var, &L_23);
+		NullCheck(L_21);
+		ArrayElementTypeCheck (L_21, L_24);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_24);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_25 = L_21;
+		BaseCameraSettingsProfile_tAFBB12867D1B05C187631306E8FFADF52B2E72E8 * L_26;
+		L_26 = MixedRealityCameraSettingsConfiguration_get_SettingsProfile_m7AB9CB39652FA09D7FC099698D70E4784CD54A80_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, L_26);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_26);
+		V_5 = L_25;
 		// if (RegisterDataProvider<IMixedRealityCameraSettingsProvider>(
 		//     configuration.ComponentType.Type,
 		//     configuration.ComponentName,
 		//     configuration.RuntimePlatform,
 		//     args))
-		SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * L_24;
-		L_24 = MixedRealityCameraSettingsConfiguration_get_ComponentType_m7F4DFC8AE7AEFFD77C0FDAECAF964A4E84ED149C_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		NullCheck(L_24);
-		Type_t * L_25;
-		L_25 = SystemType_get_Type_mD7B7EEF3C5ED6B16E2DFB9F89FCE9A8B58895E23_inline(L_24, /*hidden argument*/NULL);
-		String_t* L_26;
-		L_26 = MixedRealityCameraSettingsConfiguration_get_ComponentName_m40838B4395809F9EBB081EC0E3A2C72091BC0A22_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		int32_t L_27;
-		L_27 = MixedRealityCameraSettingsConfiguration_get_RuntimePlatform_mB34AF062C1757FCC5285BA7F9CA2B19F0310BACD_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_28 = V_3;
-		bool L_29;
-		L_29 = BaseDataProviderAccessCoreSystem_RegisterDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mC22B4EEFA0697C58444BACB2C6AADC9B37522653(__this, L_25, L_26, L_27, L_28, /*hidden argument*/BaseDataProviderAccessCoreSystem_RegisterDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mC22B4EEFA0697C58444BACB2C6AADC9B37522653_RuntimeMethod_var);
-		if (!L_29)
+		SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * L_27;
+		L_27 = MixedRealityCameraSettingsConfiguration_get_ComponentType_m7F4DFC8AE7AEFFD77C0FDAECAF964A4E84ED149C_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		NullCheck(L_27);
+		Type_t * L_28;
+		L_28 = SystemType_get_Type_mD7B7EEF3C5ED6B16E2DFB9F89FCE9A8B58895E23_inline(L_27, /*hidden argument*/NULL);
+		String_t* L_29;
+		L_29 = MixedRealityCameraSettingsConfiguration_get_ComponentName_m40838B4395809F9EBB081EC0E3A2C72091BC0A22_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		int32_t L_30;
+		L_30 = MixedRealityCameraSettingsConfiguration_get_RuntimePlatform_mB34AF062C1757FCC5285BA7F9CA2B19F0310BACD_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_31 = V_5;
+		bool L_32;
+		L_32 = BaseDataProviderAccessCoreSystem_RegisterDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mC22B4EEFA0697C58444BACB2C6AADC9B37522653(__this, L_28, L_29, L_30, L_31, /*hidden argument*/BaseDataProviderAccessCoreSystem_RegisterDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mC22B4EEFA0697C58444BACB2C6AADC9B37522653_RuntimeMethod_var);
+		V_7 = L_32;
+		bool L_33 = V_7;
+		if (!L_33)
 		{
-			goto IL_00cd;
+			goto IL_00ea;
 		}
 	}
 	{
 		// IMixedRealityCameraSettingsProvider provider = GetDataProvider<IMixedRealityCameraSettingsProvider>(configuration.ComponentName);
-		String_t* L_30;
-		L_30 = MixedRealityCameraSettingsConfiguration_get_ComponentName_m40838B4395809F9EBB081EC0E3A2C72091BC0A22_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_2), /*hidden argument*/NULL);
-		RuntimeObject* L_31;
-		L_31 = GenericVirtFuncInvoker1< RuntimeObject*, String_t* >::Invoke(BaseDataProviderAccessCoreSystem_GetDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mA31D07AB82D46BD6F9E1B8BA0CC23944DD21B96D_RuntimeMethod_var, __this, L_30);
+		String_t* L_34;
+		L_34 = MixedRealityCameraSettingsConfiguration_get_ComponentName_m40838B4395809F9EBB081EC0E3A2C72091BC0A22_inline((MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 *)(&V_4), /*hidden argument*/NULL);
+		RuntimeObject* L_35;
+		L_35 = GenericVirtFuncInvoker1< RuntimeObject*, String_t* >::Invoke(BaseDataProviderAccessCoreSystem_GetDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_mA31D07AB82D46BD6F9E1B8BA0CC23944DD21B96D_RuntimeMethod_var, __this, L_34);
+		V_8 = L_35;
 		// provider?.ApplyConfiguration();
-		RuntimeObject* L_32 = L_31;
-		G_B9_0 = L_32;
-		if (L_32)
+		RuntimeObject* L_36 = V_8;
+		if (L_36)
 		{
-			G_B10_0 = L_32;
-			goto IL_00c1;
+			goto IL_00da;
 		}
 	}
 	{
-		goto IL_00c6;
+		goto IL_00e2;
 	}
 
-IL_00c1:
+IL_00da:
 	{
-		NullCheck(G_B10_0);
-		InterfaceActionInvoker0::Invoke(1 /* System.Void Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider::ApplyConfiguration() */, IMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_il2cpp_TypeInfo_var, G_B10_0);
+		RuntimeObject* L_37 = V_8;
+		NullCheck(L_37);
+		InterfaceActionInvoker0::Invoke(1 /* System.Void Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider::ApplyConfiguration() */, IMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_il2cpp_TypeInfo_var, L_37);
 	}
 
-IL_00c6:
+IL_00e2:
 	{
 		// useFallbackBehavior = false;
 		__this->set_useFallbackBehavior_29((bool)0);
 	}
 
-IL_00cd:
+IL_00ea:
 	{
-		// for (int i = 0; i < profile.SettingsConfigurations.Length; i++)
-		int32_t L_33 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_33, (int32_t)1));
 	}
 
-IL_00d1:
+IL_00eb:
 	{
 		// for (int i = 0; i < profile.SettingsConfigurations.Length; i++)
-		int32_t L_34 = V_1;
-		MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * L_35 = V_0;
-		NullCheck(L_35);
-		MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* L_36;
-		L_36 = MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8_inline(L_35, /*hidden argument*/NULL);
-		NullCheck(L_36);
-		if ((((int32_t)L_34) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_36)->max_length))))))
+		int32_t L_38 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_38, (int32_t)1));
+	}
+
+IL_00ef:
+	{
+		// for (int i = 0; i < profile.SettingsConfigurations.Length; i++)
+		int32_t L_39 = V_3;
+		MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * L_40 = V_0;
+		NullCheck(L_40);
+		MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* L_41;
+		L_41 = MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8(L_40, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		V_9 = (bool)((((int32_t)L_39) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_41)->max_length)))))? 1 : 0);
+		bool L_42 = V_9;
+		if (L_42)
 		{
-			goto IL_0035;
+			goto IL_003c;
 		}
 	}
+	{
+	}
 
-IL_00df:
+IL_0104:
 	{
 		// if (useFallbackBehavior)
-		bool L_37 = __this->get_useFallbackBehavior_29();
-		if (!L_37)
+		bool L_43 = __this->get_useFallbackBehavior_29();
+		V_10 = L_43;
+		bool L_44 = V_10;
+		if (!L_44)
 		{
-			goto IL_0179;
+			goto IL_01be;
 		}
 	}
 	{
 		// cameraOpaqueLastFrame = IsOpaque;
-		bool L_38;
-		L_38 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
-		__this->set_cameraOpaqueLastFrame_28(L_38);
+		bool L_45;
+		L_45 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
+		__this->set_cameraOpaqueLastFrame_28(L_45);
 		// if (IsOpaque)
-		bool L_39;
-		L_39 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
-		if (!L_39)
+		bool L_46;
+		L_46 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
+		V_11 = L_46;
+		bool L_47 = V_11;
+		if (!L_47)
 		{
-			goto IL_0106;
+			goto IL_0137;
 		}
 	}
 	{
 		// ApplySettingsForOpaqueDisplay();
 		MixedRealityCameraSystem_ApplySettingsForOpaqueDisplay_m8F8C7FDEDF7FDA0B51C99930BA4A1A66E944BDDA(__this, /*hidden argument*/NULL);
-		// }
-		goto IL_010c;
+		goto IL_0140;
 	}
 
-IL_0106:
+IL_0137:
 	{
 		// ApplySettingsForTransparentDisplay();
 		MixedRealityCameraSystem_ApplySettingsForTransparentDisplay_m3F9F6B6F5BC298914CCD35FE503ED49407077E4C(__this, /*hidden argument*/NULL);
 	}
 
-IL_010c:
+IL_0140:
 	{
 		// MixedRealityPlayspace.Position = Vector3.zero;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_40;
-		L_40 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_48;
+		L_48 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(MixedRealityPlayspace_t05C727679F26BB2D77941AA76EA5C96D3E5ABE98_il2cpp_TypeInfo_var);
-		MixedRealityPlayspace_set_Position_m9D3C1DFACE8B4BB316AA8666C08F085D383D08B7(L_40, /*hidden argument*/NULL);
+		MixedRealityPlayspace_set_Position_m9D3C1DFACE8B4BB316AA8666C08F085D383D08B7(L_48, /*hidden argument*/NULL);
 		// MixedRealityPlayspace.Rotation = Quaternion.identity;
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_41;
-		L_41 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
-		MixedRealityPlayspace_set_Rotation_mB8AEF8254A03909316A00057D30CD0CE74C6250A(L_41, /*hidden argument*/NULL);
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_49;
+		L_49 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
+		MixedRealityPlayspace_set_Rotation_mB8AEF8254A03909316A00057D30CD0CE74C6250A(L_49, /*hidden argument*/NULL);
 		// if (CameraCache.Main.transform.position != Vector3.zero)
-		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_42;
-		L_42 = CameraCache_get_Main_m23DFE991C3A937306115E7BAA6ECF6F27D2B57A1(/*hidden argument*/NULL);
-		NullCheck(L_42);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_43;
-		L_43 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_42, /*hidden argument*/NULL);
-		NullCheck(L_43);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_44;
-		L_44 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_43, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_45;
-		L_45 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
-		bool L_46;
-		L_46 = Vector3_op_Inequality_m15190A795B416EB699E69E6190DE6F1C1F208710(L_44, L_45, /*hidden argument*/NULL);
-		if (!L_46)
+		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_50;
+		L_50 = CameraCache_get_Main_m23DFE991C3A937306115E7BAA6ECF6F27D2B57A1(/*hidden argument*/NULL);
+		NullCheck(L_50);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_51;
+		L_51 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_50, /*hidden argument*/NULL);
+		NullCheck(L_51);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_52;
+		L_52 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_51, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_53;
+		L_53 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
+		bool L_54;
+		L_54 = Vector3_op_Inequality_m15190A795B416EB699E69E6190DE6F1C1F208710(L_52, L_53, /*hidden argument*/NULL);
+		V_12 = L_54;
+		bool L_55 = V_12;
+		if (!L_55)
 		{
-			goto IL_0154;
+			goto IL_0191;
 		}
 	}
 	{
 		// Debug.LogWarning($"The main camera is not positioned at the origin ({Vector3.zero}), experiences may not behave as expected.");
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_47;
-		L_47 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_48 = L_47;
-		RuntimeObject * L_49 = Box(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_il2cpp_TypeInfo_var, &L_48);
-		String_t* L_50;
-		L_50 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteral4FF56F0DB79ED48F92A89FC9BCCE0794BDA6075F, L_49, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_56;
+		L_56 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_57 = L_56;
+		RuntimeObject * L_58 = Box(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_il2cpp_TypeInfo_var, &L_57);
+		String_t* L_59;
+		L_59 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteral4FF56F0DB79ED48F92A89FC9BCCE0794BDA6075F, L_58, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_LogWarning_m24085D883C9E74D7AB423F0625E13259923960E7(L_50, /*hidden argument*/NULL);
+		Debug_LogWarning_m24085D883C9E74D7AB423F0625E13259923960E7(L_59, /*hidden argument*/NULL);
 	}
 
-IL_0154:
+IL_0191:
 	{
 		// if (CameraCache.Main.transform.rotation != Quaternion.identity)
-		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_51;
-		L_51 = CameraCache_get_Main_m23DFE991C3A937306115E7BAA6ECF6F27D2B57A1(/*hidden argument*/NULL);
-		NullCheck(L_51);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_52;
-		L_52 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_51, /*hidden argument*/NULL);
-		NullCheck(L_52);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_53;
-		L_53 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_52, /*hidden argument*/NULL);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_54;
-		L_54 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
-		bool L_55;
-		L_55 = Quaternion_op_Inequality_m37169F3E8ADDA24A5A221AD7397835B437B71439(L_53, L_54, /*hidden argument*/NULL);
-		if (!L_55)
+		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_60;
+		L_60 = CameraCache_get_Main_m23DFE991C3A937306115E7BAA6ECF6F27D2B57A1(/*hidden argument*/NULL);
+		NullCheck(L_60);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_61;
+		L_61 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_60, /*hidden argument*/NULL);
+		NullCheck(L_61);
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_62;
+		L_62 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_61, /*hidden argument*/NULL);
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_63;
+		L_63 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
+		bool L_64;
+		L_64 = Quaternion_op_Inequality_m37169F3E8ADDA24A5A221AD7397835B437B71439(L_62, L_63, /*hidden argument*/NULL);
+		V_13 = L_64;
+		bool L_65 = V_13;
+		if (!L_65)
 		{
-			goto IL_0179;
+			goto IL_01bd;
 		}
 	}
 	{
@@ -2481,7 +2552,11 @@ IL_0154:
 		Debug_LogWarning_m24085D883C9E74D7AB423F0625E13259923960E7(_stringLiteral5DE6C8E7701D8D9660152721AEC14FBFED3B0408, /*hidden argument*/NULL);
 	}
 
-IL_0179:
+IL_01bd:
+	{
+	}
+
+IL_01be:
 	{
 		// }
 		return;
@@ -2501,6 +2576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Enable_m4029AEB
 	}
 	RuntimeObject* V_0 = NULL;
 	int32_t V_1 = 0;
+	bool V_2 = false;
 	{
 		// base.Enable();
 		BaseDataProviderAccessCoreSystem_Enable_m9888363EC732DDF3509296855A9A8A62EEC29B90(__this, /*hidden argument*/NULL);
@@ -2510,10 +2586,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Enable_m4029AEB
 		V_0 = L_0;
 		// for (int i = 0; i < providers.Count; i++)
 		V_1 = 0;
-		goto IL_0021;
+		goto IL_0026;
 	}
 
-IL_0011:
+IL_0013:
 	{
 		// providers[i].Enable();
 		RuntimeObject* L_1 = V_0;
@@ -2528,7 +2604,7 @@ IL_0011:
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)1));
 	}
 
-IL_0021:
+IL_0026:
 	{
 		// for (int i = 0; i < providers.Count; i++)
 		int32_t L_5 = V_1;
@@ -2536,9 +2612,11 @@ IL_0021:
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Count() */, IReadOnlyCollection_1_t6079E71F8178F439524AB84F58066BDD09BC0C88_il2cpp_TypeInfo_var, L_6);
-		if ((((int32_t)L_5) < ((int32_t)L_7)))
+		V_2 = (bool)((((int32_t)L_5) < ((int32_t)L_7))? 1 : 0);
+		bool L_8 = V_2;
+		if (L_8)
 		{
-			goto IL_0011;
+			goto IL_0013;
 		}
 	}
 	{
@@ -2560,6 +2638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Disable_m45273F
 	}
 	RuntimeObject* V_0 = NULL;
 	int32_t V_1 = 0;
+	bool V_2 = false;
 	{
 		// IReadOnlyList<IMixedRealityCameraSettingsProvider> providers = GetDataProviders<IMixedRealityCameraSettingsProvider>();
 		RuntimeObject* L_0;
@@ -2567,10 +2646,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Disable_m45273F
 		V_0 = L_0;
 		// for (int i = 0; i < providers.Count; i++)
 		V_1 = 0;
-		goto IL_001b;
+		goto IL_001f;
 	}
 
-IL_000b:
+IL_000c:
 	{
 		// providers[i].Disable();
 		RuntimeObject* L_1 = V_0;
@@ -2585,7 +2664,7 @@ IL_000b:
 		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)1));
 	}
 
-IL_001b:
+IL_001f:
 	{
 		// for (int i = 0; i < providers.Count; i++)
 		int32_t L_5 = V_1;
@@ -2593,9 +2672,11 @@ IL_001b:
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider>::get_Count() */, IReadOnlyCollection_1_t6079E71F8178F439524AB84F58066BDD09BC0C88_il2cpp_TypeInfo_var, L_6);
-		if ((((int32_t)L_5) < ((int32_t)L_7)))
+		V_2 = (bool)((((int32_t)L_5) < ((int32_t)L_7))? 1 : 0);
+		bool L_8 = V_2;
+		if (L_8)
 		{
-			goto IL_000b;
+			goto IL_000c;
 		}
 	}
 	{
@@ -2633,14 +2714,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Destroy_m38F251
 		V_0 = L_1;
 	}
 
-IL_000c:
+IL_000e:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_001d;
+			goto IL_0021;
 		}
 
-IL_000e:
+IL_0010:
 		{
 			// foreach (var provider in GetDataProviders<IMixedRealityCameraSettingsProvider>())
 			RuntimeObject* L_2 = V_0;
@@ -2654,7 +2735,7 @@ IL_000e:
 			L_5 = BaseDataProviderAccessCoreSystem_UnregisterDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_m81C3358432220D689837B61065BB47CBA75D2A64(__this, L_4, /*hidden argument*/BaseDataProviderAccessCoreSystem_UnregisterDataProvider_TisIMixedRealityCameraSettingsProvider_t38A7BDB2A848195A57227CB099F9E53CAC0F56ED_m81C3358432220D689837B61065BB47CBA75D2A64_RuntimeMethod_var);
 		}
 
-IL_001d:
+IL_0021:
 		{
 			// foreach (var provider in GetDataProviders<IMixedRealityCameraSettingsProvider>())
 			RuntimeObject* L_6 = V_0;
@@ -2663,50 +2744,50 @@ IL_001d:
 			L_7 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t5956F3AFB7ECF1117E3BC5890E7FC7B7F7A04105_il2cpp_TypeInfo_var, L_6);
 			if (L_7)
 			{
-				goto IL_000e;
+				goto IL_0010;
 			}
 		}
 
-IL_0025:
+IL_0029:
 		{
-			IL2CPP_LEAVE(0x31, FINALLY_0027);
+			IL2CPP_LEAVE(0x36, FINALLY_002b);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0027;
+		goto FINALLY_002b;
 	}
 
-FINALLY_0027:
+FINALLY_002b:
 	{ // begin finally (depth: 1)
 		{
 			RuntimeObject* L_8 = V_0;
 			if (!L_8)
 			{
-				goto IL_0030;
+				goto IL_0035;
 			}
 		}
 
-IL_002a:
+IL_002e:
 		{
 			RuntimeObject* L_9 = V_0;
 			NullCheck(L_9);
 			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t099785737FC6A1E3699919A94109383715A8D807_il2cpp_TypeInfo_var, L_9);
 		}
 
-IL_0030:
+IL_0035:
 		{
-			IL2CPP_END_FINALLY(39)
+			IL2CPP_END_FINALLY(43)
 		}
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(39)
+	IL2CPP_CLEANUP(43)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x31, IL_0031)
+		IL2CPP_JUMP_TBL(0x36, IL_0036)
 	}
 
-IL_0031:
+IL_0036:
 	{
 		// useFallbackBehavior = true;
 		__this->set_useFallbackBehavior_29((bool)1);
@@ -2725,105 +2806,116 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_Update_m62B7004
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1  V_1;
+	bool V_0 = false;
+	AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D  V_1;
 	memset((&V_1), 0, sizeof(V_1));
+	ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1  V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	bool V_3 = false;
+	bool V_4 = false;
 	Exception_t * __last_unhandled_exception = 0;
-	il2cpp::utils::ExceptionSupportStack<int32_t, 2> __leave_targets;
+	il2cpp::utils::ExceptionSupportStack<int32_t, 1> __leave_targets;
 	{
 		// if (!useFallbackBehavior) { return; }
 		bool L_0 = __this->get_useFallbackBehavior_29();
-		if (L_0)
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
 		{
-			goto IL_0009;
+			goto IL_0011;
 		}
 	}
 	{
 		// if (!useFallbackBehavior) { return; }
-		return;
+		goto IL_007c;
 	}
 
-IL_0009:
+IL_0011:
 	{
 		// using (UpdatePerfMarker.Auto())
 		IL2CPP_RUNTIME_CLASS_INIT(MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E_il2cpp_TypeInfo_var);
-		ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1  L_1 = ((MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E_StaticFields*)il2cpp_codegen_static_fields_for(MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E_il2cpp_TypeInfo_var))->get_UpdatePerfMarker_30();
-		V_1 = L_1;
-		AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D  L_2;
-		L_2 = ProfilerMarker_Auto_m136C2D8B4232A186FA4C8866BB389A5DCF69E0E5_inline((ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1 *)(&V_1), /*hidden argument*/NULL);
-		V_0 = L_2;
+		ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1  L_2 = ((MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E_StaticFields*)il2cpp_codegen_static_fields_for(MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E_il2cpp_TypeInfo_var))->get_UpdatePerfMarker_30();
+		V_2 = L_2;
+		AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D  L_3;
+		L_3 = ProfilerMarker_Auto_m136C2D8B4232A186FA4C8866BB389A5DCF69E0E5_inline((ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1 *)(&V_2), /*hidden argument*/NULL);
+		V_1 = L_3;
 	}
 
-IL_0017:
+IL_001f:
 	try
 	{ // begin try (depth: 1)
 		{
 			// base.Update();
 			BaseDataProviderAccessCoreSystem_Update_m529663F9CB852F87EDA1A292E952C47D6C2F820A(__this, /*hidden argument*/NULL);
 			// if (IsOpaque != cameraOpaqueLastFrame)
-			bool L_3;
-			L_3 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
-			bool L_4 = __this->get_cameraOpaqueLastFrame_28();
-			if ((((int32_t)L_3) == ((int32_t)L_4)))
-			{
-				goto IL_004d;
-			}
-		}
-
-IL_002b:
-		{
-			// cameraOpaqueLastFrame = IsOpaque;
-			bool L_5;
-			L_5 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
-			__this->set_cameraOpaqueLastFrame_28(L_5);
-			// if (IsOpaque)
-			bool L_6;
-			L_6 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
+			bool L_4;
+			L_4 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
+			bool L_5 = __this->get_cameraOpaqueLastFrame_28();
+			V_3 = (bool)((((int32_t)((((int32_t)L_4) == ((int32_t)L_5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_6 = V_3;
 			if (!L_6)
 			{
-				goto IL_0047;
+				goto IL_006a;
 			}
 		}
 
-IL_003f:
+IL_003c:
+		{
+			// cameraOpaqueLastFrame = IsOpaque;
+			bool L_7;
+			L_7 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
+			__this->set_cameraOpaqueLastFrame_28(L_7);
+			// if (IsOpaque)
+			bool L_8;
+			L_8 = MixedRealityCameraSystem_get_IsOpaque_m34FF7F7AD0B2BA054BEE56A447F2D3EBD7BD2687(__this, /*hidden argument*/NULL);
+			V_4 = L_8;
+			bool L_9 = V_4;
+			if (!L_9)
+			{
+				goto IL_0060;
+			}
+		}
+
+IL_0055:
 		{
 			// ApplySettingsForOpaqueDisplay();
 			MixedRealityCameraSystem_ApplySettingsForOpaqueDisplay_m8F8C7FDEDF7FDA0B51C99930BA4A1A66E944BDDA(__this, /*hidden argument*/NULL);
-			// }
-			IL2CPP_LEAVE(0x5D, FINALLY_004f);
+			goto IL_0069;
 		}
 
-IL_0047:
+IL_0060:
 		{
 			// ApplySettingsForTransparentDisplay();
 			MixedRealityCameraSystem_ApplySettingsForTransparentDisplay_m3F9F6B6F5BC298914CCD35FE503ED49407077E4C(__this, /*hidden argument*/NULL);
 		}
 
-IL_004d:
+IL_0069:
 		{
-			// }
-			IL2CPP_LEAVE(0x5D, FINALLY_004f);
+		}
+
+IL_006a:
+		{
+			IL2CPP_LEAVE(0x7C, FINALLY_006d);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_004f;
+		goto FINALLY_006d;
 	}
 
-FINALLY_004f:
+FINALLY_006d:
 	{ // begin finally (depth: 1)
-		AutoScope_Dispose_m5CDDCDA2B8769738BB695661EC4AC55DD7A0D7CA_inline((AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D *)(&V_0), /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(79)
+		AutoScope_Dispose_m5CDDCDA2B8769738BB695661EC4AC55DD7A0D7CA_inline((AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D *)(&V_1), /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(109)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(79)
+	IL2CPP_CLEANUP(109)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x5D, IL_005d)
+		IL2CPP_JUMP_TBL(0x7C, IL_007c)
 	}
 
-IL_005d:
+IL_007c:
 	{
 		// }
 		return;
@@ -2854,7 +2946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_ApplySettingsFo
 		V_0 = L_1;
 	}
 
-IL_000e:
+IL_000f:
 	try
 	{ // begin try (depth: 1)
 		// CameraCache.Main.clearFlags = CameraProfile.CameraClearFlagsOpaqueDisplay;
@@ -2904,27 +2996,26 @@ IL_000e:
 		int32_t L_15;
 		L_15 = MixedRealityCameraProfile_get_OpaqueQualityLevel_m15A30F8CA943695FCFB4556FA35086D176F02501_inline(L_14, /*hidden argument*/NULL);
 		QualitySettings_SetQualityLevel_m7925838FC6013484091AB48C3E8FE7B09150A7C6(L_15, (bool)0, /*hidden argument*/NULL);
-		// }
-		IL2CPP_LEAVE(0x83, FINALLY_0075);
+		IL2CPP_LEAVE(0x8C, FINALLY_007d);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0075;
+		goto FINALLY_007d;
 	}
 
-FINALLY_0075:
+FINALLY_007d:
 	{ // begin finally (depth: 1)
 		AutoScope_Dispose_m5CDDCDA2B8769738BB695661EC4AC55DD7A0D7CA_inline((AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D *)(&V_0), /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(117)
+		IL2CPP_END_FINALLY(125)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(117)
+	IL2CPP_CLEANUP(125)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x83, IL_0083)
+		IL2CPP_JUMP_TBL(0x8C, IL_008c)
 	}
 
-IL_0083:
+IL_008c:
 	{
 		// }
 		return;
@@ -2955,7 +3046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MixedRealityCameraSystem_ApplySettingsFo
 		V_0 = L_1;
 	}
 
-IL_000e:
+IL_000f:
 	try
 	{ // begin try (depth: 1)
 		// CameraCache.Main.clearFlags = CameraProfile.CameraClearFlagsTransparentDisplay;
@@ -3005,27 +3096,26 @@ IL_000e:
 		int32_t L_15;
 		L_15 = MixedRealityCameraProfile_get_TransparentQualityLevel_m46BF156EF963393A34CE6174D7961647F1B2F2D2_inline(L_14, /*hidden argument*/NULL);
 		QualitySettings_SetQualityLevel_m7925838FC6013484091AB48C3E8FE7B09150A7C6(L_15, (bool)0, /*hidden argument*/NULL);
-		// }
-		IL2CPP_LEAVE(0x83, FINALLY_0075);
+		IL2CPP_LEAVE(0x8C, FINALLY_007d);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0075;
+		goto FINALLY_007d;
 	}
 
-FINALLY_0075:
+FINALLY_007d:
 	{ // begin finally (depth: 1)
 		AutoScope_Dispose_m5CDDCDA2B8769738BB695661EC4AC55DD7A0D7CA_inline((AutoScope_tEB00834B4CEE8558238837BA3A36B64020E48F8D *)(&V_0), /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(117)
+		IL2CPP_END_FINALLY(125)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(117)
+	IL2CPP_CLEANUP(125)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x83, IL_0083)
+		IL2CPP_JUMP_TBL(0x8C, IL_008c)
 	}
 
-IL_0083:
+IL_008c:
 	{
 		// }
 		return;
@@ -3034,14 +3124,24 @@ IL_0083:
 // System.Boolean Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSystem::System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MixedRealityCameraSystem_System_Collections_IEqualityComparer_Equals_m2D5F9BDBA3B462E6CF895858124E5C49A2F57000 (MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E * __this, RuntimeObject * ___x0, RuntimeObject * ___y1, const RuntimeMethod* method)
 {
+	bool V_0 = false;
 	{
 		// return false;
-		return (bool)0;
+		V_0 = (bool)0;
+		goto IL_0005;
+	}
+
+IL_0005:
+	{
+		// }
+		bool L_0 = V_0;
+		return L_0;
 	}
 }
 // System.Int32 Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSystem::System.Collections.IEqualityComparer.GetHashCode(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MixedRealityCameraSystem_System_Collections_IEqualityComparer_GetHashCode_m5EE82B07E7CE8C558B16B6FE7B288192F741BC5C (MixedRealityCameraSystem_tB843FB1CEFB6FF7DF53D9DBACF9D32199493038E * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
 {
+	int32_t V_0 = 0;
 	{
 		// return Mathf.Abs(SourceName.GetHashCode());
 		String_t* L_0;
@@ -3051,7 +3151,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MixedRealityCameraSystem_System_Colle
 		L_1 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, L_0);
 		int32_t L_2;
 		L_2 = Mathf_Abs_mE46B08A540F26741910760E84ACB6AACD996C3C0(L_1, /*hidden argument*/NULL);
-		return L_2;
+		V_0 = L_2;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		// }
+		int32_t L_3 = V_0;
+		return L_3;
 	}
 }
 // System.Void Microsoft.MixedReality.Toolkit.CameraSystem.MixedRealityCameraSystem::.cctor()
@@ -3095,14 +3203,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BaseCoreSystem_set_Registrar
 		RuntimeObject* L_0 = ___value0;
 		__this->set_U3CRegistrarU3Ek__BackingField_20(L_0);
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* MixedRealityCameraProfile_get_SettingsConfigurations_m6A096129EF38D7DD7468306F6C7CB7405C5E75F8_inline (MixedRealityCameraProfile_tEC703BB556098CC843838D4E93C528212B9B638F * __this, const RuntimeMethod* method)
-{
-	{
-		// get { return settingsConfigurations; }
-		MixedRealityCameraSettingsConfigurationU5BU5D_tBADD086F3F9861EFDB442F9486A4DF3207A34574* L_0 = __this->get_settingsConfigurations_5();
-		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SystemType_t82325BD837C1E903F236C2282E72378ED2E2892E * MixedRealityCameraSettingsConfiguration_get_ComponentType_m7F4DFC8AE7AEFFD77C0FDAECAF964A4E84ED149C_inline (MixedRealityCameraSettingsConfiguration_t7ADEA803B6F55D151988D4B11769BDDDE4764206 * __this, const RuntimeMethod* method)

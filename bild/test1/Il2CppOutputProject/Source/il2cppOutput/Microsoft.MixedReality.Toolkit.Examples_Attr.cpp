@@ -335,7 +335,7 @@ static void Microsoft_MixedReality_Toolkit_Examples_CustomAttributesCacheGenerat
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
 	}
 }
 static void DemoSpatialMeshHandler_tAB78A488E202E3526828A627E6AE5BABFEB082C1_CustomAttributesCacheGenerator(CustomAttributesCache* cache)

@@ -1016,13 +1016,13 @@ inline Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * GameObject_GetCompon
 	return ((  Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * (*) (GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_mCE43118393A796C759AC5D43257AB2330881767D_gshared)(__this, method);
 }
 // Microsoft.MixedReality.Toolkit.Audio.AudioLoFiSourceQuality Microsoft.MixedReality.Toolkit.Audio.AudioLoFiEffect::get_SourceQuality()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4_inline (AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4 (AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * __this, const RuntimeMethod* method);
 // System.Void Microsoft.MixedReality.Toolkit.Examples.Demos.LoFiFilterSelection::SetEmitterMaterial(Microsoft.MixedReality.Toolkit.Audio.AudioLoFiSourceQuality)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoFiFilterSelection_SetEmitterMaterial_mBFB030383501F0990192171413293E180447627F (LoFiFilterSelection_tC16B333DDD7A7391B442AF65BE0140DBF6C2FBF4 * __this, int32_t ___sourceQuality0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
 // System.Void Microsoft.MixedReality.Toolkit.Audio.AudioLoFiEffect::set_SourceQuality(Microsoft.MixedReality.Toolkit.Audio.AudioLoFiSourceQuality)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AudioLoFiEffect_set_SourceQuality_m0FF30EA9564E6E7F4D36BC7A33FD7F9B873B6288_inline (AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * __this, int32_t ___value0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioLoFiEffect_set_SourceQuality_m0FF30EA9564E6E7F4D36BC7A33FD7F9B873B6288 (AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Renderer::set_sharedMaterial(UnityEngine.Material)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_sharedMaterial_m1E66766F93E95F692C3C9C2C09AFD795B156678B (Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * __this, Material_t8927C00353A72755313F046D0CE85178AE8218EE * ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.MonoBehaviour::.ctor()
@@ -1035,7 +1035,7 @@ inline TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * Component_GetCom
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
 // Microsoft.MixedReality.Toolkit.Audio.TextToSpeechVoice Microsoft.MixedReality.Toolkit.Audio.TextToSpeech::get_Voice()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TextToSpeech_get_Voice_m88B04111F183D4F5F4040A5150DBD2AC38E1081F_inline (TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TextToSpeech_get_Voice_m88B04111F183D4F5F4040A5150DBD2AC38E1081F (TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * __this, const RuntimeMethod* method);
 // System.String System.String::Format(System.String,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17 (String_t* ___format0, RuntimeObject * ___arg01, const RuntimeMethod* method);
 // System.Void Microsoft.MixedReality.Toolkit.Audio.TextToSpeech::StartSpeaking(System.String)
@@ -1082,7 +1082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoFiFilterSelection_Start_mF727AC2C7663E
 		AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * L_4 = __this->get_loFiEffect_8();
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4_inline(L_4, /*hidden argument*/NULL);
+		L_5 = AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4(L_4, /*hidden argument*/NULL);
 		LoFiFilterSelection_SetEmitterMaterial_mBFB030383501F0990192171413293E180447627F(__this, L_5, /*hidden argument*/NULL);
 		// }
 		return;
@@ -1098,91 +1098,107 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoFiFilterSelection_OnPointerClicked_m37
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
 	{
 		// if (loFiEffect == null) { return; }
 		AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * L_0 = __this->get_loFiEffect_8();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
+		V_1 = L_1;
+		bool L_2 = V_1;
+		if (!L_2)
 		{
-			goto IL_000f;
+			goto IL_0014;
 		}
 	}
 	{
 		// if (loFiEffect == null) { return; }
-		return;
+		goto IL_0061;
 	}
 
-IL_000f:
+IL_0014:
 	{
 		// AudioLoFiSourceQuality sourceQuality = loFiEffect.SourceQuality;
-		AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * L_2 = __this->get_loFiEffect_8();
-		NullCheck(L_2);
-		int32_t L_3;
-		L_3 = AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4_inline(L_2, /*hidden argument*/NULL);
-		V_0 = L_3;
-		int32_t L_4 = V_0;
-		switch (L_4)
+		AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * L_3 = __this->get_loFiEffect_8();
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4(L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		// switch (sourceQuality)
+		int32_t L_5 = V_0;
+		V_3 = L_5;
+		int32_t L_6 = V_3;
+		V_2 = L_6;
+		int32_t L_7 = V_2;
+		switch (L_7)
 		{
 			case 0:
 			{
-				goto IL_0037;
+				goto IL_0040;
 			}
 			case 1:
 			{
-				goto IL_0041;
+				goto IL_004c;
 			}
 			case 2:
 			{
-				goto IL_003b;
+				goto IL_0044;
 			}
 			case 3:
 			{
-				goto IL_0041;
+				goto IL_004c;
 			}
 			case 4:
 			{
-				goto IL_003f;
+				goto IL_0048;
 			}
 		}
 	}
 	{
-		goto IL_0041;
+		goto IL_004c;
 	}
 
-IL_0037:
+IL_0040:
 	{
 		// sourceQuality = AudioLoFiSourceQuality.AmRadio;
 		V_0 = 2;
 		// break;
-		goto IL_0041;
+		goto IL_004c;
 	}
 
-IL_003b:
+IL_0044:
 	{
 		// sourceQuality = AudioLoFiSourceQuality.FullRange;
 		V_0 = 4;
 		// break;
-		goto IL_0041;
+		goto IL_004c;
 	}
 
-IL_003f:
+IL_0048:
 	{
 		// sourceQuality = AudioLoFiSourceQuality.NarrowBandTelephony;
 		V_0 = 0;
+		// break;
+		goto IL_004c;
 	}
 
-IL_0041:
+IL_004c:
 	{
 		// SetEmitterMaterial(sourceQuality);
-		int32_t L_5 = V_0;
-		LoFiFilterSelection_SetEmitterMaterial_mBFB030383501F0990192171413293E180447627F(__this, L_5, /*hidden argument*/NULL);
+		int32_t L_8 = V_0;
+		LoFiFilterSelection_SetEmitterMaterial_mBFB030383501F0990192171413293E180447627F(__this, L_8, /*hidden argument*/NULL);
 		// loFiEffect.SourceQuality = sourceQuality;
-		AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * L_6 = __this->get_loFiEffect_8();
-		int32_t L_7 = V_0;
-		NullCheck(L_6);
-		AudioLoFiEffect_set_SourceQuality_m0FF30EA9564E6E7F4D36BC7A33FD7F9B873B6288_inline(L_6, L_7, /*hidden argument*/NULL);
+		AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * L_9 = __this->get_loFiEffect_8();
+		int32_t L_10 = V_0;
+		NullCheck(L_9);
+		AudioLoFiEffect_set_SourceQuality_m0FF30EA9564E6E7F4D36BC7A33FD7F9B873B6288(L_9, L_10, /*hidden argument*/NULL);
+	}
+
+IL_0061:
+	{
 		// }
 		return;
 	}
@@ -1215,71 +1231,80 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoFiFilterSelection_OnPointerUp_mDC61292
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoFiFilterSelection_SetEmitterMaterial_mBFB030383501F0990192171413293E180447627F (LoFiFilterSelection_tC16B333DDD7A7391B442AF65BE0140DBF6C2FBF4 * __this, int32_t ___sourceQuality0, const RuntimeMethod* method)
 {
 	Material_t8927C00353A72755313F046D0CE85178AE8218EE * V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
 	{
 		// Material emitterMaterial = UnknownQuality;
 		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_0 = __this->get_UnknownQuality_7();
 		V_0 = L_0;
+		// switch (sourceQuality)
 		int32_t L_1 = ___sourceQuality0;
-		switch (L_1)
+		V_2 = L_1;
+		int32_t L_2 = V_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		switch (L_3)
 		{
 			case 0:
 			{
-				goto IL_0023;
+				goto IL_0028;
 			}
 			case 1:
 			{
-				goto IL_003c;
+				goto IL_0043;
 			}
 			case 2:
 			{
-				goto IL_002c;
+				goto IL_0031;
 			}
 			case 3:
 			{
-				goto IL_003c;
+				goto IL_0043;
 			}
 			case 4:
 			{
-				goto IL_0035;
+				goto IL_003a;
 			}
 		}
 	}
 	{
-		goto IL_003c;
+		goto IL_0043;
 	}
 
-IL_0023:
+IL_0028:
 	{
 		// emitterMaterial = NarrowBandTelephony;
-		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_2 = __this->get_NarrowBandTelephony_4();
-		V_0 = L_2;
+		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_4 = __this->get_NarrowBandTelephony_4();
+		V_0 = L_4;
 		// break;
-		goto IL_003c;
+		goto IL_0043;
 	}
 
-IL_002c:
+IL_0031:
 	{
 		// emitterMaterial = AmRadio;
-		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_3 = __this->get_AmRadio_5();
-		V_0 = L_3;
+		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_5 = __this->get_AmRadio_5();
+		V_0 = L_5;
 		// break;
-		goto IL_003c;
+		goto IL_0043;
 	}
 
-IL_0035:
+IL_003a:
 	{
 		// emitterMaterial = FullRange;
-		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_4 = __this->get_FullRange_6();
-		V_0 = L_4;
+		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_6 = __this->get_FullRange_6();
+		V_0 = L_6;
+		// break;
+		goto IL_0043;
 	}
 
-IL_003c:
+IL_0043:
 	{
 		// objectRenderer.sharedMaterial = emitterMaterial;
-		Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * L_5 = __this->get_objectRenderer_9();
-		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_6 = V_0;
-		NullCheck(L_5);
-		Renderer_set_sharedMaterial_m1E66766F93E95F692C3C9C2C09AFD795B156678B(L_5, L_6, /*hidden argument*/NULL);
+		Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C * L_7 = __this->get_objectRenderer_9();
+		Material_t8927C00353A72755313F046D0CE85178AE8218EE * L_8 = V_0;
+		NullCheck(L_7);
+		Renderer_set_sharedMaterial_m1E66766F93E95F692C3C9C2C09AFD795B156678B(L_7, L_8, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -1288,6 +1313,18 @@ IL_003c:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoFiFilterSelection__ctor_mC6C409FA428750A298D59C72928991EC37756679 (LoFiFilterSelection_tC16B333DDD7A7391B442AF65BE0140DBF6C2FBF4 * __this, const RuntimeMethod* method)
 {
 	{
+		// private Material NarrowBandTelephony = null;
+		__this->set_NarrowBandTelephony_4((Material_t8927C00353A72755313F046D0CE85178AE8218EE *)NULL);
+		// private Material AmRadio = null;
+		__this->set_AmRadio_5((Material_t8927C00353A72755313F046D0CE85178AE8218EE *)NULL);
+		// private Material FullRange = null;
+		__this->set_FullRange_6((Material_t8927C00353A72755313F046D0CE85178AE8218EE *)NULL);
+		// private Material UnknownQuality = null;
+		__this->set_UnknownQuality_7((Material_t8927C00353A72755313F046D0CE85178AE8218EE *)NULL);
+		// private AudioLoFiEffect loFiEffect = null;
+		__this->set_loFiEffect_8((AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 *)NULL);
+		// private Renderer objectRenderer = null;
+		__this->set_objectRenderer_9((Renderer_t58147AB5B00224FE1460FD47542DC0DA7EC9378C *)NULL);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -1345,44 +1382,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextToSpeechSample_Speak_m5564F6F454C0B3
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9848096709ED113CB7922603FFE749BAE52A223E);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
-	int32_t V_1 = 0;
+	bool V_0 = false;
+	String_t* V_1 = NULL;
+	int32_t V_2 = 0;
 	{
 		// if (textToSpeech != null)
 		TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * L_0 = __this->get_textToSpeech_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
 		{
-			goto IL_003e;
+			goto IL_0044;
 		}
 	}
 	{
 		// var msg = string.Format(
 		// "This is the {0} voice. It should sound like it's coming from the object you clicked. Feel free to walk around and listen from different angles.",
 		// textToSpeech.Voice.ToString());
-		TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * L_2 = __this->get_textToSpeech_4();
-		NullCheck(L_2);
-		int32_t L_3;
-		L_3 = TextToSpeech_get_Voice_m88B04111F183D4F5F4040A5150DBD2AC38E1081F_inline(L_2, /*hidden argument*/NULL);
-		V_1 = L_3;
-		RuntimeObject * L_4 = Box(TextToSpeechVoice_t09733366B2D0EB539AEF1E44FB2F61BF25AE56BC_il2cpp_TypeInfo_var, (&V_1));
-		NullCheck(L_4);
-		String_t* L_5;
-		L_5 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_4);
-		V_1 = *(int32_t*)UnBox(L_4);
+		TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * L_3 = __this->get_textToSpeech_4();
+		NullCheck(L_3);
+		int32_t L_4;
+		L_4 = TextToSpeech_get_Voice_m88B04111F183D4F5F4040A5150DBD2AC38E1081F(L_3, /*hidden argument*/NULL);
+		V_2 = L_4;
+		RuntimeObject * L_5 = Box(TextToSpeechVoice_t09733366B2D0EB539AEF1E44FB2F61BF25AE56BC_il2cpp_TypeInfo_var, (&V_2));
+		NullCheck(L_5);
 		String_t* L_6;
-		L_6 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteral9848096709ED113CB7922603FFE749BAE52A223E, L_5, /*hidden argument*/NULL);
-		V_0 = L_6;
+		L_6 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_5);
+		V_2 = *(int32_t*)UnBox(L_5);
+		String_t* L_7;
+		L_7 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteral9848096709ED113CB7922603FFE749BAE52A223E, L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
 		// textToSpeech.StartSpeaking(msg);
-		TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * L_7 = __this->get_textToSpeech_4();
-		String_t* L_8 = V_0;
-		NullCheck(L_7);
-		TextToSpeech_StartSpeaking_mE80955CDBDE8726E196CEEC746A404192D4A8352(L_7, L_8, /*hidden argument*/NULL);
+		TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * L_8 = __this->get_textToSpeech_4();
+		String_t* L_9 = V_1;
+		NullCheck(L_8);
+		TextToSpeech_StartSpeaking_mE80955CDBDE8726E196CEEC746A404192D4A8352(L_8, L_9, /*hidden argument*/NULL);
 	}
 
-IL_003e:
+IL_0044:
 	{
 		// }
 		return;
@@ -1399,29 +1439,3 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextToSpeechSample__ctor_m8488677DCF1A0F
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t AudioLoFiEffect_get_SourceQuality_m0AED26769AA7EDDE29221B1D6D09F64C12376ED4_inline (AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * __this, const RuntimeMethod* method)
-{
-	{
-		// get { return sourceQuality; }
-		int32_t L_0 = __this->get_sourceQuality_4();
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AudioLoFiEffect_set_SourceQuality_m0FF30EA9564E6E7F4D36BC7A33FD7F9B873B6288_inline (AudioLoFiEffect_tFE664E948EC03A4EEB6A07D993664A2246D685F1 * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	{
-		// set { sourceQuality = value; }
-		int32_t L_0 = ___value0;
-		__this->set_sourceQuality_4(L_0);
-		// set { sourceQuality = value; }
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TextToSpeech_get_Voice_m88B04111F183D4F5F4040A5150DBD2AC38E1081F_inline (TextToSpeech_t06BA8C2E6BE3E764B0DB77E2563F6F15FFD36900 * __this, const RuntimeMethod* method)
-{
-	{
-		// public TextToSpeechVoice Voice { get { return voice; } set { voice = value; } }
-		int32_t L_0 = __this->get_voice_5();
-		return L_0;
-	}
-}

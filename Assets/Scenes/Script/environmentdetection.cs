@@ -22,7 +22,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
     {
         public GameObject user;
         public static Environmentdetection envscript;
-        public GameObject ntw;
+        //public GameObject ntw;
         public GameObject cubeprf;
         private float nextActionTime = 0.0f;
         public float period = 0.5f;
@@ -66,24 +66,12 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
             if (InstantiatedParent == null)
                 InstantiatedParent = GameObject.Find("Demo Parent").transform;
-            //bool onserver =ntw.GetComponent<Photon Lobby>
-
-            // instantiatedPrefabs = new List<GameObject>();
-
-            // Use CoreServices to quickly get access to the IMixedRealitySpatialAwarenessSystem
+            
             var spatialAwarenessService = CoreServices.SpatialAwarenessSystem;
             // Cast to the IMixedRealityDataProviderAccess to get access to the data providers
             var dataProviderAccess = spatialAwarenessService as IMixedRealityDataProviderAccess;
             var meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-           // DebugText = GameObject.Find("Title_Observer");
-                //gameObject.FindChild("Title_Observer")
-            // Get the first Mesh Observer available, generally we have only one registered
-            //var meshObserver = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-
-            // Get the SpatialObjectMeshObserver specifically
-            //var meshObserverName = "Spatial Object Mesh Observer";
-            // var spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
-            // var observers = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
+           
             Debug.Log("im at the end of start");
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "im at the end of start";
           // var idk= GetComponent<PhotonUser>().DictUpdate
@@ -199,100 +187,45 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
 
 
-        //  Save(Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver meshObserver, string folderPath, bool consolidate = true);
-
-        // Update is called once per frame
         void Update()
-
         {
-
-            
             if (!PhotonNetwork.IsConnected)
                 return;
 
             if (!PhotonNetwork.InRoom)
                 return;
 
-            user.GetComponent<PhotonUser>().InstantiateCube();
-            
-
+           // user.GetComponent<PhotonUser>().InstantiateCube();
+           
             if (Time.time > nextActionTime)
             {
-                nextActionTime += period; 
-               
+                nextActionTime += period;
+
                 if (once)
                 {
                     var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-                    // Get the first Mesh Observer available, generally we have only one registered
-                    //var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-                    Debug.Log(observer.Name);
+                    //Debug.Log(observer.Name);
                     // DebugText.GetComponent<TMPro.TextMeshPro>().text = "in update " + count.ToString();
                     if (observer == null)
                         Debug.Log("we do not have an observer");
-                    /* else
-                         Debug.Log("we might have an observer"+ observer.Name);*/
-                    // if (observer!=null)
                     // Loop through all known Meshes
-                    foreach( var obj in sceneObjectDict)
-                    {
-                        notUpdatedIds.Add(obj.Key);
-                    }
 
-                    
+
+                    user.GetComponent<PhotonUser>().ReloadList();
+
+
+
 
                     foreach (var meshObject in observer.Meshes.Values)
                     {
 
-                        
-                        count++;
-                        DebugText.GetComponent<TMPro.TextMeshPro>().text = "reading mesh: " +sceneObjectDict.Count.ToString();
-                        if (sceneObjectDict.ContainsKey(meshObject.Id) == false)
-                        {
-                            //Add 
-                            gO =  PhotonNetwork.Instantiate(newGOforMesh.name, meshObject.GameObject.transform.position, meshObject.GameObject.transform.rotation);
-                            gO.transform.parent = InstantiatedParent;
-                            //gO = Instantiate(newGOforMesh, InstantiatedParent);
-                            Mesh mesh = meshObject.Filter.mesh;
-                            newGOforMesh.GetComponent<MeshFilter>().mesh = mesh;
-                            newGOforMesh.GetComponent<MeshRenderer>().material = MeshMat[matno];
-                            //newGOforMesh.transform.rotation = meshObject.GameObject.transform.rotation;
-                            //newGOforMesh.transform.position = meshObject.GameObject.transform.position;
-                            sceneObjectDict.Add(meshObject.Id, gO);
-                            notUpdatedIds.Add(meshObject.Id);
-                            if (matno == MeshMat.Count - 1)
-                                matno = 0;
-                            else
-                                matno++;
-                        }
-                        else
-                        {
-                            //Update
-                            if(meshObject.Filter.mesh.vertices!= sceneObjectDict[meshObject.Id].GetComponent<MeshFilter>().mesh.vertices)
-                            {
-                            Mesh mesh = meshObject.Filter.mesh;
-                            sceneObjectDict[meshObject.Id].GetComponent<MeshFilter>().mesh = mesh;
-                            sceneObjectDict[meshObject.Id].transform.rotation= meshObject.GameObject.transform.rotation;
-                            sceneObjectDict[meshObject.Id].transform.position = meshObject.GameObject.transform.position;
-
-                            }
-                            notUpdatedIds.Remove(meshObject.Id);
-
-                        }
+                        user.GetComponent<PhotonUser>().DictUpdate(meshObject.Filter.mesh, meshObject.GameObject.transform.position, meshObject.GameObject.transform.rotation, meshObject.Id);
 
 
-                        /*if (count > 100)
-                            once = false;*/
-                    }
-                    // Remove
-                    foreach (int a in notUpdatedIds)
-                    {
-                        PhotonNetwork.Destroy(sceneObjectDict[a].gameObject);
-                        Destroy(sceneObjectDict[a].gameObject);
-                        sceneObjectDict.Remove(a);
-                    }
+                     }
                 }
             }
-              }
+        }
 
         
     }

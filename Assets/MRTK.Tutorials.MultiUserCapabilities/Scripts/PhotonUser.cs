@@ -41,18 +41,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         {
 
-            Debug.Log("in update");
-           
-            if (canInstantiate)
-            {
-                Debug.Log("maybe created a cube");
-                PhotonNetwork.Instantiate(cube.name, transform.position, transform.rotation);
-                Debug.Log("didnt succeed");
-                count++;
-                if (count > 100)
-                    canInstantiate = false;
-            }
-
+          
 
         }      
                

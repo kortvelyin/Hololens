@@ -76,6 +76,10 @@
   <ItemGroup>
     <ClCompile Include="Source\il2cppOutput\Assembly-CSharp_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\AzureSpatialAnchors.SDK.Core.Runtime_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\AzureSpatialAnchors.SDK.Windows.Runtime_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\I18N.CJK_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\I18N.MidEast_CodeGen.c">
@@ -164,9 +168,29 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\netstandard_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Photon3Unity3D_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonChat_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonRealtime_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Demos_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Utilities_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Configuration_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Core_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Diagnostics.StackTrace_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Globalization.Extensions_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.IO.Compression_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Numerics.Vectors_CodeGen.c">
     </ClCompile>
@@ -176,11 +200,15 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.InteropServices.WindowsRuntime_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Runtime.Serialization.Xml_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.WindowsRuntime.UI.Xaml_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.WindowsRuntime_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml.XPath.XDocument_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Xml_CodeGen.c">
     </ClCompile>
@@ -286,7 +314,17 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Assembly-CSharp.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Assembly-CSharp1.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Assembly-CSharp_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\AzureSpatialAnchors.SDK.Core.Runtime.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\AzureSpatialAnchors.SDK.Core.Runtime_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\AzureSpatialAnchors.SDK.Windows.Runtime.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\AzureSpatialAnchors.SDK.Windows.Runtime_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods.cpp">
     </ClCompile>
@@ -299,6 +337,8 @@
     <ClCompile Include="Source\il2cppOutput\GenericMethods12.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods13.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods14.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods2.cpp">
     </ClCompile>
@@ -402,9 +442,35 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics47.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics48.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics49.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics5.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics50.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics51.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics52.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics53.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics54.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics55.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics56.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics57.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics58.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics59.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics60.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics7.cpp">
     </ClCompile>
@@ -472,13 +538,97 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs102.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs103.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs104.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs105.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs106.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs107.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs108.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs109.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs11.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs110.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs111.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs112.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs113.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs114.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs115.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs116.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs117.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs118.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs119.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs12.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs120.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs121.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs122.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs123.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs124.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs125.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs126.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs127.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs128.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs129.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs13.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs130.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs131.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs132.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs133.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs134.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs135.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs136.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs137.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs138.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs139.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs14.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs140.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs141.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs142.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs143.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppCCWs144.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppCCWs15.cpp">
     </ClCompile>
@@ -744,13 +894,105 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions130.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions131.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions132.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions133.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions134.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions135.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions136.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions137.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions138.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions139.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions14.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions140.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions141.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions142.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions143.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions144.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions145.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions146.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions147.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions148.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions149.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions15.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions150.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions151.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions152.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions153.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions154.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions155.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions156.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions157.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions158.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions159.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions16.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions160.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions161.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions162.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions163.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions164.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions165.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions166.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions167.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions168.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions169.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions17.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions170.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions171.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions172.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions173.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions174.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions175.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions176.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions18.cpp">
     </ClCompile>
@@ -1036,6 +1278,10 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK7.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK8.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK9.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.SDK_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit.Services.CameraSystem.cpp">
@@ -1082,9 +1328,13 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit5.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit6.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Microsoft.MixedReality.Toolkit_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Mono.Security1.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Mono.Security_Attr.cpp">
     </ClCompile>
@@ -1116,6 +1366,14 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib20.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib21.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib22.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib23.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\mscorlib24.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib3.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib4.cpp">
@@ -1132,6 +1390,44 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\mscorlib_Attr.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\netstandard.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\netstandard_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Photon3Unity3D.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Photon3Unity3D1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Photon3Unity3D2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Photon3Unity3D_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonChat.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonChat_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonRealtime.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonRealtime1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonRealtime_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Demos.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Demos1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Demos_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Utilities.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking.Utilities_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\PhotonUnityNetworking_Attr.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Configuration.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Configuration_Attr.cpp">
@@ -1141,6 +1437,18 @@
     <ClCompile Include="Source\il2cppOutput\System.Core_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Diagnostics.StackTrace.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Diagnostics.StackTrace_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Globalization.Extensions.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Globalization.Extensions_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.IO.Compression.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.IO.Compression_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Numerics.cpp">
     </ClCompile>
@@ -1160,6 +1468,10 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.InteropServices.WindowsRuntime_Attr.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Runtime.Serialization.Xml.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Runtime.Serialization.Xml_Attr.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.WindowsRuntime.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Runtime.WindowsRuntime.UI.Xaml.cpp">
@@ -1173,13 +1485,33 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Xml.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml.XPath.XDocument.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System.Xml.XPath.XDocument_Attr.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System.Xml_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System1.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System10.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System11.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System2.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System5.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System6.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System7.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System8.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\System9.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System_Attr.cpp">
     </ClCompile>
@@ -1198,6 +1530,10 @@
     <ClCompile Include="Source\il2cppOutput\Unity.InputSystem6.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.InputSystem7.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem8.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.InputSystem9.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.InputSystem_Attr.cpp">
     </ClCompile>
@@ -1220,6 +1556,8 @@
     <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.XR.ARFoundation.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.XR.ARFoundation1.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.XR.ARFoundation_Attr.cpp">
     </ClCompile>

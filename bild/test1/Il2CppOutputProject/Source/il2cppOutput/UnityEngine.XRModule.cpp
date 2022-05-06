@@ -5037,6 +5037,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MeshId_t583996FC9E6BA652AA2C6B0D0
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MeshInfo_get_ChangeState_mCBBE9D6299C718E353C3EEC6B5E3779DC28B9925_inline (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.XR.MeshInfo::get_PriorityHint()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MeshInfo_get_PriorityHint_m00F44283B5792A8DA7CB2A23C4970E992B0E437B_inline (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.MeshInfo::set_PriorityHint(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MeshInfo_set_PriorityHint_m968299DE375212C160E53F60B2B947D0865E01A9_inline (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.MeshInfo::Equals(UnityEngine.XR.MeshInfo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeshInfo_Equals_mC9DE98FFCC0BF85FC209C04C60B8FE4FC2657860 (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611  ___other0, const RuntimeMethod* method);
 // System.Boolean UnityEngine.XR.MeshInfo::Equals(System.Object)
@@ -9205,6 +9207,21 @@ IL2CPP_EXTERN_C  int32_t MeshInfo_get_PriorityHint_m00F44283B5792A8DA7CB2A23C497
 	_returnValue = MeshInfo_get_PriorityHint_m00F44283B5792A8DA7CB2A23C4970E992B0E437B_inline(_thisAdjusted, method);
 	return _returnValue;
 }
+// System.Void UnityEngine.XR.MeshInfo::set_PriorityHint(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeshInfo_set_PriorityHint_m968299DE375212C160E53F60B2B947D0865E01A9 (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CPriorityHintU3Ek__BackingField_2(L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void MeshInfo_set_PriorityHint_m968299DE375212C160E53F60B2B947D0865E01A9_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * _thisAdjusted = reinterpret_cast<MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 *>(__this + _offset);
+	MeshInfo_set_PriorityHint_m968299DE375212C160E53F60B2B947D0865E01A9_inline(_thisAdjusted, ___value0, method);
+}
 // System.Boolean UnityEngine.XR.MeshInfo::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MeshInfo_Equals_m268F01687C6218CF6BD8C2BD87228312029179DF (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
 {
@@ -10499,6 +10516,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t MeshInfo_get_PriorityHint
 	{
 		int32_t L_0 = __this->get_U3CPriorityHintU3Ek__BackingField_2();
 		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MeshInfo_set_PriorityHint_m968299DE375212C160E53F60B2B947D0865E01A9_inline (MeshInfo_tD0E09CA3A2260A509C063BF0C8FDAC8D138FC611 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_U3CPriorityHintU3Ek__BackingField_2(L_0);
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputFeatureUsage_1_get_name_m3732CF9955C758D341A6605EEF5F83A9702B0974_gshared_inline (InputFeatureUsage_1_t28793BE3C4ACB9F1B34C0C392EAAFB16A5FA8E40 * __this, const RuntimeMethod* method)

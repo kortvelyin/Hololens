@@ -913,6 +913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DemoSpatialMeshHandler_UpdateData_m128F3
 		s_Il2CppMethodInitialized = true;
 	}
 	uint32_t V_0 = 0;
+	bool V_1 = false;
 	{
 		// if (meshUpdateData.TryGetValue(eventDataId, out uint updateCount))
 		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_0 = __this->get_meshUpdateData_4();
@@ -920,34 +921,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DemoSpatialMeshHandler_UpdateData_m128F3
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = Dictionary_2_TryGetValue_m6C2AC5A434BE6CD254C0D2331B9DABA3BA53D489(L_0, L_1, (uint32_t*)(&V_0), /*hidden argument*/Dictionary_2_TryGetValue_m6C2AC5A434BE6CD254C0D2331B9DABA3BA53D489_RuntimeMethod_var);
-		if (!L_2)
+		V_1 = L_2;
+		bool L_3 = V_1;
+		if (!L_3)
 		{
-			goto IL_003c;
+			goto IL_0043;
 		}
 	}
 	{
 		// meshUpdateData[eventDataId] = ++updateCount;
-		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_3 = __this->get_meshUpdateData_4();
-		int32_t L_4 = ___eventDataId0;
-		uint32_t L_5 = V_0;
-		int32_t L_6 = ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1));
-		V_0 = L_6;
-		NullCheck(L_3);
-		Dictionary_2_set_Item_m72C21C95F772458097DF631323619016A975BE67(L_3, L_4, L_6, /*hidden argument*/Dictionary_2_set_Item_m72C21C95F772458097DF631323619016A975BE67_RuntimeMethod_var);
+		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_4 = __this->get_meshUpdateData_4();
+		int32_t L_5 = ___eventDataId0;
+		uint32_t L_6 = V_0;
+		int32_t L_7 = ((int32_t)il2cpp_codegen_add((int32_t)L_6, (int32_t)1));
+		V_0 = L_7;
+		NullCheck(L_4);
+		Dictionary_2_set_Item_m72C21C95F772458097DF631323619016A975BE67(L_4, L_5, L_7, /*hidden argument*/Dictionary_2_set_Item_m72C21C95F772458097DF631323619016A975BE67_RuntimeMethod_var);
 		// Debug.Log($"Mesh {eventDataId} has been updated {updateCount} times.");
-		int32_t L_7 = ___eventDataId0;
-		int32_t L_8 = L_7;
-		RuntimeObject * L_9 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_8);
-		uint32_t L_10 = V_0;
-		uint32_t L_11 = L_10;
-		RuntimeObject * L_12 = Box(UInt32_tE60352A06233E4E69DD198BCC67142159F686B15_il2cpp_TypeInfo_var, &L_11);
-		String_t* L_13;
-		L_13 = String_Format_m8D1CB0410C35E052A53AE957C914C841E54BAB66(_stringLiteralBABD5F84CFAE42B094A0A937A48816B61338D316, L_9, L_12, /*hidden argument*/NULL);
+		int32_t L_8 = ___eventDataId0;
+		int32_t L_9 = L_8;
+		RuntimeObject * L_10 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_9);
+		uint32_t L_11 = V_0;
+		uint32_t L_12 = L_11;
+		RuntimeObject * L_13 = Box(UInt32_tE60352A06233E4E69DD198BCC67142159F686B15_il2cpp_TypeInfo_var, &L_12);
+		String_t* L_14;
+		L_14 = String_Format_m8D1CB0410C35E052A53AE957C914C841E54BAB66(_stringLiteralBABD5F84CFAE42B094A0A937A48816B61338D316, L_10, L_13, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_13, /*hidden argument*/NULL);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_14, /*hidden argument*/NULL);
 	}
 
-IL_003c:
+IL_0043:
 	{
 		// }
 		return;
@@ -966,6 +969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DemoSpatialMeshHandler_RemoveFromData_mF
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD87DE9472D71F6ED13876C3E6F9565591968955E);
 		s_Il2CppMethodInitialized = true;
 	}
+	bool V_0 = false;
 	{
 		// if (meshUpdateData.ContainsKey(eventDataId))
 		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_0 = __this->get_meshUpdateData_4();
@@ -973,29 +977,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DemoSpatialMeshHandler_RemoveFromData_mF
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = Dictionary_2_ContainsKey_m5ABB4BA8281DCA90937DB6806F00245488007C8B(L_0, L_1, /*hidden argument*/Dictionary_2_ContainsKey_m5ABB4BA8281DCA90937DB6806F00245488007C8B_RuntimeMethod_var);
-		if (!L_2)
+		V_0 = L_2;
+		bool L_3 = V_0;
+		if (!L_3)
 		{
-			goto IL_0030;
+			goto IL_0036;
 		}
 	}
 	{
 		// Debug.Log($"No longer tracking mesh {eventDataId}.");
-		int32_t L_3 = ___eventDataId0;
-		int32_t L_4 = L_3;
-		RuntimeObject * L_5 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_4);
-		String_t* L_6;
-		L_6 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteralD87DE9472D71F6ED13876C3E6F9565591968955E, L_5, /*hidden argument*/NULL);
+		int32_t L_4 = ___eventDataId0;
+		int32_t L_5 = L_4;
+		RuntimeObject * L_6 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_5);
+		String_t* L_7;
+		L_7 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteralD87DE9472D71F6ED13876C3E6F9565591968955E, L_6, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_6, /*hidden argument*/NULL);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_7, /*hidden argument*/NULL);
 		// meshUpdateData.Remove(eventDataId);
-		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_7 = __this->get_meshUpdateData_4();
-		int32_t L_8 = ___eventDataId0;
-		NullCheck(L_7);
-		bool L_9;
-		L_9 = Dictionary_2_Remove_mD04ABA14C0DF2DBE89F6BBCDA73BEA61484535AA(L_7, L_8, /*hidden argument*/Dictionary_2_Remove_mD04ABA14C0DF2DBE89F6BBCDA73BEA61484535AA_RuntimeMethod_var);
+		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_8 = __this->get_meshUpdateData_4();
+		int32_t L_9 = ___eventDataId0;
+		NullCheck(L_8);
+		bool L_10;
+		L_10 = Dictionary_2_Remove_mD04ABA14C0DF2DBE89F6BBCDA73BEA61484535AA(L_8, L_9, /*hidden argument*/Dictionary_2_Remove_mD04ABA14C0DF2DBE89F6BBCDA73BEA61484535AA_RuntimeMethod_var);
 	}
 
-IL_0030:
+IL_0036:
 	{
 		// }
 		return;
@@ -1016,6 +1022,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DemoSpatialMeshHandler__ctor_mEE011AB0DE
 		Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 * L_0 = (Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14 *)il2cpp_codegen_object_new(Dictionary_2_tBEB1A25E940B28F0A9611027A80F4179846BAF14_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m9C0DE2BBF00D8AD3342B084A9FEABD707365C356(L_0, /*hidden argument*/Dictionary_2__ctor_m9C0DE2BBF00D8AD3342B084A9FEABD707365C356_RuntimeMethod_var);
 		__this->set_meshUpdateData_4(L_0);
+		// protected bool isRegistered = false;
+		__this->set_isRegistered_5((bool)0);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}

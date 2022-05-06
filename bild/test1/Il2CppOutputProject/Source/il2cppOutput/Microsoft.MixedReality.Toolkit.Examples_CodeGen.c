@@ -54,19 +54,19 @@ static Il2CppMethodPointer s_methodPointers[13] =
 };
 static const int32_t s_InvokerIndices[13] = 
 {
-	4756,
-	4756,
-	4756,
-	4756,
+	5934,
+	5934,
+	5934,
+	5934,
 	-1,
 	-1,
-	3844,
-	3844,
-	3844,
-	3808,
-	3808,
-	3808,
-	4756,
+	4791,
+	4791,
+	4791,
+	4755,
+	4755,
+	4755,
+	5934,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
@@ -75,8 +75,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[2] = 
 {
-	{ (Il2CppRGCTXDataType)3, 51737 },
-	{ (Il2CppRGCTXDataType)3, 51755 },
+	{ (Il2CppRGCTXDataType)3, 63132 },
+	{ (Il2CppRGCTXDataType)3, 63150 },
 };
 extern const CustomAttributesCacheGenerator g_Microsoft_MixedReality_Toolkit_Examples_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Examples_CodeGenModule;

@@ -2091,7 +2091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D4
 		PlaneFinding_StartPlaneFinding_m5A73B26D59EC34E1260FF69DC603285F27A7A5A9(/*hidden argument*/NULL);
 	}
 
-IL_0005:
+IL_0007:
 	try
 	{ // begin try (depth: 1)
 		// IntPtr pinnedMeshData = PinMeshDataForMarshalling(meshes);
@@ -2115,29 +2115,28 @@ IL_0005:
 		BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* L_9;
 		L_9 = PlaneFinding_MarshalBoundedPlanesFromIntPtr_mFD052FB1096EA2A19CF00B06F7BBCCFF98746D9A((intptr_t)L_7, L_8, /*hidden argument*/NULL);
 		V_3 = L_9;
-		IL2CPP_LEAVE(0x2E, FINALLY_0028);
+		IL2CPP_LEAVE(0x35, FINALLY_002c);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0028;
+		goto FINALLY_002c;
 	}
 
-FINALLY_0028:
+FINALLY_002c:
 	{ // begin finally (depth: 1)
 		// FinishPlaneFinding();
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
 		PlaneFinding_FinishPlaneFinding_m9E353292EFB5ED258BAC4D9426A97A821889F897(/*hidden argument*/NULL);
-		// }
-		IL2CPP_END_FINALLY(40)
+		IL2CPP_END_FINALLY(44)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(40)
+	IL2CPP_CLEANUP(44)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x2E, IL_002e)
+		IL2CPP_JUMP_TBL(0x35, IL_0035)
 	}
 
-IL_002e:
+IL_0035:
 	{
 		// }
 		BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* L_10 = V_3;
@@ -2155,6 +2154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlaneFinding_StartPlaneFinding_m5A73B26D
 	}
 	RuntimeObject * V_0 = NULL;
 	bool V_1 = false;
+	bool V_2 = false;
 	Exception_t * __last_unhandled_exception = 0;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 1> __leave_targets;
 	{
@@ -2165,7 +2165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlaneFinding_StartPlaneFinding_m5A73B26D
 		V_1 = (bool)0;
 	}
 
-IL_0008:
+IL_0009:
 	try
 	{ // begin try (depth: 1)
 		{
@@ -2174,63 +2174,64 @@ IL_0008:
 			// if (findPlanesRunning)
 			IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
 			bool L_2 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_findPlanesRunning_2();
-			if (!L_2)
+			V_2 = L_2;
+			bool L_3 = V_2;
+			if (!L_3)
 			{
-				goto IL_0022;
+				goto IL_0028;
 			}
 		}
 
-IL_0017:
+IL_001c:
 		{
 			// throw new Exception("PlaneFinding is already running. You can not call these APIs from multiple threads.");
-			Exception_t * L_3 = (Exception_t *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
-			Exception__ctor_m8ECDE8ACA7F2E0EF1144BD1200FB5DB2870B5F11(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral31AB08C0CF33FC5A966145615CBFB3F60D791B2B)), /*hidden argument*/NULL);
-			IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlaneFinding_StartPlaneFinding_m5A73B26D59EC34E1260FF69DC603285F27A7A5A9_RuntimeMethod_var)));
+			Exception_t * L_4 = (Exception_t *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
+			Exception__ctor_m8ECDE8ACA7F2E0EF1144BD1200FB5DB2870B5F11(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral31AB08C0CF33FC5A966145615CBFB3F60D791B2B)), /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PlaneFinding_StartPlaneFinding_m5A73B26D59EC34E1260FF69DC603285F27A7A5A9_RuntimeMethod_var)));
 		}
 
-IL_0022:
+IL_0028:
 		{
 			// findPlanesRunning = true;
 			IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
 			((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->set_findPlanesRunning_2((bool)1);
-			// }
-			IL2CPP_LEAVE(0x34, FINALLY_002a);
+			IL2CPP_LEAVE(0x3C, FINALLY_0031);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_002a;
+		goto FINALLY_0031;
 	}
 
-FINALLY_002a:
+FINALLY_0031:
 	{ // begin finally (depth: 1)
 		{
-			bool L_4 = V_1;
-			if (!L_4)
+			bool L_5 = V_1;
+			if (!L_5)
 			{
-				goto IL_0033;
+				goto IL_003b;
 			}
 		}
 
-IL_002d:
+IL_0034:
 		{
-			RuntimeObject * L_5 = V_0;
-			Monitor_Exit_mA776B403DA88AC77CDEEF67AB9F0D0E77ABD254A(L_5, /*hidden argument*/NULL);
+			RuntimeObject * L_6 = V_0;
+			Monitor_Exit_mA776B403DA88AC77CDEEF67AB9F0D0E77ABD254A(L_6, /*hidden argument*/NULL);
 		}
 
-IL_0033:
+IL_003b:
 		{
-			IL2CPP_END_FINALLY(42)
+			IL2CPP_END_FINALLY(49)
 		}
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(42)
+	IL2CPP_CLEANUP(49)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x34, IL_0034)
+		IL2CPP_JUMP_TBL(0x3C, IL_003c)
 	}
 
-IL_0034:
+IL_003c:
 	{
 		// }
 		return;
@@ -2267,6 +2268,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlaneFinding_PinObject_m1A729A4B4F89
 	}
 	GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603  V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	intptr_t V_1;
+	memset((&V_1), 0, sizeof(V_1));
 	{
 		// GCHandle h = GCHandle.Alloc(obj, GCHandleType.Pinned);
 		RuntimeObject * L_0 = ___obj0;
@@ -2282,7 +2285,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlaneFinding_PinObject_m1A729A4B4F89
 		// return h.AddrOfPinnedObject();
 		intptr_t L_4;
 		L_4 = GCHandle_AddrOfPinnedObject_m0604506F2BDCD2DC8C167FBC3BF3E965888F7589((GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603 *)(&V_0), /*hidden argument*/NULL);
-		return (intptr_t)L_4;
+		V_1 = (intptr_t)L_4;
+		goto IL_001f;
+	}
+
+IL_001f:
+	{
+		// }
+		intptr_t L_5 = V_1;
+		return (intptr_t)L_5;
 	}
 }
 // System.Void Microsoft.MixedReality.Toolkit.SpatialAwareness.Processing.PlaneFinding::UnpinAllObjects()
@@ -2300,13 +2311,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlaneFinding_UnpinAllObjects_mC5DB8EEB6A
 	int32_t V_0 = 0;
 	GCHandle_t757890BC4BBBEDE5A623A3C110013EDD24613603  V_1;
 	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
 	{
 		// for (int i = 0; i < ReusedPinnedMemoryHandles.Count; ++i)
 		V_0 = 0;
-		goto IL_001b;
+		goto IL_001f;
 	}
 
-IL_0004:
+IL_0005:
 	{
 		// ReusedPinnedMemoryHandles[i].Free();
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
@@ -2322,7 +2334,7 @@ IL_0004:
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)1));
 	}
 
-IL_001b:
+IL_001f:
 	{
 		// for (int i = 0; i < ReusedPinnedMemoryHandles.Count; ++i)
 		int32_t L_4 = V_0;
@@ -2331,17 +2343,19 @@ IL_001b:
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_mFAEDBA3EF809704D7C4AE7D4E27CDF5CF6F6DA6D_inline(L_5, /*hidden argument*/List_1_get_Count_mFAEDBA3EF809704D7C4AE7D4E27CDF5CF6F6DA6D_RuntimeMethod_var);
-		if ((((int32_t)L_4) < ((int32_t)L_6)))
+		V_2 = (bool)((((int32_t)L_4) < ((int32_t)L_6))? 1 : 0);
+		bool L_7 = V_2;
+		if (L_7)
 		{
-			goto IL_0004;
+			goto IL_0005;
 		}
 	}
 	{
 		// ReusedPinnedMemoryHandles.Clear();
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
-		List_1_tF4ACAD611CB3EA6E44AB85F4B98574AC3EBB1065 * L_7 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_ReusedPinnedMemoryHandles_1();
-		NullCheck(L_7);
-		List_1_Clear_m44C2C79163C6248EBA45ADF6149611AF78F30ADF(L_7, /*hidden argument*/List_1_Clear_m44C2C79163C6248EBA45ADF6149611AF78F30ADF_RuntimeMethod_var);
+		List_1_tF4ACAD611CB3EA6E44AB85F4B98574AC3EBB1065 * L_8 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_ReusedPinnedMemoryHandles_1();
+		NullCheck(L_8);
+		List_1_Clear_m44C2C79163C6248EBA45ADF6149611AF78F30ADF(L_8, /*hidden argument*/List_1_Clear_m44C2C79163C6248EBA45ADF6149611AF78F30ADF_RuntimeMethod_var);
 		// }
 		return;
 	}
@@ -2358,18 +2372,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlaneFinding_PinMeshDataForMarshalli
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	int32_t V_0 = 0;
-	ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4  V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  V_2;
+	bool V_0 = false;
+	int32_t V_1 = 0;
+	ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4  V_2;
 	memset((&V_2), 0, sizeof(V_2));
+	MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	bool V_4 = false;
+	intptr_t V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	int32_t G_B3_0 = 0;
 	{
 		// if (reusedImportedMeshesForMarshalling == null || reusedImportedMeshesForMarshalling.Length < meshes.Count)
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
 		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_0 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_reusedImportedMeshesForMarshalling_3();
 		if (!L_0)
 		{
-			goto IL_0016;
+			goto IL_0019;
 		}
 	}
 	{
@@ -2380,32 +2399,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlaneFinding_PinMeshDataForMarshalli
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_inline(L_2, /*hidden argument*/List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_RuntimeMethod_var);
-		if ((((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_1)->max_length)))) >= ((int32_t)L_3)))
+		G_B3_0 = ((((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_1)->max_length)))) < ((int32_t)L_3))? 1 : 0);
+		goto IL_001a;
+	}
+
+IL_0019:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_001a:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_4 = V_0;
+		if (!L_4)
 		{
-			goto IL_0026;
+			goto IL_0030;
 		}
 	}
-
-IL_0016:
 	{
 		// reusedImportedMeshesForMarshalling = new DLLImports.ImportedMeshData[meshes.Count];
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_4 = ___meshes0;
-		NullCheck(L_4);
-		int32_t L_5;
-		L_5 = List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_inline(L_4, /*hidden argument*/List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_RuntimeMethod_var);
-		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_6 = (ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486*)(ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486*)SZArrayNew(ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486_il2cpp_TypeInfo_var, (uint32_t)L_5);
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_5 = ___meshes0;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_inline(L_5, /*hidden argument*/List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_RuntimeMethod_var);
+		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_7 = (ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486*)(ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486*)SZArrayNew(ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486_il2cpp_TypeInfo_var, (uint32_t)L_6);
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
-		((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->set_reusedImportedMeshesForMarshalling_3(L_6);
+		((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->set_reusedImportedMeshesForMarshalling_3(L_7);
 	}
 
-IL_0026:
+IL_0030:
 	{
 		// for (int i = 0; i < meshes.Count; ++i)
-		V_0 = 0;
-		goto IL_00dc;
+		V_1 = 0;
+		goto IL_00e8;
 	}
 
-IL_002d:
+IL_0037:
 	{
 		// reusedImportedMeshesForMarshalling[i] = new DLLImports.ImportedMeshData()
 		// {
@@ -2417,99 +2447,109 @@ IL_002d:
 		//     indices = PinObject(meshes[i].Indices),
 		// };
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
-		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_7 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_reusedImportedMeshesForMarshalling_3();
-		int32_t L_8 = V_0;
-		il2cpp_codegen_initobj((&V_1), sizeof(ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4 ));
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_9 = ___meshes0;
-		int32_t L_10 = V_0;
-		NullCheck(L_9);
-		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_11;
-		L_11 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_9, L_10, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
-		V_2 = L_11;
-		Matrix4x4_tDE7FF4F2E2EA284F6EFE00D627789D0E5B8B4461  L_12;
-		L_12 = MeshData_get_Transform_m6929F35BF62F73745CB9560F4D24603D79B99CBC_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_2), /*hidden argument*/NULL);
-		(&V_1)->set_transform_0(L_12);
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_13 = ___meshes0;
-		int32_t L_14 = V_0;
-		NullCheck(L_13);
-		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_15;
-		L_15 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_13, L_14, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
-		V_2 = L_15;
-		Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* L_16;
-		L_16 = MeshData_get_Vertices_m8EA482610A3C4A6F908908EBA6A1D7EF49B4C53B_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_2), /*hidden argument*/NULL);
-		NullCheck(L_16);
-		(&V_1)->set_vertCount_1(((int32_t)((int32_t)(((RuntimeArray*)L_16)->max_length))));
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_17 = ___meshes0;
-		int32_t L_18 = V_0;
+		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_8 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_reusedImportedMeshesForMarshalling_3();
+		int32_t L_9 = V_1;
+		il2cpp_codegen_initobj((&V_2), sizeof(ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4 ));
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_10 = ___meshes0;
+		int32_t L_11 = V_1;
+		NullCheck(L_10);
+		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_12;
+		L_12 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_10, L_11, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
+		V_3 = L_12;
+		Matrix4x4_tDE7FF4F2E2EA284F6EFE00D627789D0E5B8B4461  L_13;
+		L_13 = MeshData_get_Transform_m6929F35BF62F73745CB9560F4D24603D79B99CBC_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_3), /*hidden argument*/NULL);
+		(&V_2)->set_transform_0(L_13);
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_14 = ___meshes0;
+		int32_t L_15 = V_1;
+		NullCheck(L_14);
+		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_16;
+		L_16 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_14, L_15, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
+		V_3 = L_16;
+		Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* L_17;
+		L_17 = MeshData_get_Vertices_m8EA482610A3C4A6F908908EBA6A1D7EF49B4C53B_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_3), /*hidden argument*/NULL);
 		NullCheck(L_17);
-		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_19;
-		L_19 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_17, L_18, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
-		V_2 = L_19;
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_20;
-		L_20 = MeshData_get_Indices_m2F6E28E812C4E3D6CE04B19ED81F50F8069C4F00_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_2), /*hidden argument*/NULL);
-		NullCheck(L_20);
-		(&V_1)->set_indexCount_2(((int32_t)((int32_t)(((RuntimeArray*)L_20)->max_length))));
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_21 = ___meshes0;
-		int32_t L_22 = V_0;
+		(&V_2)->set_vertCount_1(((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length))));
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_18 = ___meshes0;
+		int32_t L_19 = V_1;
+		NullCheck(L_18);
+		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_20;
+		L_20 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_18, L_19, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
+		V_3 = L_20;
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_21;
+		L_21 = MeshData_get_Indices_m2F6E28E812C4E3D6CE04B19ED81F50F8069C4F00_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_3), /*hidden argument*/NULL);
 		NullCheck(L_21);
-		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_23;
-		L_23 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_21, L_22, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
-		V_2 = L_23;
-		Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* L_24;
-		L_24 = MeshData_get_Vertices_m8EA482610A3C4A6F908908EBA6A1D7EF49B4C53B_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_2), /*hidden argument*/NULL);
-		intptr_t L_25;
-		L_25 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_24, /*hidden argument*/NULL);
-		(&V_1)->set_verts_3((intptr_t)L_25);
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_26 = ___meshes0;
-		int32_t L_27 = V_0;
-		NullCheck(L_26);
-		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_28;
-		L_28 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_26, L_27, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
-		V_2 = L_28;
-		Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* L_29;
-		L_29 = MeshData_get_Normals_mE4E1A8319AB06C2975099F0BA043A8CE6661D256_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_2), /*hidden argument*/NULL);
-		intptr_t L_30;
-		L_30 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_29, /*hidden argument*/NULL);
-		(&V_1)->set_normals_4((intptr_t)L_30);
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_31 = ___meshes0;
-		int32_t L_32 = V_0;
-		NullCheck(L_31);
-		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_33;
-		L_33 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_31, L_32, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
-		V_2 = L_33;
-		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_34;
-		L_34 = MeshData_get_Indices_m2F6E28E812C4E3D6CE04B19ED81F50F8069C4F00_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_2), /*hidden argument*/NULL);
-		intptr_t L_35;
-		L_35 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_34, /*hidden argument*/NULL);
-		(&V_1)->set_indices_5((intptr_t)L_35);
-		ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4  L_36 = V_1;
-		NullCheck(L_7);
-		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(L_8), (ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4 )L_36);
+		(&V_2)->set_indexCount_2(((int32_t)((int32_t)(((RuntimeArray*)L_21)->max_length))));
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_22 = ___meshes0;
+		int32_t L_23 = V_1;
+		NullCheck(L_22);
+		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_24;
+		L_24 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_22, L_23, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
+		V_3 = L_24;
+		Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* L_25;
+		L_25 = MeshData_get_Vertices_m8EA482610A3C4A6F908908EBA6A1D7EF49B4C53B_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_3), /*hidden argument*/NULL);
+		intptr_t L_26;
+		L_26 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_25, /*hidden argument*/NULL);
+		(&V_2)->set_verts_3((intptr_t)L_26);
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_27 = ___meshes0;
+		int32_t L_28 = V_1;
+		NullCheck(L_27);
+		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_29;
+		L_29 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_27, L_28, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
+		V_3 = L_29;
+		Vector3U5BU5D_t5FB88EAA33E46838BDC2ABDAEA3E8727491CB9E4* L_30;
+		L_30 = MeshData_get_Normals_mE4E1A8319AB06C2975099F0BA043A8CE6661D256_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_3), /*hidden argument*/NULL);
+		intptr_t L_31;
+		L_31 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_30, /*hidden argument*/NULL);
+		(&V_2)->set_normals_4((intptr_t)L_31);
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_32 = ___meshes0;
+		int32_t L_33 = V_1;
+		NullCheck(L_32);
+		MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D  L_34;
+		L_34 = List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_inline(L_32, L_33, /*hidden argument*/List_1_get_Item_m87CDE8A000752979846E39295B3473BF4C7EF131_RuntimeMethod_var);
+		V_3 = L_34;
+		Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* L_35;
+		L_35 = MeshData_get_Indices_m2F6E28E812C4E3D6CE04B19ED81F50F8069C4F00_inline((MeshData_t2CC6096AB3DA5ED00BF675ABB300480BF06D4F6D *)(&V_3), /*hidden argument*/NULL);
+		intptr_t L_36;
+		L_36 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_35, /*hidden argument*/NULL);
+		(&V_2)->set_indices_5((intptr_t)L_36);
+		ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4  L_37 = V_2;
+		NullCheck(L_8);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_9), (ImportedMeshData_tA8DFABD7CA5B9904EE7E4C5430072AC2331FB8C4 )L_37);
 		// for (int i = 0; i < meshes.Count; ++i)
-		int32_t L_37 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_37, (int32_t)1));
+		int32_t L_38 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_38, (int32_t)1));
 	}
 
-IL_00dc:
+IL_00e8:
 	{
 		// for (int i = 0; i < meshes.Count; ++i)
-		int32_t L_38 = V_0;
-		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_39 = ___meshes0;
-		NullCheck(L_39);
-		int32_t L_40;
-		L_40 = List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_inline(L_39, /*hidden argument*/List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_RuntimeMethod_var);
-		if ((((int32_t)L_38) < ((int32_t)L_40)))
+		int32_t L_39 = V_1;
+		List_1_t98813D456FCE3DC0F56A90B4F678D72E196B7CD2 * L_40 = ___meshes0;
+		NullCheck(L_40);
+		int32_t L_41;
+		L_41 = List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_inline(L_40, /*hidden argument*/List_1_get_Count_mC484244DD709C9372FB302388293D014414EF34D_RuntimeMethod_var);
+		V_4 = (bool)((((int32_t)L_39) < ((int32_t)L_41))? 1 : 0);
+		bool L_42 = V_4;
+		if (L_42)
 		{
-			goto IL_002d;
+			goto IL_0037;
 		}
 	}
 	{
 		// return PinObject(reusedImportedMeshesForMarshalling);
 		IL2CPP_RUNTIME_CLASS_INIT(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var);
-		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_41 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_reusedImportedMeshesForMarshalling_3();
-		intptr_t L_42;
-		L_42 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_41, /*hidden argument*/NULL);
-		return (intptr_t)L_42;
+		ImportedMeshDataU5BU5D_t43015C68AC4F364A5A77AEC138BC83B38D0B9486* L_43 = ((PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_StaticFields*)il2cpp_codegen_static_fields_for(PlaneFinding_tF327610146C4AF9A80CFC972AEC6AD322D317777_il2cpp_TypeInfo_var))->get_reusedImportedMeshesForMarshalling_3();
+		intptr_t L_44;
+		L_44 = PlaneFinding_PinObject_m1A729A4B4F899334EE1397E652AF3660917F5364((RuntimeObject *)(RuntimeObject *)L_43, /*hidden argument*/NULL);
+		V_5 = (intptr_t)L_44;
+		goto IL_0108;
+	}
+
+IL_0108:
+	{
+		// }
+		intptr_t L_45 = V_5;
+		return (intptr_t)L_45;
 	}
 }
 // Microsoft.MixedReality.Toolkit.SpatialAwareness.Processing.BoundedPlane[] Microsoft.MixedReality.Toolkit.SpatialAwareness.Processing.PlaneFinding::MarshalBoundedPlanesFromIntPtr(System.IntPtr,System.Int32)
@@ -2530,6 +2570,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D4
 	intptr_t V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	int32_t V_3 = 0;
+	bool V_4 = false;
+	BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* V_5 = NULL;
 	{
 		// BoundedPlane[] resArray = new BoundedPlane[size];
 		int32_t L_0 = ___size1;
@@ -2549,10 +2591,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D4
 		V_2 = (intptr_t)L_5;
 		// for (int i = 0; i < size; i++)
 		V_3 = 0;
-		goto IL_004c;
+		goto IL_004f;
 	}
 
-IL_001d:
+IL_001e:
 	{
 		// resArray[i] = (BoundedPlane)Marshal.PtrToStructure(current, typeof(BoundedPlane));
 		BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* L_6 = V_0;
@@ -2580,24 +2622,34 @@ IL_001d:
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_16, (int32_t)1));
 	}
 
-IL_004c:
+IL_004f:
 	{
 		// for (int i = 0; i < size; i++)
 		int32_t L_17 = V_3;
 		int32_t L_18 = ___size1;
-		if ((((int32_t)L_17) < ((int32_t)L_18)))
+		V_4 = (bool)((((int32_t)L_17) < ((int32_t)L_18))? 1 : 0);
+		bool L_19 = V_4;
+		if (L_19)
 		{
-			goto IL_001d;
+			goto IL_001e;
 		}
 	}
 	{
 		// Marshal.FreeCoTaskMem(outArray);
-		intptr_t L_19 = ___outArray0;
+		intptr_t L_20 = ___outArray0;
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tEBAFAE20369FCB1B38C49C4E27A8D8C2C4B55058_il2cpp_TypeInfo_var);
-		Marshal_FreeCoTaskMem_mCC0E874C853846E0A82E36971E3FC7BF359C6AA5((intptr_t)L_19, /*hidden argument*/NULL);
+		Marshal_FreeCoTaskMem_mCC0E874C853846E0A82E36971E3FC7BF359C6AA5((intptr_t)L_20, /*hidden argument*/NULL);
 		// return resArray;
-		BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* L_20 = V_0;
-		return L_20;
+		BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* L_21 = V_0;
+		V_5 = L_21;
+		goto IL_0065;
+	}
+
+IL_0065:
+	{
+		// }
+		BoundedPlaneU5BU5D_tD95430E17D406AC1AFFEF75D450252E1EB7C5929* L_22 = V_5;
+		return L_22;
 	}
 }
 // System.Void Microsoft.MixedReality.Toolkit.SpatialAwareness.Processing.PlaneFinding::.cctor()

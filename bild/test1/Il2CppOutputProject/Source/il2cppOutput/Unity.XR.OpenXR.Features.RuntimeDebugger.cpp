@@ -1091,6 +1091,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t RuntimeDebuggerOpenXRFeature_HookGet
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_1_tC416C0B5D8D67CC46E455200016B5C8E6B75EC31_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
 		// PlayerConnection.instance.Register(kEditorToPlayerRequestDebuggerOutput, RecvMsg);
 		PlayerConnection_t4A5AAC39753FEC33854C3478DD55863FDF2788B3 * L_0;
@@ -1111,7 +1113,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t RuntimeDebuggerOpenXRFeature_HookGet
 		uint32_t L_5 = __this->get_perThreadCacheSize_18();
 		intptr_t L_6;
 		L_6 = RuntimeDebuggerOpenXRFeature_Native_HookGetInstanceProcAddr_mC598EAE452C76E216DAA76377CB7D36965EBC465((intptr_t)L_3, L_4, L_5, /*hidden argument*/NULL);
-		return (intptr_t)L_6;
+		V_0 = (intptr_t)L_6;
+		goto IL_003e;
+	}
+
+IL_003e:
+	{
+		// }
+		intptr_t L_7 = V_0;
+		return (intptr_t)L_7;
 	}
 }
 // System.Void UnityEngine.XR.OpenXR.Features.RuntimeDebugger.RuntimeDebuggerOpenXRFeature::RecvMsg(UnityEngine.Networking.PlayerConnection.MessageEventArgs)
@@ -1132,6 +1142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeDebuggerOpenXRFeature_RecvMsg_m4B
 	memset((&V_2), 0, sizeof(V_2));
 	uint32_t V_3 = 0;
 	ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* V_4 = NULL;
+	bool V_5 = false;
 	{
 		// Native_StartDataAccess();
 		IL2CPP_RUNTIME_CLASS_INIT(RuntimeDebuggerOpenXRFeature_tE0D0BEE876CB547A518EF73B7596C17F6A507B32_il2cpp_TypeInfo_var);
@@ -1155,33 +1166,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeDebuggerOpenXRFeature_RecvMsg_m4B
 		Marshal_Copy_m057A8067BF7212A361510EA26B24022990A07AC0((intptr_t)L_5, L_6, 0, L_7, /*hidden argument*/NULL);
 		// if (size2 > 0)
 		uint32_t L_8 = V_3;
-		if ((!(((uint32_t)L_8) > ((uint32_t)0))))
+		V_5 = (bool)((!(((uint32_t)L_8) <= ((uint32_t)0)))? 1 : 0);
+		bool L_9 = V_5;
+		if (!L_9)
 		{
-			goto IL_003b;
+			goto IL_0045;
 		}
 	}
 	{
 		// Marshal.Copy(ptr2, data, (int)size1, (int)size2);
-		intptr_t L_9 = V_2;
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_10 = V_4;
-		uint32_t L_11 = V_1;
-		uint32_t L_12 = V_3;
+		intptr_t L_10 = V_2;
+		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_11 = V_4;
+		uint32_t L_12 = V_1;
+		uint32_t L_13 = V_3;
 		IL2CPP_RUNTIME_CLASS_INIT(Marshal_tEBAFAE20369FCB1B38C49C4E27A8D8C2C4B55058_il2cpp_TypeInfo_var);
-		Marshal_Copy_m057A8067BF7212A361510EA26B24022990A07AC0((intptr_t)L_9, L_10, L_11, L_12, /*hidden argument*/NULL);
+		Marshal_Copy_m057A8067BF7212A361510EA26B24022990A07AC0((intptr_t)L_10, L_11, L_12, L_13, /*hidden argument*/NULL);
 	}
 
-IL_003b:
+IL_0045:
 	{
 		// Native_EndDataAccess();
 		IL2CPP_RUNTIME_CLASS_INIT(RuntimeDebuggerOpenXRFeature_tE0D0BEE876CB547A518EF73B7596C17F6A507B32_il2cpp_TypeInfo_var);
 		RuntimeDebuggerOpenXRFeature_Native_EndDataAccess_m72DD450D71C7E82C91BAABDBDC20386C179172DE(/*hidden argument*/NULL);
 		// PlayerConnection.instance.Send(kPlayerToEditorSendDebuggerOutput, data);
-		PlayerConnection_t4A5AAC39753FEC33854C3478DD55863FDF2788B3 * L_13;
-		L_13 = PlayerConnection_get_instance_mA46C9194C4D2FE0BB06C135C4C0521DD516592F6(/*hidden argument*/NULL);
-		Guid_t  L_14 = ((RuntimeDebuggerOpenXRFeature_tE0D0BEE876CB547A518EF73B7596C17F6A507B32_StaticFields*)il2cpp_codegen_static_fields_for(RuntimeDebuggerOpenXRFeature_tE0D0BEE876CB547A518EF73B7596C17F6A507B32_il2cpp_TypeInfo_var))->get_kPlayerToEditorSendDebuggerOutput_16();
-		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_15 = V_4;
-		NullCheck(L_13);
-		PlayerConnection_Send_m51137877D6E519903AEA4A506ABD48A30AF684F0(L_13, L_14, L_15, /*hidden argument*/NULL);
+		PlayerConnection_t4A5AAC39753FEC33854C3478DD55863FDF2788B3 * L_14;
+		L_14 = PlayerConnection_get_instance_mA46C9194C4D2FE0BB06C135C4C0521DD516592F6(/*hidden argument*/NULL);
+		Guid_t  L_15 = ((RuntimeDebuggerOpenXRFeature_tE0D0BEE876CB547A518EF73B7596C17F6A507B32_StaticFields*)il2cpp_codegen_static_fields_for(RuntimeDebuggerOpenXRFeature_tE0D0BEE876CB547A518EF73B7596C17F6A507B32_il2cpp_TypeInfo_var))->get_kPlayerToEditorSendDebuggerOutput_16();
+		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_16 = V_4;
+		NullCheck(L_14);
+		PlayerConnection_Send_m51137877D6E519903AEA4A506ABD48A30AF684F0(L_14, L_15, L_16, /*hidden argument*/NULL);
 		// }
 		return;
 	}
