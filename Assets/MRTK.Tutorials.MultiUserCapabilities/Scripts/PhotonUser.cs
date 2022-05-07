@@ -2,6 +2,7 @@
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 namespace MRTK.Tutorials.MultiUserCapabilities
 {
@@ -10,6 +11,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         public static PhotonUser PhotonScript;
         private PhotonView pv;
         private string username;
+        public GameObject DebugText;
         public GameObject cube;
         public GameObject env;
         public GameObject newGOforMesh;
@@ -20,7 +22,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         private Transform InstantiatedParent;
 
         public bool canInstantiate = true;
-        public GameObject DebugText;
+        
         int count = 0;
         private void Start()
         {
@@ -31,16 +33,23 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             username = "User" + PhotonNetwork.NickName;
             pv.RPC("PunRPC_SetNickName", RpcTarget.AllBuffered, username);
             //PhotonNetwork.Instantiate(cube.name, transform.position, transform.rotation);
-            
+            DebugText = GameObject.Find("Title_Observer2");
 
             InstantiatedParent = GameObject.Find("Demo Parent").transform;
-            var idk = GetComponent<Environmentdetection>().observer;
+
+            DebugText.GetComponent<TMPro.TextMeshPro>().text = "connected";
+
+            while(!PhotonNetwork.InRoom)
+            {
+                DebugText.GetComponent<TMPro.TextMeshPro>().text = "not in room";
+            }
+            DebugText.GetComponent<TMPro.TextMeshPro>().text = "in room:" +PhotonNetwork.CurrentRoom;
         }
 
         void Update()
 
         {
-
+                
           
 
         }      
@@ -55,12 +64,13 @@ namespace MRTK.Tutorials.MultiUserCapabilities
                 return;
 
 
-           
+               
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "reading mesh: " + sceneObjectDict.Count.ToString();
             if (sceneObjectDict.ContainsKey(Id) == false)
             {
                 //Add 
-                var gO = PhotonNetwork.Instantiate(newGOforMesh.name,pos, rot);
+                var gO = PhotonNetwork.InstantiateRoomObject(newGOforMesh.name,pos, rot);
+                gO = Instantiate(newGOforMesh, pos, rot);
                 gO.transform.parent = InstantiatedParent;
                 Mesh mesh = newMesh;
                 newGOforMesh.GetComponent<MeshFilter>().mesh = mesh;

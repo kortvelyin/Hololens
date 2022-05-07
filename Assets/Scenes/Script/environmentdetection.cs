@@ -66,8 +66,8 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
             if (InstantiatedParent == null)
                 InstantiatedParent = GameObject.Find("Demo Parent").transform;
-            
-            var spatialAwarenessService = CoreServices.SpatialAwarenessSystem;
+            user = GameObject.Find("User2");
+        var spatialAwarenessService = CoreServices.SpatialAwarenessSystem;
             // Cast to the IMixedRealityDataProviderAccess to get access to the data providers
             var dataProviderAccess = spatialAwarenessService as IMixedRealityDataProviderAccess;
             var meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
@@ -189,6 +189,9 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
         void Update()
         {
+
+            if (user == null)
+                return;
             if (!PhotonNetwork.IsConnected)
                 return;
 
@@ -210,7 +213,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
                         Debug.Log("we do not have an observer");
                     // Loop through all known Meshes
 
-
+                  
                     user.GetComponent<PhotonUser>().ReloadList();
 
 
@@ -218,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
                     foreach (var meshObject in observer.Meshes.Values)
                     {
-
+                        
                         user.GetComponent<PhotonUser>().DictUpdate(meshObject.Filter.mesh, meshObject.GameObject.transform.position, meshObject.GameObject.transform.rotation, meshObject.Id);
 
 

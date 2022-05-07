@@ -10,7 +10,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         private int roomNumber = 1;
         private int userIdCount;
-        public GameObject scriptobj;
+       // public GameObject scriptobj;
 
         private void Awake()
         {
@@ -41,25 +41,27 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             userIdCount++;
             PhotonNetwork.NickName = PhotonNetwork.AuthValues.UserId;
             Debug.Log("connected to server");
-            PhotonNetwork.JoinRandomRoom();
+            PhotonNetwork.JoinRoom("Holo");
 
         }
 
         public override void OnJoinedRoom()
         {
             base.OnJoinedRoom();
-
+            
             Debug.Log("\nPhotonLobby.OnJoinedRoom()");
             Debug.Log("Current room name: " + PhotonNetwork.CurrentRoom.Name);
             Debug.Log("Other players in room: " + PhotonNetwork.CountOfPlayersInRooms);
             Debug.Log("Total players in room: " + (PhotonNetwork.CountOfPlayersInRooms + 1));
         }
 
-        public override void OnJoinRandomFailed(short returnCode, string message)
+        public override void OnJoinRoomFailed(short returnCode, string message)
         {
+           
             CreateRoom();
         }
-
+        
+        
         public override void OnCreateRoomFailed(short returnCode, string message)
         {
             Debug.Log("\nPhotonLobby.OnCreateRoomFailed()");

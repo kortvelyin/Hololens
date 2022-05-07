@@ -1,0 +1,2578 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'hu' Physical Memory: 16300 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/HP/Documents/Hololens
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50445
+Successfully changed project path to: C:/Users/HP/Documents/Hololens
+C:/Users/HP/Documents/Hololens
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 278.37 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 2.40 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/HP/Documents/Hololens/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon(TM) 530 (ID=0x6900)
+    Vendor:   
+    VRAM:     4087 MB
+    Driver:   22.19.128.5
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006272 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 202.24 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.23 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.599 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1600ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1261ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (368ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (538ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (203ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.052094 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 193.30 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.23 ms.
+[XR] Error loading subsystem: Display (1) (header mismatch?)
+[XR] [MROpenXR][Info   ][16:56:25.550529][tid:65dc] MeshProvider_RegisterLifecycleProvider
+[XR] [MROpenXR][Info   ][16:56:25.550749][tid:65dc] InputProvider_RegisterLifeCycleProvider
+[XR] [MROpenXR][Info   ][16:56:25.552507][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][16:56:25.553939][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][16:56:25.554064][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][16:56:25.554246][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  7.223 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7226ms)
+		BeginReloadAssembly (350ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (6713ms)
+			LoadAssemblies (293ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (908ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (194ms)
+			SetupLoadedEditorAssemblies (4992ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (194ms)
+				BeforeProcessingInitializeOnLoad (316ms)
+				ProcessInitializeOnLoadAttributes (2654ms)
+				ProcessInitializeOnLoadMethodAttributes (1800ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
+Refreshing native plugins compatible for Editor in 2.57 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
+Unloading 4169 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.1 MB.
+System memory in use after: 168.8 MB.
+
+Unloading 799 unused Assets to reduce memory usage. Loaded Objects now: 4430.
+Total: 10.845200 ms (FindLiveObjects: 0.615700 ms CreateObjectMapping: 0.400800 ms MarkObjects: 8.581900 ms  DeleteObjects: 1.244200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/UI.prefab
+  artifactKey: Guid(b857137ceee78db40b5d6aa9f4f7df79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/UI.prefab using Guid(b857137ceee78db40b5d6aa9f4f7df79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdf43af6f144f4f6c3dbff9f8056698') in 0.606185 seconds 
+  Import took 0.624641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Scenes/ConnecttoServer.prefab
+  artifactKey: Guid(8932e6d97d78f6649b9ad040ef20b9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConnecttoServer.prefab using Guid(8932e6d97d78f6649b9ad040ef20b9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd4796a883ece644c691d32b99d0311') in 0.034078 seconds 
+  Import took 0.048313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000502 seconds.
+  path: Assets/Scenes/Cube.prefab
+  artifactKey: Guid(53870f33cd8c7b04da73bb6922e9aa66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cube.prefab using Guid(53870f33cd8c7b04da73bb6922e9aa66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20abae74bc1b4a5aef05d02576aebf3b') in 0.060345 seconds 
+  Import took 0.073180 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:00:20.811336][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:00:20.811909][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:00:20.811965][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:00:20.812044][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.685 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2685ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (2449ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (416ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (1659ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (883ms)
+				ProcessInitializeOnLoadMethodAttributes (626ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.56 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.6 MB.
+System memory in use after: 162.5 MB.
+
+Unloading 417 unused Assets to reduce memory usage. Loaded Objects now: 4445.
+Total: 4.893500 ms (FindLiveObjects: 0.384800 ms CreateObjectMapping: 0.233800 ms MarkObjects: 3.931300 ms  DeleteObjects: 0.342300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.026013 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:00:28.091165][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:00:28.091729][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:00:28.091785][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:00:28.091864][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.626 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2626ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (2411ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (398ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (1585ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (816ms)
+				ProcessInitializeOnLoadMethodAttributes (622ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.43 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.7 MB.
+System memory in use after: 162.6 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4453.
+Total: 4.504700 ms (FindLiveObjects: 0.326200 ms CreateObjectMapping: 0.216100 ms MarkObjects: 3.627900 ms  DeleteObjects: 0.333300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 21.85 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.6 MB.
+System memory in use after: 78.8 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4453.
+Total: 4.502100 ms (FindLiveObjects: 0.290600 ms CreateObjectMapping: 0.212300 ms MarkObjects: 3.969600 ms  DeleteObjects: 0.028200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.424980 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.94 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:09:46.535354][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:09:46.536287][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:09:46.536396][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:09:46.536499][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  5.912 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5913ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (5578ms)
+			LoadAssemblies (217ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (810ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (165ms)
+			SetupLoadedEditorAssemblies (3734ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (609ms)
+				ProcessInitializeOnLoadAttributes (1304ms)
+				ProcessInitializeOnLoadMethodAttributes (1780ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.31 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.32 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.8 MB.
+System memory in use after: 162.6 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4461.
+Total: 13.350600 ms (FindLiveObjects: 0.813500 ms CreateObjectMapping: 0.604200 ms MarkObjects: 10.883000 ms  DeleteObjects: 1.046400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 866.919339 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/Cube.prefab
+  artifactKey: Guid(15d32bde47c7ebb41a501668d844c10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/Cube.prefab using Guid(15d32bde47c7ebb41a501668d844c10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2ba5ff1dced2b42c0b507899d829a8') in 0.187359 seconds 
+  Import took 0.209845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/RoverExplorer_Complete_Variant.prefab
+  artifactKey: Guid(3aada5ac7445eba458862c38f8f93acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/RoverExplorer_Complete_Variant.prefab using Guid(3aada5ac7445eba458862c38f8f93acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dcd1196e4d46ca921e40de022d44505') in 1.259065 seconds 
+  Import took 1.284908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/MeshFilter.prefab
+  artifactKey: Guid(acf9c509d713996459164fb3a4c1a357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/MeshFilter.prefab using Guid(acf9c509d713996459164fb3a4c1a357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce378e809667513fc82257a9ba068bd') in 0.046303 seconds 
+  Import took 0.063244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.175387 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab
+  artifactKey: Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab using Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1df03a0c7f7f99edb21bf02bab70e67') in 0.853395 seconds 
+  Import took 0.878031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.364871 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab
+  artifactKey: Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab using Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6916379d3331d4d53092d7054b6949d8') in 0.202709 seconds 
+  Import took 0.225589 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025465 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:13:58.174036][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:13:58.174598][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:13:58.174652][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:13:58.174729][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.732 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2732ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (2495ms)
+			LoadAssemblies (138ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (416ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (1642ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (951ms)
+				ProcessInitializeOnLoadMethodAttributes (538ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.50 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.0 MB.
+
+Unloading 418 unused Assets to reduce memory usage. Loaded Objects now: 4471.
+Total: 6.354200 ms (FindLiveObjects: 0.489800 ms CreateObjectMapping: 0.492600 ms MarkObjects: 4.935800 ms  DeleteObjects: 0.434600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020513 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:14:07.663053][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:14:07.663672][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:14:07.663732][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:14:07.663821][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.554 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2554ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (2329ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (492ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (1437ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (829ms)
+				ProcessInitializeOnLoadMethodAttributes (466ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.67 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.1 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4479.
+Total: 5.550900 ms (FindLiveObjects: 0.393500 ms CreateObjectMapping: 0.267900 ms MarkObjects: 4.535800 ms  DeleteObjects: 0.351700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021776 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:14:17.670720][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:14:17.671504][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:14:17.671581][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:14:17.671706][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  3.169 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3170ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (2947ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (505ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (1948ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (157ms)
+				ProcessInitializeOnLoadAttributes (1070ms)
+				ProcessInitializeOnLoadMethodAttributes (702ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.64 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.1 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4487.
+Total: 6.592700 ms (FindLiveObjects: 0.590300 ms CreateObjectMapping: 0.650400 ms MarkObjects: 4.961600 ms  DeleteObjects: 0.388500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.048635 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.25 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.25 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:15:33.084036][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:15:33.085914][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:15:33.086156][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:15:33.086443][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  6.325 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6326ms)
+		BeginReloadAssembly (289ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (98ms)
+		EndReloadAssembly (5877ms)
+			LoadAssemblies (291ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1015ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (132ms)
+			SetupLoadedEditorAssemblies (3819ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (336ms)
+				ProcessInitializeOnLoadAttributes (2162ms)
+				ProcessInitializeOnLoadMethodAttributes (1280ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (45ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.22 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.29 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.3 MB.
+System memory in use after: 163.1 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4495.
+Total: 10.817600 ms (FindLiveObjects: 1.071500 ms CreateObjectMapping: 0.830300 ms MarkObjects: 8.049700 ms  DeleteObjects: 0.863400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025093 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:17:05.520742][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:17:05.521314][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:17:05.521367][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:17:05.521446][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.594 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2594ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (2377ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (409ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (1504ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (841ms)
+				ProcessInitializeOnLoadMethodAttributes (510ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.42 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.3 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4503.
+Total: 4.896900 ms (FindLiveObjects: 0.341900 ms CreateObjectMapping: 0.223100 ms MarkObjects: 3.995400 ms  DeleteObjects: 0.335300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 31.28 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.42 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.1 MB.
+System memory in use after: 79.4 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4503.
+Total: 4.559100 ms (FindLiveObjects: 0.337200 ms CreateObjectMapping: 0.273200 ms MarkObjects: 3.918700 ms  DeleteObjects: 0.028900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022421 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:22:07.585461][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:22:07.586095][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:22:07.586160][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:22:07.586268][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  3.034 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3034ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (2817ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (494ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (1794ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (159ms)
+				ProcessInitializeOnLoadAttributes (1002ms)
+				ProcessInitializeOnLoadMethodAttributes (614ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.86 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.3 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4511.
+Total: 6.827200 ms (FindLiveObjects: 0.604700 ms CreateObjectMapping: 0.460200 ms MarkObjects: 5.154500 ms  DeleteObjects: 0.606200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.449783 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:29:19.948187][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:29:19.949181][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:29:19.949294][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:29:19.949438][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  4.361 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4362ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (4087ms)
+			LoadAssemblies (174ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (582ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (2847ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (182ms)
+				ProcessInitializeOnLoadAttributes (1767ms)
+				ProcessInitializeOnLoadMethodAttributes (877ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.01 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.4 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4519.
+Total: 10.599300 ms (FindLiveObjects: 0.848500 ms CreateObjectMapping: 0.675400 ms MarkObjects: 8.223400 ms  DeleteObjects: 0.849300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 42.22 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.2 MB.
+System memory in use after: 79.5 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4519.
+Total: 8.688400 ms (FindLiveObjects: 0.515200 ms CreateObjectMapping: 0.376800 ms MarkObjects: 7.741700 ms  DeleteObjects: 0.047600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028754 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.31 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:33:55.872819][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:33:55.874869][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:33:55.875108][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:33:55.875397][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in 10.743 seconds
+Domain Reload Profiling:
+	ReloadAssembly (10744ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (10493ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1129ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (180ms)
+			SetupLoadedEditorAssemblies (8117ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (226ms)
+				ProcessInitializeOnLoadAttributes (6437ms)
+				ProcessInitializeOnLoadMethodAttributes (1417ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (45ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.67 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.44 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.4 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4527.
+Total: 13.198900 ms (FindLiveObjects: 0.849800 ms CreateObjectMapping: 0.592900 ms MarkObjects: 10.827000 ms  DeleteObjects: 0.924600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1580.794195 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab
+  artifactKey: Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab using Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b4e43b398f3adac48084026270d2bf') in 1.086784 seconds 
+  Import took 1.110609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.631909 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab
+  artifactKey: Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab using Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0194f333cb9f157e91c9eb44d91c3f') in 0.174811 seconds 
+  Import took 0.193013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.098854 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab
+  artifactKey: Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab using Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6afe53ce2a28b05255582998c0abba3') in 0.160281 seconds 
+  Import took 0.186597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.875717 seconds.
+  path: Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab
+  artifactKey: Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MRTK.Tutorials.MultiUserCapabilities/Resources/PhotonUser.prefab using Guid(77681e113a66a094ca9b8d6e673d84e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11dd1e7c682711349ad4f2d9594e0772') in 0.183206 seconds 
+  Import took 0.202905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.311092 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Occlusion.mat
+  artifactKey: Guid(a809c7ea182b699409443d46d5b42435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Occlusion.mat using Guid(a809c7ea182b699409443d46d5b42435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30164bac0dddbbd48bcb93120bff7d5') in 0.125499 seconds 
+  Import took 0.140077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentCyan.mat
+  artifactKey: Guid(c6bd404f506e1894289fde7b1689f901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentCyan.mat using Guid(c6bd404f506e1894289fde7b1689f901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f5ab7a60b14fd0252364e99dab841f') in 0.035970 seconds 
+  Import took 0.058038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentMagenta.mat
+  artifactKey: Guid(6c0366ebfed014a40a2e6923663c7381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentMagenta.mat using Guid(6c0366ebfed014a40a2e6923663c7381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c251310f787451ca0582231ea48635fd') in 0.042225 seconds 
+  Import took 0.057639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Gray.mat
+  artifactKey: Guid(835cb4a58f172d7478801db95e510f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Gray.mat using Guid(835cb4a58f172d7478801db95e510f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052fdeebf235a04cd8189f6d6053aa3a') in 0.041253 seconds 
+  Import took 0.056767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_GlowingCyan.mat
+  artifactKey: Guid(27a6136d64696da4eba1b89b3df8d3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_GlowingCyan.mat using Guid(27a6136d64696da4eba1b89b3df8d3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6e0fd0b72fe4c35e69be8c563abb53') in 0.052199 seconds 
+  Import took 0.070663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_PurpleDesaturated.mat
+  artifactKey: Guid(e4c84336a1663704083b58c1b3d8cedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_PurpleDesaturated.mat using Guid(e4c84336a1663704083b58c1b3d8cedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce2e46ba58349d6409303040def9e73') in 0.035026 seconds 
+  Import took 0.050580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_UnlitWhite.mat
+  artifactKey: Guid(8f2fb2809320347428c67ea7c78ef4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_UnlitWhite.mat using Guid(8f2fb2809320347428c67ea7c78ef4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda8fbc483cbdd1cefe11be791b765cc') in 0.048125 seconds 
+  Import took 0.063080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentGreen.mat
+  artifactKey: Guid(163c37494bc2d0540b3488a9d901ee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentGreen.mat using Guid(163c37494bc2d0540b3488a9d901ee07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d1a95358bbbe219327bb45f71511fa') in 0.040368 seconds 
+  Import took 0.055588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikLight.mat
+  artifactKey: Guid(07c12c0ec28e4b8c8f083045ea0765ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikLight.mat using Guid(07c12c0ec28e4b8c8f083045ea0765ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856e704da2126c3180b4d5dff203c50a') in 0.053574 seconds 
+  Import took 0.066895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Purple.mat
+  artifactKey: Guid(d808c628536649eaa61f2a2f2d16c6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Purple.mat using Guid(d808c628536649eaa61f2a2f2d16c6cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d78bcbdf86224d4d3bc0c547b7aa835') in 0.032951 seconds 
+  Import took 0.047554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentLightGray.mat
+  artifactKey: Guid(9921ca73d1b94b24aba7726b9df6db8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentLightGray.mat using Guid(9921ca73d1b94b24aba7726b9df6db8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4700c8bfc410d60f20b12414524f651f') in 0.045841 seconds 
+  Import took 0.058828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentDarkGray.mat
+  artifactKey: Guid(07ebc80273d64c84b923be3e5f484151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentDarkGray.mat using Guid(07ebc80273d64c84b923be3e5f484151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7de364778d11bdc349dfdb51964fde3') in 0.049714 seconds 
+  Import took 0.064121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/UIDarkGray.mat
+  artifactKey: Guid(a8de2758c4b4460cae694f0d50d94fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/UIDarkGray.mat using Guid(a8de2758c4b4460cae694f0d50d94fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc5a5dd9159f239cc2858663e194642a') in 0.052025 seconds 
+  Import took 0.067803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_DarkGray.mat
+  artifactKey: Guid(f40914b49f8741e39df5b08d3db15497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_DarkGray.mat using Guid(f40914b49f8741e39df5b08d3db15497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b745295e3ee0beb0fb22c61cf881d9f6') in 0.042741 seconds 
+  Import took 0.058003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000542 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Cyan.mat
+  artifactKey: Guid(53ea63593b32415faf734536616f5fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Cyan.mat using Guid(53ea63593b32415faf734536616f5fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf19ca674c57271b10e756a60d6049f0') in 0.032021 seconds 
+  Import took 0.046727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentLime.mat
+  artifactKey: Guid(d8efdb3c98967354dad720c9f34297fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentLime.mat using Guid(d8efdb3c98967354dad720c9f34297fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cb3d8bf34b6331145cfd1c6dfea023') in 0.041496 seconds 
+  Import took 0.058934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Blue.mat
+  artifactKey: Guid(3c55769e893c4f4c8c51b7fa69bee2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Blue.mat using Guid(3c55769e893c4f4c8c51b7fa69bee2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77500debe5e484ca203222f861c4b8db') in 0.043849 seconds 
+  Import took 0.059881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikSemibold.mat
+  artifactKey: Guid(995259be68dc4fa98ed72600bc3cc149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikSemibold.mat using Guid(995259be68dc4fa98ed72600bc3cc149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32d3541a774afdf6fdda8a63cdc319d') in 0.054811 seconds 
+  Import took 0.067960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikBold.mat
+  artifactKey: Guid(114fd1489fbd406ab097068cd1fa8842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikBold.mat using Guid(114fd1489fbd406ab097068cd1fa8842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad55ebe8cf0d4fa789a5cf9083d5860') in 0.050653 seconds 
+  Import took 0.064396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Emerald.mat
+  artifactKey: Guid(b0fcdc3322e34d9ea83e8399bd9f4031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Emerald.mat using Guid(b0fcdc3322e34d9ea83e8399bd9f4031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79adf05bab3e18f1b5bad0bfe03dd2c') in 0.044821 seconds 
+  Import took 0.059141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000583 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_LightGray.mat
+  artifactKey: Guid(d5334c45caee46be937b095a1e977dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_LightGray.mat using Guid(d5334c45caee46be937b095a1e977dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55ce5af1fd976c92998ebafb469e502') in 0.042619 seconds 
+  Import took 0.056248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_White.mat
+  artifactKey: Guid(680505b4b4f3400f9fd3ebb242751819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_White.mat using Guid(680505b4b4f3400f9fd3ebb242751819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3fe9729a4a672c2014a5fc7467e076') in 0.055899 seconds 
+  Import took 0.072569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Orange.mat
+  artifactKey: Guid(71d471797c0e430783230146721c3fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Orange.mat using Guid(71d471797c0e430783230146721c3fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31df7f9d56c5ad7c12941487aaed6ad9') in 0.032516 seconds 
+  Import took 0.046236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Green.mat
+  artifactKey: Guid(47f3c5e1cb6142ba9697cd4c86d74321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Green.mat using Guid(47f3c5e1cb6142ba9697cd4c86d74321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b3c1cd8cdbc8ed4d57eb9a4436c443') in 0.040974 seconds 
+  Import took 0.056846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentRed.mat
+  artifactKey: Guid(635a27f13b7b26b4483bc1283d04803e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentRed.mat using Guid(635a27f13b7b26b4483bc1283d04803e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c85bc4917dde2b0715610991ac3f81e') in 0.041829 seconds 
+  Import took 0.058676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Black.mat
+  artifactKey: Guid(54322026142964d4084eda2478d9b1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Black.mat using Guid(54322026142964d4084eda2478d9b1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a9a580085a5958e0eb83f0ec6c5186') in 0.058084 seconds 
+  Import took 0.073374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Lime.mat
+  artifactKey: Guid(00665e2a669d4b0fab1965843b4c914b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Lime.mat using Guid(00665e2a669d4b0fab1965843b4c914b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9927fbd983aa120df308bedb6bf3c420') in 0.032661 seconds 
+  Import took 0.048688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentWhite.mat
+  artifactKey: Guid(978c13c1492639341a61913375335e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentWhite.mat using Guid(978c13c1492639341a61913375335e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e90eca1a45fd85033bf9518d80a08fa') in 0.043233 seconds 
+  Import took 0.057632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentYellow.mat
+  artifactKey: Guid(6a92a01febd262544a43a7fe54b88013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentYellow.mat using Guid(6a92a01febd262544a43a7fe54b88013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dd36e1a371d900c4fc3c40119a7377') in 0.044261 seconds 
+  Import took 0.061372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentPurple.mat
+  artifactKey: Guid(0d8c6bb9c868a9246abea5b9462b401f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentPurple.mat using Guid(0d8c6bb9c868a9246abea5b9462b401f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520383ef74e543e104573e13d1f1d48c') in 0.044243 seconds 
+  Import took 0.063196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_GlowingOrange.mat
+  artifactKey: Guid(a50237e3265fe9149a16e889fd8d8b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_GlowingOrange.mat using Guid(a50237e3265fe9149a16e889fd8d8b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf7c8ebe9e6866ce4b3bac1a957fd28') in 0.048653 seconds 
+  Import took 0.065235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Wireframe.mat
+  artifactKey: Guid(47c3d3b0d8143e3489351498fceed55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Wireframe.mat using Guid(47c3d3b0d8143e3489351498fceed55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877cc33b7400b56fc946ae93ae20b2e4') in 0.045990 seconds 
+  Import took 0.060711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_LimeDesaturated.mat
+  artifactKey: Guid(56848fd596f082a43844edfc0e7647ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_LimeDesaturated.mat using Guid(56848fd596f082a43844edfc0e7647ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e04877946ae1bc570d69ce085c8e6f') in 0.045806 seconds 
+  Import took 0.060324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_DarkBrown.mat
+  artifactKey: Guid(a7448698c15706f48905e44d8e76f2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_DarkBrown.mat using Guid(a7448698c15706f48905e44d8e76f2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3a7beddf18017da3bffbb8d2fabd22') in 0.042919 seconds 
+  Import took 0.060515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentPink.mat
+  artifactKey: Guid(0e3f68a0b25245e4d9a3e2380c8ac1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentPink.mat using Guid(0e3f68a0b25245e4d9a3e2380c8ac1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa44923927ed0066af6677c1f757095c') in 0.040109 seconds 
+  Import took 0.054730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentOrange.mat
+  artifactKey: Guid(4e7efd468ef796b4cbdefce6c9b071f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentOrange.mat using Guid(4e7efd468ef796b4cbdefce6c9b071f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12539fa78a642a1abfdcac05a6206c7') in 0.045088 seconds 
+  Import took 0.061088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentEmerald.mat
+  artifactKey: Guid(ab6b5d4dc17c48bbab69426bced2d601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentEmerald.mat using Guid(ab6b5d4dc17c48bbab69426bced2d601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8a7c60c4119982ff693f5bb7a16c1d') in 0.042278 seconds 
+  Import took 0.056663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentGray.mat
+  artifactKey: Guid(caaf928081244ea78e869b5904d8ddff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentGray.mat using Guid(caaf928081244ea78e869b5904d8ddff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7debebe87660e08e1b64d3b1004b58af') in 0.043353 seconds 
+  Import took 0.058801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Red.mat
+  artifactKey: Guid(c4a1b7475a654dd0acaa0cfdfba2e20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Red.mat using Guid(c4a1b7475a654dd0acaa0cfdfba2e20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c68c8904ceb0072277620cbad3db859a') in 0.044249 seconds 
+  Import took 0.058215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentCharcoal.mat
+  artifactKey: Guid(68b4661a8a0b2644b886f95904c52ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentCharcoal.mat using Guid(68b4661a8a0b2644b886f95904c52ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09967f4712e730aeb720a1640555d357') in 0.047478 seconds 
+  Import took 0.063264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikSemilight.mat
+  artifactKey: Guid(f994cbd38a764af182fc2d9c96693ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawikSemilight.mat using Guid(f994cbd38a764af182fc2d9c96693ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08e1c72fa38ee4d46fdf8400e8db6a5') in 0.050702 seconds 
+  Import took 0.065358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawik.mat
+  artifactKey: Guid(27e8d7c95f97434681887029d5c7a928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/Text3DSelawik.mat using Guid(27e8d7c95f97434681887029d5c7a928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617f31ff809d54b6d16f9381a9d88b81') in 0.053109 seconds 
+  Import took 0.069482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Magenta.mat
+  artifactKey: Guid(71d573ea4cb045cdadc98e56044f6d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Magenta.mat using Guid(71d573ea4cb045cdadc98e56044f6d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620d28bb5dc5b29f3843243e8e7a7112') in 0.032831 seconds 
+  Import took 0.047751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Yellow.mat
+  artifactKey: Guid(cb74390ea57642f8b5ca0aa8f5fb38c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Yellow.mat using Guid(cb74390ea57642f8b5ca0aa8f5fb38c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf369da5e7346d07cb2af34013826f9') in 0.044873 seconds 
+  Import took 0.060662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Pink.mat
+  artifactKey: Guid(67e4ae112f094f3082e033060c3cd298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Pink.mat using Guid(67e4ae112f094f3082e033060c3cd298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5959e7f6d56d94170c80930acf3be15') in 0.040641 seconds 
+  Import took 0.057546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_WireframeBlue.mat
+  artifactKey: Guid(a923a5d1aebc7fe449b4ab3289da537b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_WireframeBlue.mat using Guid(a923a5d1aebc7fe449b4ab3289da537b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0231e927297e2a1ebf1eee5c73fc19f8') in 0.044929 seconds 
+  Import took 0.060028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Charcoal.mat
+  artifactKey: Guid(a5e028070ace428d8971079be1d965a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_Charcoal.mat using Guid(a5e028070ace428d8971079be1d965a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bfeaae06516d68a67cb74c763fab7a5') in 0.033678 seconds 
+  Import took 0.047311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentBlue.mat
+  artifactKey: Guid(0530d90ba2a117e4f95c7a6345e8bb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.microsoft.mixedreality.toolkit.standardassets/Materials/MRTK_Standard_TransparentBlue.mat using Guid(0530d90ba2a117e4f95c7a6345e8bb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d07ebe94482f2c1f7aae0d9402c9f6') in 0.043165 seconds 
+  Import took 0.056496 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.028679 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.59 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:41:09.832934][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:41:09.833494][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:41:09.833547][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:41:09.833632][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.633 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2634ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (2408ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (434ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (1505ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (849ms)
+				ProcessInitializeOnLoadMethodAttributes (470ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.47 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.8 MB.
+System memory in use after: 163.7 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4568.
+Total: 5.277000 ms (FindLiveObjects: 0.393200 ms CreateObjectMapping: 0.237000 ms MarkObjects: 4.282500 ms  DeleteObjects: 0.362600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 20.87 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.7 MB.
+System memory in use after: 79.9 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4568.
+Total: 4.623200 ms (FindLiveObjects: 0.401100 ms CreateObjectMapping: 0.310900 ms MarkObjects: 3.882400 ms  DeleteObjects: 0.027700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027074 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.01 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:47:21.798161][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:47:21.799193][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:47:21.799269][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:47:21.799354][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  5.364 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5365ms)
+		BeginReloadAssembly (300ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (99ms)
+		EndReloadAssembly (4869ms)
+			LoadAssemblies (319ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (871ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (3209ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (2206ms)
+				ProcessInitializeOnLoadMethodAttributes (808ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.02 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.31 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.9 MB.
+System memory in use after: 163.7 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4576.
+Total: 11.299300 ms (FindLiveObjects: 1.285300 ms CreateObjectMapping: 0.923000 ms MarkObjects: 8.286800 ms  DeleteObjects: 0.801400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.053840 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.72 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:54:08.527738][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:54:08.529719][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:54:08.529890][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:54:08.530151][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  7.760 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7762ms)
+		BeginReloadAssembly (313ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (99ms)
+		EndReloadAssembly (7240ms)
+			LoadAssemblies (298ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1173ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (128ms)
+			SetupLoadedEditorAssemblies (4698ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (397ms)
+				ProcessInitializeOnLoadAttributes (2647ms)
+				ProcessInitializeOnLoadMethodAttributes (1606ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (48ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 4.40 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.53 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.9 MB.
+System memory in use after: 163.7 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4584.
+Total: 11.697200 ms (FindLiveObjects: 0.634300 ms CreateObjectMapping: 0.619300 ms MarkObjects: 9.530000 ms  DeleteObjects: 0.910900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.074819 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.69 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.25 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][17:59:16.089832][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][17:59:16.091364][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][17:59:16.091519][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][17:59:16.091698][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  6.213 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6214ms)
+		BeginReloadAssembly (302ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (5709ms)
+			LoadAssemblies (323ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (942ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (109ms)
+			SetupLoadedEditorAssemblies (3584ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (304ms)
+				ProcessInitializeOnLoadAttributes (1840ms)
+				ProcessInitializeOnLoadMethodAttributes (1407ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.60 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.9 MB.
+System memory in use after: 163.8 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4592.
+Total: 9.409900 ms (FindLiveObjects: 0.887500 ms CreateObjectMapping: 0.526500 ms MarkObjects: 7.375100 ms  DeleteObjects: 0.618600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023370 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.43 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:00:28.646159][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:00:28.647037][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:00:28.647130][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:00:28.647250][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.719 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2720ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (2504ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (403ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (1585ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (142ms)
+				ProcessInitializeOnLoadAttributes (903ms)
+				ProcessInitializeOnLoadMethodAttributes (521ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.49 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.0 MB.
+System memory in use after: 163.8 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4600.
+Total: 4.829600 ms (FindLiveObjects: 0.369000 ms CreateObjectMapping: 0.202100 ms MarkObjects: 3.928000 ms  DeleteObjects: 0.329400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:04:50.061985][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:04:50.062552][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:04:50.062607][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:04:50.062686][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.650 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2650ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (2424ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (421ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (1499ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (886ms)
+				ProcessInitializeOnLoadMethodAttributes (458ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.80 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.0 MB.
+System memory in use after: 163.9 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4608.
+Total: 4.910400 ms (FindLiveObjects: 0.379000 ms CreateObjectMapping: 0.231500 ms MarkObjects: 3.950500 ms  DeleteObjects: 0.348300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.022939 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:05:06.269958][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:05:06.271755][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:05:06.271951][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:05:06.272258][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  4.201 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4202ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (3929ms)
+			LoadAssemblies (165ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (489ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (2506ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (156ms)
+				ProcessInitializeOnLoadAttributes (1187ms)
+				ProcessInitializeOnLoadMethodAttributes (1132ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.01 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.0 MB.
+System memory in use after: 163.9 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4616.
+Total: 5.983700 ms (FindLiveObjects: 0.432100 ms CreateObjectMapping: 0.374900 ms MarkObjects: 4.762500 ms  DeleteObjects: 0.412500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.024240 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:07:15.247892][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:07:15.248520][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:07:15.248582][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:07:15.248660][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.653 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2654ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (2429ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (395ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (1520ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (874ms)
+				ProcessInitializeOnLoadMethodAttributes (494ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.45 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.0 MB.
+System memory in use after: 163.9 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4624.
+Total: 6.907800 ms (FindLiveObjects: 0.378300 ms CreateObjectMapping: 0.261300 ms MarkObjects: 5.905600 ms  DeleteObjects: 0.360900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020786 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:07:23.112910][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:07:23.113508][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:07:23.113591][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:07:23.113707][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.763 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2763ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (2535ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (381ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (1601ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (127ms)
+				ProcessInitializeOnLoadAttributes (899ms)
+				ProcessInitializeOnLoadMethodAttributes (560ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.45 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.1 MB.
+System memory in use after: 163.9 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4632.
+Total: 5.108400 ms (FindLiveObjects: 0.350900 ms CreateObjectMapping: 0.244800 ms MarkObjects: 4.165100 ms  DeleteObjects: 0.346300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021245 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:07:34.591211][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:07:34.592257][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:07:34.592354][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:07:34.592443][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  3.140 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3140ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (2920ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (494ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (1791ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (968ms)
+				ProcessInitializeOnLoadMethodAttributes (646ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.11 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.1 MB.
+System memory in use after: 164.0 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4640.
+Total: 6.099600 ms (FindLiveObjects: 0.413200 ms CreateObjectMapping: 0.380100 ms MarkObjects: 4.895100 ms  DeleteObjects: 0.410000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 54.32 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.9 MB.
+System memory in use after: 80.2 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4640.
+Total: 11.730600 ms (FindLiveObjects: 0.821200 ms CreateObjectMapping: 0.617900 ms MarkObjects: 10.232500 ms  DeleteObjects: 0.056700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.651510 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.47 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.31 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:15:55.206862][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:15:55.208171][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:15:55.208294][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:15:55.208472][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  6.852 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6853ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (6566ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (722ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (152ms)
+			SetupLoadedEditorAssemblies (3955ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (267ms)
+				ProcessInitializeOnLoadAttributes (1156ms)
+				ProcessInitializeOnLoadMethodAttributes (2491ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (50ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 3.84 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.1 MB.
+System memory in use after: 164.0 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4648.
+Total: 14.215900 ms (FindLiveObjects: 1.059900 ms CreateObjectMapping: 0.680500 ms MarkObjects: 10.853600 ms  DeleteObjects: 1.615700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025292 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:20:19.194492][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:20:19.195064][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:20:19.195125][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:20:19.195204][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  2.719 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2719ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (2500ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (401ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (1533ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (894ms)
+				ProcessInitializeOnLoadMethodAttributes (490ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.43 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.2 MB.
+System memory in use after: 164.0 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4656.
+Total: 4.756000 ms (FindLiveObjects: 0.358500 ms CreateObjectMapping: 0.238000 ms MarkObjects: 3.800300 ms  DeleteObjects: 0.357900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 21.71 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.0 MB.
+System memory in use after: 80.2 MB.
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 4656.
+Total: 5.305900 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.227600 ms MarkObjects: 4.707900 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.059813 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.50 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+Error when attempting to update scene info fields. Scene info data may be stale.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:RefreshSceneInfoFieldsInScriptableObjects () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:313)
+Microsoft.MixedReality.Toolkit.Editor.SceneInfoUtils:InitializeOnLoad () (at Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs:231)
+System.Reflection.MonoMethod:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.toolkit.foundation@7031015f1531-1646945430362/Core/Inspectors/PropertyDrawers/SceneInfoUtils.cs Line: 313)
+
+[XR] [MROpenXR][Info   ][18:27:48.840037][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment unityVersion=2020.3.26f1
+[XR] [MROpenXR][Info   ][18:27:48.841791][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment openXRPluginVersion=1.3.1
+[XR] [MROpenXR][Info   ][18:27:48.841958][tid:65dc] MicrosoftOpenXRPlugin_SetPluginEnvironment mrOpenXRPluginVersion=1.3.1.0
+[XR] [MROpenXR][Info   ][18:27:48.842157][tid:65dc] OnPluginStarted UnityVersion=2020.3.26f1 OpenXRPluginVersion=1.3.1 MROpenXRPluginVersion=1.3.1.0 PartA_PrivTags=33554432
+Mono: successfully reloaded assembly
+- Completed reload, in  7.955 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7956ms)
+		BeginReloadAssembly (444ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (157ms)
+		EndReloadAssembly (7244ms)
+			LoadAssemblies (446ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1355ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (174ms)
+			SetupLoadedEditorAssemblies (4163ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (376ms)
+				ProcessInitializeOnLoadAttributes (2378ms)
+				ProcessInitializeOnLoadMethodAttributes (1363ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (49ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(21) subTarget(3) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.70 ms, found 17 plugins.
+Preloading 1 native plugins for Editor in 0.25 ms.
+Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 164.2 MB.
+System memory in use after: 164.0 MB.
+
+Unloading 416 unused Assets to reduce memory usage. Loaded Objects now: 4664.
+Total: 12.103500 ms (FindLiveObjects: 0.798400 ms CreateObjectMapping: 0.730500 ms MarkObjects: 8.962600 ms  DeleteObjects: 1.609600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
