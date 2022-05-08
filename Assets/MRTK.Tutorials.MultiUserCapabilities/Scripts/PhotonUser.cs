@@ -70,7 +70,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             {
                 //Add 
                 var gO = PhotonNetwork.InstantiateRoomObject(newGOforMesh.name,pos, rot);
-                gO = Instantiate(newGOforMesh, pos, rot);
+               // gO = Instantiate(newGOforMesh, pos, rot);
                 gO.transform.parent = InstantiatedParent;
                 Mesh mesh = newMesh;
                 newGOforMesh.GetComponent<MeshFilter>().mesh = mesh;
@@ -101,7 +101,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             foreach (int a in notUpdatedIds)
             {
                 PhotonNetwork.Destroy(sceneObjectDict[a].gameObject);
-                Destroy(sceneObjectDict[a].gameObject);
+                //Destroy(sceneObjectDict[a].gameObject);
                 sceneObjectDict.Remove(a);
             }
 

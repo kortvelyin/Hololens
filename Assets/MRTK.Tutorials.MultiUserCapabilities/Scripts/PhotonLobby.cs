@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using Photon.Realtime;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MRTK.Tutorials.MultiUserCapabilities
@@ -41,7 +42,17 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             userIdCount++;
             PhotonNetwork.NickName = PhotonNetwork.AuthValues.UserId;
             Debug.Log("connected to server");
+#if UNITY_EDITOR
             PhotonNetwork.JoinRoom("Holo");
+#endif
+
+        }
+
+       public override void OnRoomListUpdate(List<RoomInfo> roomList)
+        {
+            PhotonNetwork.JoinRoom("Holo");
+
+
 
         }
 
@@ -57,8 +68,16 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         public override void OnJoinRoomFailed(short returnCode, string message)
         {
-           
+
+#if !UNITY_EDITOR
+
+PhotonNetwork.JoinRoom("Holo");
+
+
+#endif
+#if UNITY_EDITOR
             CreateRoom();
+#endif
         }
         
         
@@ -91,8 +110,8 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         private void CreateRoom()
         {
-           // var roomOptions = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 10};
-            PhotonNetwork.CreateRoom("Holo");
+           var roomOptions = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 10};
+            PhotonNetwork.CreateRoom("Holo", roomOptions);
             //PhotonNetwork.CreateRoom("Room" + Random.Range(1, 3000), roomOptions);
         }
     }

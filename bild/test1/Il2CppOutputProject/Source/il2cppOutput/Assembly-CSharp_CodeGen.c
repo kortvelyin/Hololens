@@ -1202,8 +1202,8 @@ extern void PhotonLobby_Awake_m144ED70BDF7D1EE48AC531DE23AEA807E85984B4 (void);
 extern void PhotonLobby_OnConnectedToMaster_mF311E196BBC8C6AC737F92009D80E58E8DC1C5B7 (void);
 // 0x00000254 System.Void MRTK.Tutorials.MultiUserCapabilities.PhotonLobby::OnJoinedRoom()
 extern void PhotonLobby_OnJoinedRoom_m21984064BB24DD508D78957E15ED9FCFAA0E0C1B (void);
-// 0x00000255 System.Void MRTK.Tutorials.MultiUserCapabilities.PhotonLobby::OnJoinRandomFailed(System.Int16,System.String)
-extern void PhotonLobby_OnJoinRandomFailed_mD9A86AABD096263D14EC064DFAC2AA92EF9EA3D3 (void);
+// 0x00000255 System.Void MRTK.Tutorials.MultiUserCapabilities.PhotonLobby::OnJoinRoomFailed(System.Int16,System.String)
+extern void PhotonLobby_OnJoinRoomFailed_m11AC54C30B92E2167CE737FE27A4FA66DB546E42 (void);
 // 0x00000256 System.Void MRTK.Tutorials.MultiUserCapabilities.PhotonLobby::OnCreateRoomFailed(System.Int16,System.String)
 extern void PhotonLobby_OnCreateRoomFailed_mDB24EAC1B46BB7B94C05269278D246AC0A563D61 (void);
 // 0x00000257 System.Void MRTK.Tutorials.MultiUserCapabilities.PhotonLobby::OnCreatedRoom()
@@ -2002,7 +2002,7 @@ static Il2CppMethodPointer s_methodPointers[697] =
 	PhotonLobby_Awake_m144ED70BDF7D1EE48AC531DE23AEA807E85984B4,
 	PhotonLobby_OnConnectedToMaster_mF311E196BBC8C6AC737F92009D80E58E8DC1C5B7,
 	PhotonLobby_OnJoinedRoom_m21984064BB24DD508D78957E15ED9FCFAA0E0C1B,
-	PhotonLobby_OnJoinRandomFailed_mD9A86AABD096263D14EC064DFAC2AA92EF9EA3D3,
+	PhotonLobby_OnJoinRoomFailed_m11AC54C30B92E2167CE737FE27A4FA66DB546E42,
 	PhotonLobby_OnCreateRoomFailed_mDB24EAC1B46BB7B94C05269278D246AC0A563D61,
 	PhotonLobby_OnCreatedRoom_mF53822BDF65D62B81E4DFC75997D799C1664004F,
 	PhotonLobby_OnCancelButtonClicked_m9A0A54D07F06738CDAE1A767CF5D24F334BCE648,
@@ -2811,8 +2811,8 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[3] = 
 {
-	{ (Il2CppRGCTXDataType)3, 63920 },
-	{ (Il2CppRGCTXDataType)3, 62909 },
+	{ (Il2CppRGCTXDataType)3, 63919 },
+	{ (Il2CppRGCTXDataType)3, 62908 },
 	{ (Il2CppRGCTXDataType)2, 483 },
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];

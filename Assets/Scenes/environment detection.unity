@@ -529,25 +529,15 @@ MonoBehaviour:
   user: {fileID: 0}
   cubeprf: {fileID: 0}
   period: 0.5
-  newGOforMesh: {fileID: 1928539925116183620, guid: e289b32c0cad7544d873b9f0581a0ed5, type: 3}
+  newGOforMesh: {fileID: 0}
   once: 1
-  DebugText: {fileID: 679041855}
+  DebugText: {fileID: 0}
   InstantiatePrefabs: 0
   InstantiatedPrefab: {fileID: 0}
-  InstantiatedParent: {fileID: 122450484}
-  canInstantiate: 0
+  InstantiatedParent: {fileID: 0}
+  canInstantiate: 1
   gO: {fileID: 0}
-  MeshMat:
-  - {fileID: 2100000, guid: 54322026142964d4084eda2478d9b1a2, type: 2}
-  - {fileID: 2100000, guid: 3c55769e893c4f4c8c51b7fa69bee2b9, type: 2}
-  - {fileID: 2100000, guid: a5e028070ace428d8971079be1d965a6, type: 2}
-  - {fileID: 2100000, guid: 53ea63593b32415faf734536616f5fb3, type: 2}
-  - {fileID: 2100000, guid: 47f3c5e1cb6142ba9697cd4c86d74321, type: 2}
-  - {fileID: 2100000, guid: 00665e2a669d4b0fab1965843b4c914b, type: 2}
-  - {fileID: 2100000, guid: 71d573ea4cb045cdadc98e56044f6d2c, type: 2}
-  - {fileID: 2100000, guid: 71d471797c0e430783230146721c3fcb, type: 2}
-  - {fileID: 2100000, guid: d808c628536649eaa61f2a2f2d16c6cc, type: 2}
-  - {fileID: 2100000, guid: e4c84336a1663704083b58c1b3d8cedf, type: 2}
+  MeshMat: []
   matno: 0
 --- !u!114 &835032447
 MonoBehaviour:
@@ -855,12 +845,12 @@ MonoBehaviour:
   period: 0.5
   newGOforMesh: {fileID: 7253917417947462929, guid: acf9c509d713996459164fb3a4c1a357, type: 3}
   once: 1
-  DebugText: {fileID: 679041855}
+  DebugText: {fileID: 0}
   InstantiatePrefabs: 0
   InstantiatedPrefab: {fileID: 0}
-  InstantiatedParent: {fileID: 122450484}
-  canInstantiate: 0
-  gO: {fileID: 0}
+  InstantiatedParent: {fileID: 0}
+  canInstantiate: 1
+  gO: {fileID: 7253917417947462929, guid: acf9c509d713996459164fb3a4c1a357, type: 3}
   MeshMat:
   - {fileID: 2100000, guid: 47c3d3b0d8143e3489351498fceed55d, type: 2}
   matno: 0
