@@ -64,7 +64,8 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         {
             PhotonNetwork.JoinRoom("Holo");
             
-            DebugText.GetComponent<TMPro.TextMeshPro>().text = "list of rooms:"+ roomList.ToString();
+            foreach (var room in roomList)
+            DebugText.GetComponent<TMPro.TextMeshPro>().text = "list of rooms: "+ room.Name;
 
         }
 
@@ -80,16 +81,8 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         public override void OnJoinRoomFailed(short returnCode, string message)
         {
-
-#if !UNITY_EDITOR
-
- PhotonNetwork.JoinRoom("Holo");
- DebugText.GetComponent<TMPro.TextMeshPro>().text = "i couldnt join room";
-
-#endif
-#if UNITY_EDITOR
+            DebugText.GetComponent<TMPro.TextMeshPro>().text = "i couldnt join room";
             CreateRoom();
-#endif
         }
         
         
