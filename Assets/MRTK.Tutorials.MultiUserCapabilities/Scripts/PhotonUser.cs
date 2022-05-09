@@ -3,11 +3,16 @@ using UnityEngine;
 using Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.IO;
+using UnityEditor;
 
 namespace MRTK.Tutorials.MultiUserCapabilities
 {
     public class PhotonUser : MonoBehaviour
     {
+        private float nextActionTime = 0.0f;
+        public float period = 50f;
+        bool prefabSuccess;
         public static PhotonUser PhotonScript;
         private PhotonView pv;
         private string username;
@@ -22,6 +27,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         private Transform InstantiatedParent;
 
         public bool canInstantiate = true;
+        private GameObject fullScenePrf;
         
         int count = 0;
         private void Start()
@@ -30,7 +36,9 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
             if (!pv.IsMine) return;
 
+
             username = "User" + PhotonNetwork.NickName;
+
             pv.RPC("PunRPC_SetNickName", RpcTarget.AllBuffered, username);
             //PhotonNetwork.Instantiate(cube.name, transform.position, transform.rotation);
             DebugText = GameObject.Find("Title_Observer2");
@@ -44,12 +52,18 @@ namespace MRTK.Tutorials.MultiUserCapabilities
                 DebugText.GetComponent<TMPro.TextMeshPro>().text = "not in room";
             }
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "in room:" +PhotonNetwork.CurrentRoom;
+
+
+            //to save scene Meshes
+            if (!Directory.Exists("Assets/Prefabs"))
+                AssetDatabase.CreateFolder("Assets", "Prefabs");
+            
         }
 
         void Update()
 
         {
-                
+
           
 
         }      

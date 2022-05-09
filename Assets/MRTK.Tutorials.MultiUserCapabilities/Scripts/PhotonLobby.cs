@@ -50,8 +50,8 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             PhotonNetwork.NickName = PhotonNetwork.AuthValues.UserId;
             Debug.Log("connected to server");
 
-            //PhotonNetwork.JoinRoom("Holo");
-            PhotonNetwork.JoinLobby();
+            PhotonNetwork.JoinRoom("Holo");
+           // PhotonNetwork.JoinLobby();
 
 
         }

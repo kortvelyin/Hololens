@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72285be076877864eb84ddea73a678a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  period: 50
   DebugText: {fileID: 0}
   cube: {fileID: 6481021172052408865, guid: 15d32bde47c7ebb41a501668d844c10b, type: 3}
   env: {fileID: 0}

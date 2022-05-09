@@ -25,7 +25,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
         //public GameObject ntw;
         public GameObject cubeprf;
         private float nextActionTime = 0.0f;
-        public float period = 1f;
+        public float period = 5f;
         public GameObject newGOforMesh;
         public bool once = true;
         //public Button button;
@@ -66,10 +66,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
             if (InstantiatedParent == null)
                 InstantiatedParent = GameObject.Find("Demo Parent").transform;
-            //while(user==null)
-            {
-             user = GameObject.Find("User2");
-            }
+          
             
         var spatialAwarenessService = CoreServices.SpatialAwarenessSystem;
             // Cast to the IMixedRealityDataProviderAccess to get access to the data providers
@@ -82,112 +79,9 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
 
         }
 
-        #region notworking
-       /* protected override void OnEnable()
-        {
-            Debug.Log("in on enable");
            
-            await new WaitUntil(() => MixedRealityToolkit.SpatialAwarenessSystem != null);
-            MixedRealityToolkit.SpatialAwarenessSystem.Register(gameObject);
-            DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script is working!2";
-            DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script onenable";
-            //myText.text = "the script onenable";
-            // Register component to listen for Mesh Observation events, typically done in OnEnable()
-           CoreServices.SpatialAwarenessSystem.RegisterHandler<SpatialAwarenessHandler>(this);
-            Debug.Log("spa neve: "+CoreServices.SpatialAwarenessSystem.Name);
-            Debug.Log(this);
-            DebugText.GetComponent<TMPro.TextMeshPro>().text = "subscribed";
-            //var observer = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
-            //var obs2 = CoreServices.SpatialAwarenessSystem;
-        }*/
-      /*  
-        protected override void OnDisable()
-        {
-           // DebugText.GetComponent<TMPro.TextMeshPro>().text = "the script onDisable";
-            //myText.text = "the script onDisable";
-            CoreServices.SpatialAwarenessSystem.UnregisterHandler<SpatialAwarenessHandler>(this);
-        }
-
-        protected override void OnDestroy()
-        {
-           // CoreServices.SpatialAwarenessSystem.UnregisterHandler<SpatialAwarenessHandler>(this);
-        }
-      */
-       /* public void OnObservationAdded(MixedRealitySpatialAwarenessEventData<SpatialAwarenessSceneObject> eventData)
-        {
-            // This method called everytime a SceneObject created by the SU observer
-            // The eventData contains everything you need do something useful
-
-
-          //  Debug.Log("added something and legth of dict is: "+sceneObjectDict.Count);
-            DebugText.GetComponent<TMPro.TextMeshPro>().text = "added something and length of dict is: " + sceneObjectDict.Count;
-           
-            InstantiatedPrefab = Instantiate(eventData.SpatialObject.GameObject, InstantiatedParent);
-                sceneObjectDict.Add(eventData.Id, InstantiatedPrefab);
-                sceneObjectDict[eventData.Id].GetComponent<MeshRenderer>().material = MeshMat[matno];
-            
-                if (matno == MeshMat.Count - 1)
-                    matno = 0;
-                else
-                    matno++;
-           
-            
-
-           
-                /* foreach (var quad in eventData.SpatialObject.Quads)
-                 {
-                     quad.GameObject.GetComponent<Renderer>().material.color = ColorForSurfaceType(eventData.SpatialObject.SurfaceType);
-                 }*/
-
-           
-      //  }
-
-
-        /// <inheritdoc />
-       /* public void OnObservationUpdated(MixedRealitySpatialAwarenessEventData<SpatialAwarenessSceneObject> eventData)
-        {
-
-            if (sceneObjectDict.ContainsKey(eventData.Id))
-            {
-                Debug.Log("updated something and legth of dict is: " + sceneObjectDict.Count);
-                DebugText.GetComponent<TMPro.TextMeshPro>().text = "updated something and legth of dict is: " + sceneObjectDict.Count;
-               
-                sceneObjectDict[eventData.Id] = eventData.SpatialObject.GameObject;
-                sceneObjectDict[eventData.Id].GetComponent<MeshRenderer>().material = MeshMat[matno];
-                if (matno == MeshMat.Count - 1)
-                    matno = 0;
-                else
-                    matno++;
-            }
-            else
-            {
-                Debug.Log("added something in update and legth of dict is: " + sceneObjectDict.Count);
-                DebugText.GetComponent<TMPro.TextMeshPro>().text = "added something in update and legth of dict is: " + sceneObjectDict.Count;
-                
-                InstantiatedPrefab = Instantiate(eventData.SpatialObject.GameObject, InstantiatedParent);
-                sceneObjectDict.Add(eventData.Id, InstantiatedPrefab);
-                sceneObjectDict[eventData.Id].GetComponent<MeshRenderer>().material = MeshMat[matno];
-                if (matno == MeshMat.Count - 1)
-                    matno = 0;
-                else
-                    matno++;
-            }    
-           
-        }*/
-
-
-        /// <inheritdoc />
-       /* public void OnObservationRemoved(MixedRealitySpatialAwarenessEventData<SpatialAwarenessSceneObject> eventData)
-        {
-            Debug.Log("removed something and legth of dict is: " + sceneObjectDict.Count);
-            DebugText.GetComponent<TMPro.TextMeshProUGUI>().text = "removed something in update and legth of dict is: " + sceneObjectDict.Count;
-            
-            Destroy(sceneObjectDict[eventData.Id]);
-            sceneObjectDict.Remove(eventData.Id);
-        }*/
-
-
-        #endregion notworking
+     
+       
 
 
 
@@ -196,7 +90,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
             /*if (user.name == "User2")
                 return;*/
             if (user == null)
-                user = GameObject.Find("User2");
+                user = GameObject.Find("User1");
 
             if (user == null)
                 return;
