@@ -15,7 +15,7 @@ namespace MRTK.Tutorials.MultiUserCapabilities
         public GameObject cube;
         public GameObject env;
         public GameObject newGOforMesh;
-        public static Dictionary<int, GameObject> sceneObjectDict = new Dictionary<int, GameObject>();
+        private static Dictionary<int, GameObject> sceneObjectDict = new Dictionary<int, GameObject>();
         public List<Material> MeshMat = new List<Material>();
         public int matno = 0;
         private List<int> notUpdatedIds = new List<int>();
@@ -63,18 +63,25 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             if (!PhotonNetwork.InRoom)
                 return;
 
+           /* var gOC = PhotonNetwork.InstantiateRoomObject(newGOforMesh.name, pos, rot);
+            // gO = Instantiate(newGOforMesh, pos, rot);
+            gOC.transform.parent = InstantiatedParent;
+            Mesh meshC = newMesh;
+            gOC.GetComponent<MeshFilter>().mesh = meshC;
+            gOC.GetComponent<MeshRenderer>().material = MeshMat[0];
+            sceneObjectDict.Add(Id, gOC);
+            return;*/
 
-               
             DebugText.GetComponent<TMPro.TextMeshPro>().text = "reading mesh: " + sceneObjectDict.Count.ToString();
-            if (sceneObjectDict.ContainsKey(Id) == false)
+            if (!sceneObjectDict.ContainsKey(Id))
             {
                 //Add 
                 var gO = PhotonNetwork.InstantiateRoomObject(newGOforMesh.name,pos, rot);
                // gO = Instantiate(newGOforMesh, pos, rot);
                 gO.transform.parent = InstantiatedParent;
                 Mesh mesh = newMesh;
-                newGOforMesh.GetComponent<MeshFilter>().mesh = mesh;
-                newGOforMesh.GetComponent<MeshRenderer>().material = MeshMat[matno];
+                gO.GetComponent<MeshFilter>().mesh = mesh;
+                gO.GetComponent<MeshRenderer>().material = MeshMat[matno];
                 sceneObjectDict.Add(Id, gO);
                 notUpdatedIds.Add(Id);
                 if (matno == MeshMat.Count - 1)

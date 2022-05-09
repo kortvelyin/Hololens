@@ -11,7 +11,8 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
         private int roomNumber = 1;
         private int userIdCount;
-       // public GameObject scriptobj;
+        // public GameObject scriptobj;
+        private GameObject DebugText;
 
         private void Awake()
         {
@@ -31,7 +32,13 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             DontDestroyOnLoad(gameObject);
 
             GenericNetworkManager.OnReadyToStartNetwork += StartNetwork;
+
+            DebugText = GameObject.Find("Title_Observer");
         }
+
+
+        //public override void Room
+        
 
         public override void OnConnectedToMaster()
         {
@@ -42,24 +49,29 @@ namespace MRTK.Tutorials.MultiUserCapabilities
             userIdCount++;
             PhotonNetwork.NickName = PhotonNetwork.AuthValues.UserId;
             Debug.Log("connected to server");
-#if UNITY_EDITOR
-            PhotonNetwork.JoinRoom("Holo");
-#endif
+
+            //PhotonNetwork.JoinRoom("Holo");
+            PhotonNetwork.JoinLobby();
+
 
         }
 
-       public override void OnRoomListUpdate(List<RoomInfo> roomList)
+        public override void OnJoinedLobby()
+        {
+            Debug.Log("joined lobby"+Lobby.name);
+        }
+        public override void OnRoomListUpdate(List<RoomInfo> roomList)
         {
             PhotonNetwork.JoinRoom("Holo");
-
-
+            
+            DebugText.GetComponent<TMPro.TextMeshPro>().text = "list of rooms:"+ roomList.ToString();
 
         }
 
         public override void OnJoinedRoom()
         {
             base.OnJoinedRoom();
-            
+            DebugText.GetComponent<TMPro.TextMeshPro>().text = "joined room";
             Debug.Log("\nPhotonLobby.OnJoinedRoom()");
             Debug.Log("Current room name: " + PhotonNetwork.CurrentRoom.Name);
             Debug.Log("Other players in room: " + PhotonNetwork.CountOfPlayersInRooms);
@@ -71,8 +83,8 @@ namespace MRTK.Tutorials.MultiUserCapabilities
 
 #if !UNITY_EDITOR
 
-PhotonNetwork.JoinRoom("Holo");
-
+ PhotonNetwork.JoinRoom("Holo");
+ DebugText.GetComponent<TMPro.TextMeshPro>().text = "i couldnt join room";
 
 #endif
 #if UNITY_EDITOR
@@ -112,6 +124,7 @@ PhotonNetwork.JoinRoom("Holo");
         {
            var roomOptions = new RoomOptions {IsVisible = true, IsOpen = true, MaxPlayers = 10};
             PhotonNetwork.CreateRoom("Holo", roomOptions);
+
             //PhotonNetwork.CreateRoom("Room" + Random.Range(1, 3000), roomOptions);
         }
     }
